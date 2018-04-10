@@ -1,0 +1,17 @@
+
+<div style="margin-top: 13vmin"></div>
+    <div class="freshman">
+        新手上路
+    </div>
+    <div class="fresh-problems">
+      {volist name="list" id="v" empty="<p style='text-align:center' >暂无数据</p>"}
+      <a href="{:url('helpdetail',array('id'=>$v['id']))}">
+        {$v.title}
+        <img src="__IMG__/left.png" alt="">
+      </a>
+      {/volist}
+    </div>
+
+
+</body>
+</html>

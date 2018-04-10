@@ -1,0 +1,143 @@
+{include file="public/head" /}
+<script type="text/javascript" src="__SELLER__/js/upload.js"></script>
+<style type="text/css">
+    input[readonly]{
+        border: none !important;
+        background: #fff;
+        cursor: auto;
+        box-shadow: none;
+    }
+</style>
+<body>
+   <div class="dux-tools">
+        <div class="bread-head">商家信息
+            <span class="small"></span>
+        </div>
+    </div>
+        
+    <div class="admin-main">
+        <form method="post" class="form-x dux-form form-auto" id="form" >
+            <div class="panel dux-box  active">
+                <div class="panel-head">
+                    <strong>商家信息</strong>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <table style="width:70%" class="table table-bordered">
+                            <tbody>
+                                <tr>
+                                    <td colspan="3" ><span style="color:#999">店铺名称：</span>{$info.shop_name}</td>
+                                </tr>
+                                <tr>
+                                    <td><span style="color:#999">店铺负责人：</span>{$info.respon_name}</td>
+                                    <td><span style="color:#999">负责人手机：</span>{$info.respon_mobile}</td>
+                                    <td><span style="color:#999">负责人邮箱：</span>{$info.respon_email}</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" ><span style="color:#999">店铺所在地：</span>{$info.province}、{$info.city}、{$info.district}</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" ><span style="color:#999">店铺详细地：</span>{$info.addresss_detail}</td>
+                                </tr>
+                                <tr>
+                                    <td><span style="color:#999">所属行业：</span>{$info.industry_name}</td>
+                                    <td colspan="2" ><span style="color:#999">服务费系数：</span>{$info.fee}%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="form-group">
+                        {eq name="info['user_type']" value='1'}
+                        <table style="width:70%" class="table table-bordered">
+                            <tbody>
+                                <tr>
+                                    <td><span style="color:#999">类型：</span>{$info.user_type==1 ? '企业用户':'个人用户'}</td>
+                                    <td><span style="color:#999">是否三证合一：</span>{$info['is_three_card']==1?'是':'否'}</td>
+                                    <td><span style="color:#999">是否分公司：</span>{$info['is_child_company']==1?'是':'否'}</td>
+                                </tr>
+                                <tr>
+                                    <td><span style="color:#999">税务登记证：</span>{$info['tax_no']}</td>
+                                    <td><span style="color:#999">社会信用代码：</span>{$info['credit_no']}</td>
+                                    <td><span style="color:#999">组织机构证：</span>{$info['organize_no']}</td>
+                                </tr>
+                                 <tr>
+                                    <td><span style="color:#999">法人：</span>{$info['legal_name']}</td>
+                                    <td><span style="color:#999">公司类型：</span>{$info['company_type']}</td>
+                                    <td><span style="color:#999">经营负责人：</span>{$info['manage_parent']}</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    <a href="{$info.idcard_img_face}">
+                                       <img style="width:100%" src="{$info.idcard_img_face}" alt=""> 
+                                       <p style="text-align:center" >正面照</p>
+                                    </a>
+                                    </td>
+                                    <td>
+                                    <a href="{$info.idcard_img_back}">
+                                        <img style="width:100%" src="{$info.idcard_img_back}" alt="">
+                                        <p style="text-align:center" >反面照</p>
+                                    </a>
+                                    </td>
+                                    <td>
+                                    <a href="{$info.idcard_img_hand}">
+                                        <img style="width:100%" src="{$info.idcard_img_hand}" alt="">
+                                        <p style="text-align:center" >手持照</p>
+                                    </a>
+                                    </td>
+                                </tr>
+                                {notempty name="info['company_license_img']"}
+                                <tr>
+                                    <td colspan="3" >
+                                     <a href="{$info.company_license_img}">
+                                        <img style="width:33%" src="{$info.company_license_img}" alt="">
+                                        <p style="text-align:center" >营业执照</p>
+                                    </a>
+                                    </td>
+                                </tr>
+                                {/notempty}
+                            </tbody>
+                        </table>
+                        {else /}
+                         <table style="width:70%" class="table table-bordered">
+                            <tbody>
+                                <tr>
+                                    <td><span style="color:#999">证件类型：</span>{$info['idcard_type']==1 ? '非大陆身份证':'大陆身份证'}</td>
+                                    <td><span style="color:#999">身份证号：</span>{$info.idcard}</td>
+                                    <td><span style="color:#999">证件有效期：</span>{$info.idcar_startdate} 至 {$info.idcar_endtdate}</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    <a href="{$info.idcard_img_face}">
+                                       <img style="width:100%" src="{$info.idcard_img_face}" alt=""> 
+                                       <p style="text-align:center" >正面照</p>
+                                    </a>
+                                    </td>
+                                    <td>
+                                    <a href="{$info.idcard_img_back}">
+                                        <img style="width:100%" src="{$info.idcard_img_back}" alt="">
+                                        <p style="text-align:center" >反面照</p>
+                                    </a>
+                                    </td>
+                                    <td>
+                                     <a href="{$info.idcard_img_hand}">
+                                        <img style="width:100%" src="{$info.idcard_img_hand}" alt="">
+                                        <p style="text-align:center" >手持照</p>
+                                    </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        {/eq}
+                    </div>
+        			
+                    
+
+                </div>
+                
+            </div>
+        </form>
+
+    </div>
+</body>
+</html>

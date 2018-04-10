@@ -1,0 +1,50 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,minimal-ui">
+  <title>宏八商城</title>
+  <link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+
+
+</head> -->
+<body id="color">
+  <!-- 轮播图 -->
+    <div class="fxm_header">
+       <div class="fxm_left"><a href="grzl.html"><img src="__IMG__/left0.png"></a></div>
+       <div class="fxm_center">修改地区</div>
+       <!-- <div class="fxm_right"><img src="__IMG__/zf.png"></div> -->
+    </div>
+
+<div style="margin-top: 20vmin"></div>
+ 
+
+ 
+    <div class="info">
+        <div>
+            <label for="">选择省份</label><select id="s_province" name="s_province"></select>  
+            <label for="">选择城市</label><select id="s_city" name="s_city" ></select>  
+            <label for="">选择地区</label> <select id="s_county" name="s_county"></select>
+            <script class="resources library" src="__JS__/area.js" type="text/javascript"></script>   
+            <script type="text/javascript">_init_area();</script>
+        </div>
+        <div class="buttones">
+          <a href="wancheng.html">下一步</a>
+        </div>
+    </div>
+
+
+
+<script type="text/javascript">
+var Gid  = document.getElementById ;
+var showArea = function(){
+    Gid('show').innerHTML = "<h3>省" + Gid('s_province').value + " - 市" +    
+    Gid('s_city').value + " - 县/区" + 
+    Gid('s_county').value + "</h3>"
+}
+Gid('s_county').setAttribute('onchange','showArea()');
+</script>
+
+</body>
+</html>

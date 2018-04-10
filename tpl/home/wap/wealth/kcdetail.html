@@ -1,0 +1,13 @@
+<div style="padding-top: 13vmin;"></div>
+    
+    <div class="kefu_b yubei_xq">  
+        <p>类型：<span>{$info['from_type']==1 ? '转入':'转出'}</span></p>
+        <p>名称：<span>{$info.type_name}</span></p>
+        <p>数量：<span class="lanse">{$info.money}</span></p>
+        <p>说明：<span>{$info.content}</span></p>
+        <p>时间：<span>{$info.create_time|date="Y-m-d H:i",###}</span></p>
+        <p>余额：<span class="lanse">{$info.money_record}</span></p>
+    </div>
+
+    
+    <div style="padding-bottom: 10vmin;float: left;width: 100%"></div>

@@ -1,0 +1,145 @@
+{include file="public/head" /}
+<script type="text/javascript" src="__SELLER__/js/upload.js"></script>
+<style type="text/css">
+    input[readonly]{
+        border: none !important;
+        background: #fff;
+        cursor: auto;
+        box-shadow: none;
+    }
+</style>
+<body>
+   <div class="dux-tools">
+        <div class="bread-head">商家信息
+            <span class="small"></span>
+        </div>
+    </div>
+        
+    <div class="admin-main">
+        <form method="post" class="form-x dux-form form-auto" id="form" action="{:url('setshop')}" >
+            <div class="panel dux-box  active">
+                <div class="panel-head">
+                    <strong>商家信息</strong>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <div class="label">
+                            <label for="sitename">店铺名称：</label>
+                        </div>
+                        <div class="field">
+                            <input class="input" disabled="true" type="text" value="{$s_info.shop_name}" >
+                            <div class="input-note"></div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="label">
+                            <label for="sitename">店铺logo：</label>
+                        </div>
+                        <div class="field">
+                            <input type="hidden" id="shop_logo" name="shop_logo" value="{$s_info.shop_logo|default=''}" >
+                            <img style="width:20vmin;" id="cover_img" src="{$s_info.shop_logo|default=''}" alt="">
+                            <input class="button bg-main" type="button" name="button" id="button1" value="选择上传..." class="btn btn-primary" onClick="GetUploadify('{:url('Uploadify/upload',array('num'=>1,'func'=>'img_call_back'))}')" >
+                            <div class="input-note"></div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="label">
+                            <label for="sitename">店铺简介：</label>
+                        </div>
+                        <div class="field">
+                           <textarea   class="form-control" style="width:40vmin;height:10vmin" name="content">{$s_info.content}</textarea>
+                            <div class="input-note"></div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="form-group">
+                        <div class="label">
+                            <label for="sitename">店铺条幅：</label>
+                        </div>
+                        <div class="field">
+                            <input type="hidden" id="shop_img" name="shop_img" value="{$s_info.shop_img|default=''}">
+                            <img style="width:40vmin;" id="cover_shop_img" src="{$s_info.shop_img|default=''}" alt="">
+                            <input class="button bg-main" type="button" name="button" id="button1" value="选择上传..." class="btn btn-primary" onClick="GetUploadify('{:url('Uploadify/upload',array('num'=>1,'func'=>'shop_call_back'))}')" >
+                            <div class="input-note"></div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="label">
+                            <label for="sitename">服务电话：</label>
+                        </div>
+                        <div class="field">
+                            <input name="server_tel" class="input" type="text" value="{$s_info.server_tel}" >
+                            <div class="input-note"></div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="form-group">
+                        <div class="label">
+                            <label for="sitename">营业时间：</label>
+                        </div>
+                        <div class="field">
+                            <input name="work_time" class="input" type="text" value="{$s_info.work_time}" >
+                            <div class="input-note">如:9:00-18:00</div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="label">
+                            <label for="sitename">店铺坐标：</label>
+                        </div>
+                        <div class="field">
+                            <input name="shop_jw" class="input" type="text" value="{$s_info.shop_jw}"  placeholder="将拾取坐标复制到这里" >
+                            <span class="button bg-main zuobaio" >拾取店铺坐标</span>
+                            <div class="input-note">拾取坐标时尽可能准确，以方便用户能准确找到您的店铺位置。输入一个正确的坐标(比如：116.307629,40.058359)</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <a class="button bg-main ajax-post" type="submit" target-form="dux-form">保存</a>
+                    </div>
+                </div>
+                
+            </div>
+        </form>
+
+    <script type="text/javascript">
+    $('.zuobaio').click(function(){
+
+        layer.open({
+          type: 2,
+          title: '拾取店铺坐标',
+          shadeClose: true,
+          shade: false,
+          maxmin: true, //开启最大化最小化按钮
+          area: ['893px', '600px'],
+          content: 'http://api.map.baidu.com/lbsapi/getpoint/index.html?qq-pf-to=pcqq.group'
+        });
+
+    })
+
+    //上传图片回调
+    function img_call_back(fileurl_tmp)
+    {
+        $("#cover_img").attr('src', fileurl_tmp);
+        $('#shop_logo').val(fileurl_tmp);
+    }
+
+    //上传图片回调
+    function shop_call_back(fileurl_tmp)
+    {
+        $("#cover_shop_img").attr('src', fileurl_tmp);
+        $('#shop_img').val(fileurl_tmp);
+    }
+
+
+
+    </script>
+
+
+    </div>
+</body>
+</html>

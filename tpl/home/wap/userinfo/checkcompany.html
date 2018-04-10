@@ -1,0 +1,146 @@
+    <!-- 地区 -->
+    <link rel="stylesheet" type="text/css" href="__CSS__/jquery-weui.min.css" />
+    <div style="padding-top: 13vmin;"></div>
+    <div class="shezhi qyrz1">
+        <form class="postfrom" action="{:url('savecheckcompany')}">
+        <ul>
+            <!-- <li>&nbsp;&nbsp;&nbsp;&nbsp;店铺名称<span><input type="text" placeholder="请填写店铺名称" name="shop_name" value="{$info.shop_name|default=''}" /></span></li> -->
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;公司名称<span><input type="text" placeholder="请填写公司名称" name="companyname" value="{$info.company_name|default=''}" /></span></li>
+            
+            <li class="isthree">是否分公司
+                <span style="float: inherit;">
+                <a href="javascript:"><i {eq name="info['is_child_company']" value="0"}class="on"{/eq} data="0">否</i></a>
+                <a href="javascript:" class="fou"><i {eq name="info['is_child_company']" value="1"}class="on"{/eq} data="1" >是</i></a>
+                </span>
+                <input type="hidden" name="ischild" value="{$info.is_child_company|default='0'}">
+            </li>
+
+            <li class="isthree" >&nbsp;&nbsp;&nbsp;&nbsp;三证合一<span style="float: inherit;">
+              <a href="javascript:"><i {eq name="info['is_three_card']" value="0"}class="on"{/eq} data="0">否</i></a>
+              <a href="javascript:" class="fou"><i {eq name="info['is_three_card']" value="1"}class="on"{/eq} data="1" >是</i></a>
+              </span>
+              <input type="hidden" name="isthree" value="{$info.is_three_card|default='0'}">
+            </li>
+
+            <li>社会信用代码<span><input name="credit" type="text" value="{$info.credit_no|default=''}" placeholder="请填写信用代码"></span></li>
+            <li class="tax-c" >税务登记证<span><input name="tax" type="text" value="{$info.tax_no|default=''}" placeholder="请填写税务登记表"></span></li>
+            <li class="tax-c" >组织机构证<span><input name="organize" type="text" value="{$info.organize_no|default=''}" placeholder="请填写组织机构代码"></span></li>
+            <li>组织机构类型<span>{$info.company_organize}</span></li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;法人<span><input type="text" name="legal" placeholder="请填写法人"  value="{$info.legal_name|default=''}" /></span></li>
+            <li>公司类型
+                <span>
+                    <select name="companytype" >
+                      <option value ="">请选择企业类型</option>
+                      <option {eq name="info['company_type']" value="国有企业"}selected="true"{/eq} value ="国有企业">国有企业</option>
+                      <option {eq name="info['company_type']" value="集体企业"}selected="true"{/eq} value ="集体企业">集体企业</option>
+                      <option {eq name="info['company_type']" value="股份合作企业"}selected="true"{/eq} value ="股份合作企业">股份合作企业</option>
+                      <option {eq name="info['company_type']" value="联营企业"}selected="true"{/eq} value ="联营企业">联营企业</option>
+                      <option {eq name="info['company_type']" value="有限责任公司"}selected="true"{/eq} value ="有限责任公司">有限责任公司</option>
+                      <option {eq name="info['company_type']" value="股份有限公司"}selected="true"{/eq} value ="股份有限公司">股份有限公司</option>
+                      <option {eq name="info['company_type']" value="私营企业"}selected="true"{/eq} value ="私营企业">私营企业</option>
+                      <option {eq name="info['company_type']" value="个体户"}selected="true"{/eq} value ="个体户">个体户</option>
+                      <option {eq name="info['company_type']" value="中外合资经营企业"}selected="true"{/eq} value ="中外合资经营企业">中外合资经营企业</option>
+                      <option {eq name="info['company_type']" value="中外合作经营企业"}selected="true"{/eq} value ="中外合作经营企业">中外合作经营企业</option>
+                      <option {eq name="info['company_type']" value="外资企业"}selected="true"{/eq} value ="外资企业">外资企业</option>
+                      <option {eq name="info['company_type']" value="外商投资股份有限公司"}selected="true"{/eq} value ="外商投资股份有限公司">外商投资股份有限公司</option>
+                      <option {eq name="info['company_type']" value="其他企业"}selected="true"{/eq} value ="其他企业">其他企业</option>
+                    </select>
+                </span>
+            </li>
+           <!--  <li>行业分类
+                <span>
+                    <select>
+                      <option value ="请选择">请选择企业类型</option>
+                      <option value ="石油和天然气开采产品">石油和天然气开采产品</option>
+                      <option value ="石油和天然气开采产品">石油和天然气开采产品</option>
+                      <option value ="石油和天然气开采产品">石油和天然气开采产品</option>
+                      <option value ="石油和天然气开采产品">石油和天然气开采产品</option>
+                    </select>
+                </span> 
+            </li> -->
+            <li>所在区域
+                <span>
+                  <input name="area" value="{$info.area|default=''}" type='text' id='city-picker' placeholder='请选择省市区县' />
+                </span>    
+            </li>
+            <li class="isthree1" >经营者<span style="float: inherit;">
+              <a href="javascript:"><i data="1" {eq name="info['is_legal']" value="1"}class="on"{/eq} >被授权人</i></a>
+              <a href="javascript:" class="fou" ><i data="0" {eq name="info['is_legal']" value="0"}class="on"{/eq} >法人</i></a></span>
+              <input type="hidden" name="islegal" value="0">
+            </li>
+            <li class="manage" {eq name="info['is_legal']" value="0"}style="display:none"{/eq} >
+              经营负责人
+              <span>
+                <input name="manageparent" value="{$info.manage_parent|default=''}" type="text" placeholder="请填写经营负责人">
+              </span>
+            </li>
+        </ul>
+        </form>
+        <p>您正在申请企业认证</p>
+    </div>
+    
+    {if condition="($info['is_check_company'] neq 1) AND ($info['is_check_company'] neq 2)" }
+    <span id="anniu"><a class="post"  target-from="postfrom" href="javascript:">下一步</a></span>
+    {/if}
+    <div style="padding-bottom: 10vmin"></div>
+
+    <script type="text/javascript" src="__JS__/jquery-weui.min.js"></script>
+    <script type="text/javascript" src="__JS__/city-picker.min.js"></script>
+    <script>
+
+        //提交数据
+        $('.post').click(function(){
+          var datafrom=$(this).attr('target-from');
+          var post_url = $("."+datafrom).attr('action');
+          var post_data= $("."+datafrom).serialize();
+          if(post_url){
+              $.ajax({
+                 type: "POST",
+                 url: post_url,
+                 data:post_data,
+                 dataType: "json",
+                 success: function(data){
+                    if(data.status==1){
+                          window.location.href=data.url;
+                    }else{
+                        msg_alert(data.info);
+                    }      
+                  }    
+            });
+          }
+        });
+
+
+        $('.isthree a').click(function(){
+          var that=$(this);
+          that.find('i').addClass('on');
+          that.siblings('a').find('i').removeClass('on');
+          var data=that.find('i').attr('data');
+          that.parents('.isthree').find('input').val(data);
+          if(data==1)
+            $('.tax-c').hide();
+          else
+            $('.tax-c').show();
+        })
+
+        $('.isthree1 a').click(function(){
+          var that=$(this);
+          that.find('i').addClass('on');
+          that.siblings('a').find('i').removeClass('on');
+          var data=that.find('i').attr('data');
+          if(data==1){
+            $('.manage').show();
+          }else{
+            $('.manage').hide();
+          }
+          that.parents('.isthree1').find('input').val(data);
+        })
+
+
+        $("#city-picker").cityPicker({
+            title: "选择省市区/县",
+            onChange: function (picker, values, displayValues) {
+                console.log(values, displayValues);
+            }
+        });
+    </script>

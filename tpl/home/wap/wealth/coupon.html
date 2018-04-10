@@ -1,0 +1,33 @@
+
+  
+    <div style="padding-top: 13vmin;"></div>
+  
+    <div class="mywallet-top">
+      <strong style="color:#FF860E">{$total}</strong>
+      <p>优惠券</p>
+
+    </div>
+    <div class="yubei">
+      <ul>
+        <li onclick="window.location.href='{:url('Wealth/coupon',array('f_type'=>'0'))}'" >全部</li>
+        <li onclick="window.location.href='{:url('Wealth/coupon',array('f_type'=>'1'))}'"  >转入</li>
+        <li onclick="window.location.href='{:url('Wealth/coupon',array('f_type'=>'2'))}'"  style="border-right:none">转出</li>
+      </ul>
+    </div>
+
+    <div class="disnone">
+      <div class="zichanmx">
+        <ul>
+        {foreach name="list" item="v" }
+        <li>
+          <h1>{$v.type_name}</h1>
+          <span>{$v.content}</span>
+          <em style="color:#FC7C03;margin-top: -10vmin;">{$v['from_type']==1? '+':'-'}{$v['money']+0}<br/>
+                <i>{$v.create_time|date="Y-m-d",###}</i>
+           </em>
+        </li>
+        {/foreach}
+      </ul>
+      </div>
+    </div>
+    

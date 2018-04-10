@@ -1,0 +1,266 @@
+{__NOLAYOUT__}
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta content="width=device-width,initial-scale=1,mininum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>{$info.shop_name|default='宏八商城'}</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="stylesheet" href="__CSS__/task.css">
+<link rel="stylesheet" href="__ICON__/iconfont.css">
+
+<script type="text/javascript" src="__JS__/jquery-1.6.min.js"></script>
+<script type="text/javascript" src="__JS__/jquery.reveal.js"></script>
+<script type="text/javascript" src="__HOME__/layer_mobile/layer.js"></script>
+
+</head>
+<body>
+
+<div class="fxm_header">
+       <div class="fxm_left"><a href="javascript:history.go(-1)"><img src="__IMG__/left0.png"></a></div>
+       <div class="fxm_center">{$info.shop_name|default='宏八商城'}</div>
+</div>
+
+<div style="background:url({$info.shop_img|default='/static/home/wap/mall/images/dp_bg.jpg'}) no-repeat;background-size: cover;background-position: center;"  class="zyd">
+	<div class="zyd_top" style="height: 26vmin;"><!-- <img src="{$info.shop_logo|default=''}"> --></div>
+	<div class="zyd_bottom" style="float: left;width: 96%;padding: 2%">
+		<div class="zyd_img" style=" margin-top: 0%;width: 10vmin;height: 10vmin;">
+		<img src="{$info.shop_logo|default=''}">
+		</div>
+		<p>{$info.shop_name|default='宏八商城'}</p>
+		<span style=" left:0; margin-left: 15%;width: 100%;position: absolute;margin-top: 5.5%;">{$info.shop_collect}人收藏 <i id="collect" class="iconfont">&#xe61f;收藏</i></span>
+	</div>
+</div>
+
+<form action="{:url('shoplist/index')}" method="get" id="formsearch">
+<div class="banner" style="background: none;">
+	<input type="text" name="keywork" value="{:input('keywork')}" placeholder="搜索商品" onfocus="this.placeholder=''" onblur="this.placeholder='搜索商品'"/ style="    background-color: rgba(255, 255, 255, 0.92);">
+	<input type="hidden" name="bid" value="{:input('bid')}">
+	<div onclick="document.getElementById('formsearch').submit()" class="search">
+	 	<img src="__IMG__/search.png" alt="">
+	</div>
+</div>
+
+<div class="navigation" style="margin-top: 68vmin">
+		<a href="{:url('index',array('keywork'=>input('keywork'),'bid'=>input('bid')))}">综合</a>
+	    <a href="{:url('index',array('keywork'=>input('keywork'),'bid'=>input('bid'),'order_str'=>'xl'))}">销量</a>
+	    {php}
+	      $str=input('order_str');
+	      if($str=='price_desc'){
+	         $str='price_asc'; 
+	      }else{
+	         $str='price_desc'; 
+	      }
+	    {/php}
+	    <a href="{:url('index',array('keywork'=>input('keywork'),'bid'=>input('bid'),'order_str'=>$str))}" class="chlid2" style="position:relative;">
+	      <span>价格</span>
+	      <img  src="__IMG__/top.png" alt="" class="ssx">
+	      <img  src="__IMG__/down.png" alt="" class="xsx">
+	    </a>
+	    
+	    <a href="#" data-reveal-id="myModal2">筛选
+	    <i class="iconfont">&#xe63b;</i>
+	    </a>
+</div>
+
+<div id="myModal2" class="reveal-modal2" style="padding-top: 10vmin;" >
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <input name="start_price" type="text" placeholder="最低价" value="{:input('start_price')}" >
+    <em>-</em>
+    <input name="end_price" type="text" placeholder="最高价" value="{:input('end_price')}"  >
+
+    <div class="close-reveal-modal">
+      <a href="javascript:document.getElementById('formsearch').submit()">确定</a>
+    </div>
+  </div>
+
+</form>
+
+
+<!-- <div id="myModal" class="reveal-modal" >
+	<form action="">
+		<p class="leibie">
+		<label for="">类别</label>
+			<a href="#" class="optiones">全部</a>
+			<a href="#" class="optiones">分销</a>
+			<a href="#" class="optiones">广告</a>
+		</p>
+		<p class="zhouqi">
+			<label for="">周期</label>
+			<a href="#" class="optiones">全部</a>
+			<a href="#" class="optiones">0-5天</a>
+			<a href="#" class="optiones">6-10天</a>
+			<a href="#" class="optiones">11-20天</a>
+			<a href="#" class="optiones">21-30天</a>
+			<a href="#" class="optiones">30天以上</a>
+		</p>
+		<p class="jiamf">
+			<label for="">加盟费(元)</label>
+			<a href="#" class="optiones">全部</a>
+			<a href="#" class="optiones">0-100</a>
+			<a href="#" class="optiones">100-1,000</a>
+			<a href="#" class="optiones">1,000-10,000</a>
+			
+		</p>
+	</form>
+
+	<div class="close-reveal-modal">
+		<a href="#">确定</a>
+	</div>
+</div> -->
+
+
+
+<!-- <div id="myModal3" class="reveal-modal3" >
+<form action="">
+	<input type="radio" name="ra">综合排序<br>
+	<input type="radio" name="ra">加盟费从高到低<br>
+	<input type="radio" name="ra">加盟费从低到高<br>
+	<input type="radio" name="ra">时间最新<br>
+</form>
+<div class="close-reveal-modal">
+	<a href="#">确定</a>
+</div>
+</div> -->
+
+<div class="cpfl_b" style="margin-top:84vmin;">
+	<i class="iconfont">&#xe6d3;店主分享</i>
+
+	<ul class="list" >
+		{volist name="list" id="v" key="k" empty="<li style='text-align:center;width:100%' >暂时没有数据</li>"}
+		<li>
+	      <a href="{:url('Good/details',array('good_id'=>$v.good_id))}">
+	        <span><img src="{$v.good_cover_img}"></span>
+	        <p>{$v.good_name}</p>
+	        <p><em>￥{$v['good_price']+0}</em> 
+	        {eq name="v['ship_fee']" value="1"}
+	        <i>免运费</i>
+	        {/eq}
+	        </p>
+	        <p class="jiangli">已出售{$v.good_sell_num}件</p>
+	        {notempty name="v['good_integral']"}
+	        <p class="jiangli">奖励：{$v.good_integral}积分</p>
+	        {/notempty}
+	      </a>
+	    </li>
+	    {/volist}
+	</ul>
+</div>
+
+{notempty name="list"}
+<!-- 每页显示20条 -->
+<div class="more">
+	<a onclick="loadmore(this)" url="{:url('moregood')}" href="javascript:">查看更多……</a>
+	<input class="page" type="hidden" value="1">
+</div>
+{/notempty}
+
+<div class="dp_footer">
+     <a href="{:url('mall/Goodtype/index')}">
+        <i class="iconfont" style="font-size: 5vmin;padding-top: 4%;display: block;"></i>
+        <p>产品分类</p>
+    </a>
+     <a href="{:url('Shoplist/shopcomment',array('seller_id'=>input('bid')))}">
+        <i class="iconfont">&#xe67b;</i>
+        <p>用户评价</p>
+    </a>
+     <a href="tel:13655555555">
+        <i class="iconfont">&#xe601;</i>
+        <p>联系卖家</p>
+    </a>
+</div>
+	
+	<input type="hidden" id="seller_id" value="{:input('bid')}">
+
+</body>
+</html>
+<script type="text/javascript">
+ 	$('.optiones').click(function(){
+ 		$(this).toggleClass('checkeds').siblings('.optiones').removeClass('checkeds');
+ 	})
+ 	//加载更多
+    function insertDiv(data,type){  
+     var datetime=$('#date').val(); 
+     var list = $(".list");
+     var str='';
+     var details_url="{:url('Good/details')}";
+      $.each(data, function(index, v){
+	        str+='<li>';
+		      str+='<a href="'+details_url+'?good_id='+v.good_id+'">';
+		        str+='<span><img src="'+v.good_cover_img+'"></span>';
+		        str+='<p>'+v.good_name+'</p>';
+		        str+='<p><em>￥'+(v.good_price*1)+'</em> ';
+		        if(v['ship_fee']==1){
+		        	str+='<i>免运费</i>';
+		        }
+		        str+='</p>';
+		        str+='<p class="jiangli">已出售'+v.good_sell_num+'件</p>';
+		        if(v.good_integral){
+		        	str+='<p class="jiangli">奖励：'+v.good_integral+'积分</p>';
+		        }
+		      str+='</a>';
+		    str+='</li>';
+      })
+      if(type=='more'){
+          list.append(str);  
+          $(".more a").text("加载更多");  
+      }else{
+        list.html(str);
+      }   
+      
+ } 
+
+   function loadmore(obj) {  
+   		 var seller_id=$('#seller_id').val();
+         var page = $(obj).next('.page').val()
+         page=parseInt(page);  
+         var oldthis=$(obj);
+         var url=$(obj).attr('url');
+
+         var keywork=$("input[name='keywork']").val();
+         var start_price=$("input[name='start_price']").val();
+         var end_price=$("input[name='end_price']").val();
+
+         oldthis.text("加载中...");  
+         $.ajax({  
+             type: "get",  
+             url: url,  
+             data: {'p':page,'bid':seller_id,'keywork':keywork,'start_price':start_price,'end_price':end_price},  
+             dataType: "json",  
+             success: function (data) {  
+                
+              /*判断有没有数据*/
+              if (data){
+                  $(obj).next('.page').val(page + 1);  
+                  insertDiv(data,'more');  
+               }else{  
+                  oldthis.attr('onclick','');
+                  oldthis.html("已经没有了");
+               }  
+             }  
+         });  
+    }
+
+
+    //收藏店铺
+    $('#collect').click(function(){
+
+         var seller_id=$('#seller_id').val();
+          $.ajax({
+          type : "POST",
+          dataType: "json",
+          url:"{:url('collectshop')}",
+          data:{'seller_id':seller_id},
+          success: function(data){
+            layer.open({
+               style: 'top:0'
+              ,content: data.info
+              ,skin: 'msg'
+              ,time: 1 
+            })
+          }
+        });
+    })
+
+ </script>

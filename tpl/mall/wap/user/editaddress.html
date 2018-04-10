@@ -1,0 +1,120 @@
+<link rel="stylesheet" href="__CSS__/dizhi.css">
+<script type="text/javascript" src="__COM__/js/address.js" ></script>
+
+<div style="margin-top: 13vmin"></div>
+<section class="DZBJ-wrapper ng-scope">
+    <form name="address" action="{:url('User/saveaddress')}" >
+    <input type="hidden" name="id" value="{$info.id|default=''}">
+    <!--循环项 start-->
+    <section class="input_item">
+        <i class="iconfont">&#xe6f8;</i>
+        <section class="_content">
+            <h5 class="input_name">收件人</h5>
+            <section class="input_block">
+                <input name="username" placeholder="收件人姓名" value="{$info.user_name|default=''}" class="ng-pristine ng-untouched ng-valid"></section>
+        </section>
+    </section>
+    <!--循环项 end-->
+    <!--循环项 start-->
+    <section class="input_item">
+        <i class="iconfont">&#xe622;</i>
+        <section class="_content">
+            <h5 class="input_name">联系电话</h5>
+            <section class="input_block">
+                <input name="usermobile" placeholder="收货人电话" class="ng-pristine ng-untouched ng-valid" type="tel" value="{$info.user_mobile|default=''}" ></section>
+        </section>
+    </section>
+    <!--循环项 end-->
+    <!--循环项 start-->
+    <section class="input_item city" style="height: 40vmin;">
+        <i class="iconfont">&#xe632;</i>
+        <section class="_content city">
+            <h5 class="input_name">所在地区</h5>
+            <section class="input_block">
+                <select id="province" name="sheng" >
+                </select>
+                <select id="city" name="shi" >
+                </select>
+                <select id="district" name="xian" >
+                </select>
+                
+            </section>
+        </section>
+    </section>
+    <script type="text/javascript">
+      addressInit('province', 'city', 'district',"{$info['province']|default=''}","{$info['city']|default=''}","{$info['district']|default=''}");
+    </script>
+    <!--循环项 end-->
+    <!--循环项 start-->
+    <section class="input_item">
+        <i class="iconfont">&#xe6cf;</i>
+        <section class="_content">
+            <h5 class="input_name">详细地址</h5>
+            <section class="input_block">
+                <input name="detail" ng-model="areaPostcode" placeholder="收货人详细地址" class="ng-pristine ng-untouched ng-valid" type="text" value="{$info.detail_address|default=''}" ></section>
+        </section>
+    </section>
+    <!--循环项 end-->
+    <!--循环项 start-->
+    <!-- <section class="input_item" style="height:auto">
+        <i class="iconfont">&#xe651;</i>
+        <section class="_content">
+            <h5 class="input_name">邮政编码</h5>
+            <section class="input_block">
+                <textarea ng-model="areaDetail" placeholder="所在地区邮编" class="ng-pristine ng-untouched ng-valid"></textarea>
+            </section>
+        </section>
+    </section> -->
+    <!--循环项 end-->
+    <!--循环项 start-->
+    <section class="input_item">
+        <section class="_content">
+            <h5 class="input_name">是否默认</h5>
+            <input {if condition="isset($info) AND ($info['is_default'] eq 1)"}checked="true"{/if} type="checkbox" name="default" id="checkbox" class="aa" value="1" >
+        </section>
+    </section>
+    <!--循环项 end-->
+    </form>
+</section>
+<!--中部内容区 end-->
+<!--底部banner栏 start-->
+<div style="height:0.75rem" class="ng-scope"></div>
+<div class="newAddressPageBottom ng-scope">
+    <a class="btn ng-scope"  href="javascript:AddAddress();" title="#">确认保存</a>
+</div>
+<!--底部banner栏 end-->
+</div>
+<script type="text/javascript">
+  //修改用户信息
+  function AddAddress(){
+
+        var post_url = $("form[name='address']").attr('action');
+        var post_data= $("form[name='address']").serialize();
+        $.ajax({
+             type: "POST",
+             url: post_url,
+             data:post_data,
+             dataType: "json",
+             success: function(data){
+                if(data.status==1){
+                  layer.open({
+                    content: data.info
+                    ,skin: 'msg'
+                    ,time: 1.5 //2秒后自动关闭
+                    ,end:function(index){
+                      location.href=data.url;
+                    }
+                  });
+                }
+                else{
+                  layer.open({
+                    content: data.info
+                    ,skin: 'msg'
+                    ,time: 1.5 //2秒后自动关闭
+                  });
+                }      
+              }     
+        });
+  }
+
+</script>

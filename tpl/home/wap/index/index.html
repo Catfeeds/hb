@@ -1,0 +1,380 @@
+{__NOLAYOUT__}
+<!-- 不使用布局文件 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,minimal-ui">
+    <meta name="description" content="{$site_info.WEB_SITE_DESCRIPTION}">
+    <meta name="Keywords" content="{$site_info.WEB_SITE_KEYWORD}">
+	<title>{$site_info.WEB_SITE_TITLE}</title>
+	<link rel="stylesheet" href="__CSS__/style.css">
+	<script type="text/javascript" src="__JS__/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="__JS__/jquery.touchSlider.js"></script>
+    <script type="text/javascript" src="__JS__/js.js"></script>
+
+    <!-- 点击弹出右侧 -->
+    <link rel="stylesheet" type="text/css" href="__CSS__/component.css" />
+    <script src="__JS__/modernizr.custom.js"></script>
+    <script src="__JS__/jquery.dlmenu.js"></script>
+</head>
+<body>
+	<!-- 轮播图 -->
+    <div class="header">
+        <div class="header_left">
+            <!-- 弹出右侧 -->
+            <div id="dl-menu" class="dl-menuwrapper">
+                <button><!-- <img src="__IMG__/my.png"> --></button>
+
+                <ul class="dl-menu">
+                    <div class="menu_top">
+                        <p class="xiaoxi">
+                            <a href="{:url('Message/index')}">
+                                <img src="__IMG__/xiaoxi.jpg">
+                                {if condition="$message_count gt 0"}
+                                <span id="xx_dian">&nbsp;</span>
+                                {/if}
+                            </a>
+                        </p>
+                        <p>
+                            <a href="{:url('Usercenter/userdata')}"><img src="__IMG__/shezhi.jpg"></a>
+                        </p>
+                    </div>
+                    <div class="menu_center">
+                        <p id="touxiang" style="margin-left: 37%;">
+                        {notempty name="head_img"}
+                            <img src="{$head_img}">
+                        {else /}
+                            <img src="__IMG__/sg3.jpg">
+                        {/notempty}
+                        </p>
+                       <!--  <p id="ewm" ><a href="{:url('Login/usercode',array('uid'=>$Think.session.user_login.userid))}"><img src="__IMG__/ewm2.jpg"></a></p> --><!-- onclick ="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" -->
+                    </div>
+
+                    <div class="namy" style="text-align: left;padding-left: 39%;">{$Think.session.user_login.account}</div>
+
+                    <div class="renzheng">
+                        <div class="renzheng0 renzheng1{if condition='$level egt 6'}-1{/if}"></div>
+                        <div class="renzheng0 renzheng2{if condition='$level egt 5'}-1{/if}"></div>
+                        <div class="renzheng0 renzheng3{if condition='$level egt 4'}-1{/if}"></div>
+                        <div class="renzheng0 renzheng4{if condition='$level egt 3'}-1{/if}"></div>
+                        <div class="renzheng0 renzheng5{if condition='$level egt 2'}-1{/if}"></div>
+                        <div class="renzheng0 renzheng6{if condition='$level egt 1'}-1{/if}"></div>
+                        <div class="renzheng0 renzheng7{if condition='$level egt 0'}-1{/if}"></div>
+                    </div>
+                   
+                    <div style="clear: both;"></div>
+                    <div class="menu_bottom">
+                        <li>
+                            <a href="{:url('Usercenter/manageuser')}">
+                                <img src="__IMG__/a1.jpg">用户管理
+                            </a>  
+                        </li>
+                        <li class="xhx">
+                            <a href="{:url('Userinfo/index')}">
+                                <img src="__IMG__/a2.jpg">用户认证
+                            </a>  
+                        </li>
+
+                        <!-- <li>
+                            <a href="{:url('Usercenter/collection')}">
+                                <img src="__IMG__/a3.jpg">我的收藏
+                            </a>  
+                        </li> -->
+                        <li>
+                            <a href="{:url('Login/usercode',array('uid'=>$Think.session.user_login.userid))}">
+                                <img src="__IMG__/a4.jpg">我的分享
+                            </a>  
+                        </li>
+                        <li>
+                            <a href="{:url('Wealth/recharge')}">
+                                <img src="__IMG__/a5.jpg">充值
+                            </a>  
+                        </li>
+                        <li class="xhx">
+                            <a href="{:url('Seller/alliancebusiness')}">
+                                <img src="__IMG__/a6.jpg">联盟商家
+                            </a>  
+                        </li>
+                        <li>
+                            <a href="{:url('Usercenter/feedback')}">
+                                <img src="__IMG__/a7.jpg">用户反馈
+                            </a>  
+                        </li>
+                        <li>
+                            <a href="{:url('Usercenter/aboutus')}">
+                                <img src="__IMG__/a8.jpg">关于我们
+                            </a>  
+                        </li>
+                        <li>
+                            <a href="{:url('Usercenter/helpcenter',array('new_ids'=>8))}">
+                                <img src="__IMG__/a9.jpg">帮助中心
+                            </a>  
+                        </li>
+
+                        <span id="tuichu"><a href="{:url('home/Login/logout')}">退出登录<img src="__IMG__/a10.jpg"></a></span>
+                    </div>
+                    
+                </ul>
+               
+            </div>
+            <style>
+                .backsize{position: fixed;width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.50);z-index: 1;display: none;}
+            </style>
+            <script>
+                $(function() {
+                    // $('#dl-menu').dlmenu();
+                    $('#dl-menu button').click(function(){
+                        $('#back').toggle();
+                        $('#dl-menu button').toggleClass('dl-active');
+                        $('#dl-menu ul').toggleClass('dl-menuopen');
+                    })
+                    $('#back').click(function(){
+                        $(this).hide();
+                        $('#dl-menu button').removeClass('dl-active');
+                        $('#dl-menu ul').removeClass('dl-menuopen');
+                    })
+                });
+
+            </script>
+
+
+
+        </div>
+        <div class="header_center">首页</div>
+        <div style="text-align: right;" class="header_right">
+            <a href="{:url('Login/usercode',array('uid'=>$Think.session.user_login.userid))}"><img src="__IMG__/ewm.png"></a>
+            <!-- <a href="javascript:"><img src="__IMG__/sys.png"></a> -->
+        </div>
+    </div>
+     <div id="back" class="backsize"></div>
+   	<div class="main-content ng-scope" id="main_content">
+        <div class="main_visual">
+            {php} $banner=get_banner('total'); {/php}
+            <div class="flicking_con">
+                {foreach name="banner" item="v" }
+                <a href="#"></a>
+                {/foreach}
+            </div>
+            <div class="main_image">
+                <ul>
+                    {foreach name="banner" item="v" }
+                    <li><span class="img_3"><img src="{$v.b_img}"></span></li>
+                    {/foreach}
+                </ul>
+
+                <a href="javascript:;" id="btn_prev"></a>
+                <a href="javascript:;" id="btn_next"></a>
+            </div>   
+        </div>
+    </div>
+    <!-- 轮播图 -->
+
+
+    <!-- 下分类 -->
+    <div class="type">
+    	<ul>
+    		<li>
+    			<a href="{:url('mall/Index/index')}">
+	    			<span><img src="__IMG__/fl1.png"></span>
+	    			<p>商城</p>
+    			</a>
+    		</li>
+    		<li>
+    			<a href="{:url('news/sxy')}">
+	    			<span><img src="__IMG__/fl2.png"></span>
+	    			<p>商学院</p>
+    			</a>
+    		</li>
+    		<li>
+    			<a href="{:url('Turntable/index')}">
+	    			<span><img src="__IMG__/fl3.png"></span>
+	    			<p>活动抽奖</p>
+    			</a>
+    		</li>
+    		<li>
+    			<a href="{:url('Usersign/index')}">
+	    			<span><img src="__IMG__/fl4.png"></span>
+	    			<p>签到</p>
+    			</a>
+    		</li>
+    		<li>
+    			<a href="{:url('Usercenter/manageuser')}">
+	    			<span><img src="__IMG__/fl5.png"></span>
+	    			<p>分享管理</p>
+    			</a>
+    		</li>
+    		<li>
+                <a href="{:url('Userupdate/tocompany')}">
+                    <span><img src="__IMG__/f23.png"></span>
+                    <p>个人转企业</p>
+                </a>
+            </li>
+    		<li>
+    			<a href="{:url('Userinfo/index')}">
+	    			<span><img src="__IMG__/fl7.png"></span>
+	    			<p>认证中心</p>
+    			</a>
+    		</li>
+    		<li>
+    			<a href="{:url('Userorder/index')}">
+	    			<span><img src="__IMG__/fl8.png"></span>
+	    			<p>工单</p>
+    			</a>
+    		</li>
+    		<li>
+                <a href="{:url('Userupdate/index')}">
+                    <span><img src="__IMG__/fl1.png"></span>
+                    <p>会员升级</p>
+                </a>
+            </li>
+    		<li>
+    			<a href="{:url('index/more')}">
+	    			<span><img src="__IMG__/f20.png"></span>
+	    			<p>更多</p>
+    			</a>
+    		</li>
+    	</ul>
+    </div>
+    <!-- 下分类完 -->
+
+    <!-- 数据统计 标题 -->
+   <!--  <div class="notice">
+        <div class="notice_left"><img src="__IMG__/sjtj.png" style="width: 93%"></div>
+        <div class="notice_right">
+            <p style="color: #ff9000;">数据统计</p>
+        </div>
+    </div>
+    <div class="sjtj_b">
+        <ul>
+            <li>
+                <h6>上一天新增积分总额</h6>
+                <p class="lanse">0</p>
+            </li>
+            <li>
+                <h6>总积分总额</h6>
+                <p class="lvse">0</p>
+            </li>
+        </ul>
+    </div> -->
+
+
+    <!-- 猜你喜欢 标题 -->
+    <div class="notice">
+    	<div class="notice_left"><img src="__IMG__/gg.png"></div>
+    	<div class="notice_right">
+    		<p>猜你喜欢<a href="{:url('mall/Index/index')}" style="display: initial;"><i>更多</i></a></p>
+    	</div>
+    </div>
+
+
+
+    <!-- 猜你喜欢 -->
+    <div class="youxuan mlrs" style="border-top: 1px solid #f0f2f3">
+            {if condition="$goodcount gt 0"}
+    		<div class="yx_l">
+    			<a href="{:url('mall/good/details',array('good_id'=>$goodlist[0]['good_id']))}">
+	    			<div class="yx_l_t">
+	    				<p>{$goodlist[0]['good_name']}</p>
+		    			<p class="mlrsa">￥{$goodlist[0]['good_price']+0}</p>
+		    			<p class="tupian"><img src="{$goodlist[0]['good_cover_img']}"></p>
+	    			</div>
+    			</a>
+    		</div>
+            {/if}
+            {if condition="$goodcount gt 1"}
+    		<div class="yx_l yx_r">
+    			<a href="{:url('mall/good/details',array('good_id'=>$goodlist[1]['good_id']))}">
+	    			<div class="yx_l_t">
+	    				<p>{$goodlist[1]['good_name']}</p>
+		    			<p class="mlrsa">￥{$goodlist[1]['good_price']+0}</p>
+		    			<p class="tupian"><img src="{$goodlist[1]['good_cover_img']}"></p>
+	    			</div>
+    			</a>
+    		</div>
+            {/if}
+    		<ul id="mlsr_b">
+                {if condition="$goodcount gt 2"}
+                {volist name="goodlist" id="data" offset="2" length='8' }
+    			<li>
+    				<a href="{:url('mall/good/details',array('good_id'=>$data['good_id']))}">
+	    				<p>{$data.good_name}</p>
+	    				<p class="mlsr_b">￥{$data['good_price']+0}</p>
+	    				<p><img src="{$data.good_cover_img}"></p>
+    				</a>
+    			</li>
+                {/volist}
+                {/if}
+    		</ul>
+    </div>
+    <!-- 猜你喜欢 -->
+
+
+<style type="text/css">
+.zxzx_top ul li {
+    margin-right: 1%;
+}
+</style>
+
+    <!-- 资讯中心 标题 -->
+    <div class="notice">
+        <div class="notice_left"><img src="__IMG__/gg2.png"></div>
+        <div class="notice_right zxzx">
+            <p>资讯中心<a href="{:url('News/newscenter',array('new_ids'=>$menu_son[0]['id']))}" style="display: initial;"><i>更多</i></a></p>
+        </div>
+    </div>
+
+    <div class="zxzx_top">
+        <ul>
+            {foreach name="menu_son" item="v" key='k'}
+            <li>
+                <a href="{:url('News/newscenter',array('new_ids'=>$v['id']))}">
+                    <img src="__IMG__/zx{$k+1}.jpg">
+                    <p>{$v['title']}</p>
+                </a>
+            </li>
+            {/foreach}
+            <li>
+                <a href="{:url('usercenter/helpcenter',array('new_ids'=>$help_son[0]['id']))}">
+                    <img src="__IMG__/zx6.jpg">
+                    <p>帮助中心</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    
+
+    <div class="zxzx_bottom">
+        <ul>
+            {foreach name="newtop" item="v"}
+            <li <?php if($v['newtop']==2){echo 'class=""';}else{echo 'class="new"';}?>>
+                <a href="{:url('news/newsdetail',array('news_id'=>$v['id']))}">
+                   {$v.title}
+                </a>
+            </li>
+            {/foreach}   
+
+        </ul>
+    </div>
+    <div class="banquan">公司版权所有</div>
+
+<div style="height:20vmin;float: left;display: block;width: 100%;"></div>
+
+<!-- 底部 -->
+
+{include file="public/bottom" /}
+
+
+
+
+<!-- 二维码弹出框 -->
+    <div id="light" class="white_content">
+        <a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'" id="guanbi">X</a>
+        <img src="{$code_path}">
+    </div> 
+    <div id="fade" class="black_overlay"></div> 
+<!-- 二维码弹出框完 -->
+
+</body>
+</html>

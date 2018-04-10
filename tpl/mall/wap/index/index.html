@@ -1,0 +1,206 @@
+    <script type="text/javascript" src="__JS__/jquery.touchSlider.js"></script>
+     <!-- 轮播图 -->
+    <div class="main-content ng-scope" id="main_content">
+        <div class="main_visual">
+            <div class="flicking_con">
+                {foreach name="banner" item="v"}
+                <a href="#"></a>
+                {/foreach}
+            </div>
+            <div class="main_image">
+                <ul>
+                  {foreach name="banner" item="v"}
+                    <li>
+                      <span class="img_3">
+                        <a {notempty name="v['b_link']"} href="{$v.b_link}" {else/} href="#" {/notempty} >
+                          <img src="{$v.b_img}">
+                        </a>
+                      </span>
+                    </li>
+                  {/foreach}
+                </ul>
+
+                <a href="javascript:;" id="btn_prev"></a>
+                <a href="javascript:;" id="btn_next"></a>
+            </div>   
+        </div>
+        <form action="{:url('goodlist/index')}" method="get" id="search">
+          <input name="keywork" type="text" placeholder="请输入关键词" id="sou">
+          <span onclick="document.getElementById('search').submit()" ><i class="iconfont"></i></span>
+        </form>
+    </div>
+    <!-- 轮播图 -->
+
+
+    <!-- 下分类 -->
+    <div class="type">
+      <ul>
+        {foreach name="cate_info" item="v" }
+        <li>
+          <a href="{:url('Goodlist/index',array('id'=>$v['id']))}">
+            <span><img src="{$v.image}"></span>
+            <p style="width: 100%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;" >{$v.name}</p>
+          </a>
+        </li>
+        {/foreach}
+        <li>
+          <a href="{:url('mall/Goodtype/index')}">
+            <span><i class="iconfont"></i></span>
+            <p>分类</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- 下分类完 -->
+
+
+    <!-- 最新动态 公告 -->
+    <div class="notice">
+      <div class="notice_left"><img src="__IMG__/gg.jpg"></div>
+      <div class="notice_right">
+        {foreach name="newlist" item="v"}
+        <p><a href="{:url('News/detail',array('id'=>$v['id']))}"><span>最新</span>{$v.title}</a></p>
+        {/foreach}
+      </div>
+    </div>
+
+
+    <!-- 今日优选 -->
+    <div class="youxuan">
+      {php}
+        $recommend=goodlist(array('is_recommend'=>1),5);
+      {/php}
+      <h3>精品推荐 <span>BOUTIQUE PREFERRED</span></h3>
+        <div class="yx_l">
+          {volist name="recommend" id="vo" length='1'}
+          <div class="yx_l_t">
+            <p class="biaoti">值得买</p>
+            <p>{$vo.good_name}</p>
+            <p class="color">¥ {$vo.good_price+0}</p>
+            <p class="tupian"><a href="{:url('Good/details',array('good_id'=>$vo.good_id))}"><img src="{$vo.good_cover_img}"></a></p>
+          </div>
+          {/volist}
+          {volist name="recommend" id="vo" offset="1" length='1'}
+          <div class="yx_l_b">
+            <div class="yx_left">
+              <p class="biaoti gules">必抢</p>
+              <p>¥{$vo.good_price+0}</p>
+            </div>
+            <div class="yx_right">
+              <a href="{:url('Good/details',array('good_id'=>$vo.good_id))}">
+              <img src="{$vo.good_cover_img}">
+              </a>
+            </div>
+          </div> 
+          {/volist}
+        </div>
+        <div class="yx_r">
+          {volist name="recommend" id="vo" offset="2" length='3'}
+          <div class="yx_r_a">
+            <a href="{:url('Good/details',array('good_id'=>$vo.good_id))}">
+              <div class="yx_left">
+                <p class="biaoti Violet">清仓价</p>
+                <p>{$vo.good_name}</p>
+              </div>
+              <div class="yx_right">
+                <img src="{$vo.good_cover_img}">
+              </div>
+            </a>
+          </div>
+          {/volist}
+        </div>  
+      
+    </div>
+    <!-- 今日优选 -->
+
+
+    <!-- 美丽人生 -->
+     {php}
+        $hot=goodlist(array('is_hot'=>1),6);
+     {/php}
+    <div class="youxuan mlrs">
+      <h3>热门商品 <span>HOT &amp; COMMODITY</span></h3>
+        {volist name="hot" id="vo" key="k" length='2'}
+        <div class="yx_l {eq name='k' value='1' }yx_r{/eq}">
+          <a href="{:url('Good/details',array('good_id'=>$vo.good_id))}">
+            <div class="yx_l_t">
+              <p>{$vo.good_name}</p>
+              
+              <p class="tupian"><img src="{$vo.good_cover_img}"></p>
+            </div>
+          </a>
+        </div>
+        {/volist} 
+        <ul id="mlsr_b">
+        {volist name="hot" id="vo" key="k" offset="2" length='4'}
+          <li>
+            <a href="{:url('Good/details',array('good_id'=>$vo.good_id))}">
+              <p>{$vo.good_name}</p>
+              
+              <p><img src="{$vo.good_cover_img}"></p>
+            </a>
+          </li>
+         {/volist} 
+        </ul>
+    </div>
+    <!-- 美丽人生 -->
+
+     <!-- 迷人秋妆 -->
+     {php}
+        $new=goodlist(array('is_new'=>1),6);
+     {/php}
+    <div class="youxuan qrmz">
+      <h3>新品上市 <span>NEW COMMODITY</span></h3>
+      <img src="__IMG__/banner1.jpg">
+      <div class="qrmz_bottom">
+
+        {volist name="hot" id="vo" }
+        <div class="qrmz_kuai">
+          <a href="{:url('Good/details',array('good_id'=>$vo.good_id))}">
+            <div class="kuai_img"><img src="{$vo.good_cover_img}"></div>
+            <div class="kuai_right">
+              <p style="overflow: hidden; text-overflow: ellipsis;white-space: nowrap; width: 100%;" >{$vo.good_name}</p>
+              <i>￥{$vo.good_price+0}</i>
+            </div>
+          </a>
+        </div>
+        {/volist} 
+
+      </div>  
+    </div>
+    <!-- 迷人秋妆 -->
+
+    <!-- 猜你喜欢 -->
+    <div class="youxuan footers">
+        <h1>
+            <span class="line-left"></span>
+            <em><img src="__IMG__/fire.png" alt="">猜你喜欢</em>
+            <span class="line-right"></span>
+        </h1>
+        <ul>
+          {php}
+            $like=goodlist(array(),4,'good_id desc');
+          {/php}
+          {foreach name="like" item="vo"}
+            <li>
+                <a href="{:url('Good/details',array('good_id'=>$vo.good_id))}" style=" display: block;float: left;">
+                    <img src="{$vo.good_cover_img}" alt="">
+                    <div class="footers-rights">
+                        <h2>{$vo.good_name}</h2>
+                        <!-- <em>一口一个刚刚好</em><span>450-500g</span> -->
+                        <p>
+                            <strong>￥{$vo.good_price+0}</strong>
+                            <i>市场价:{$vo.market_price+0}</i>
+                        </p>
+                    </div>
+                    <i class="iconfont"></i>
+                </a>
+            </li>
+           {/foreach}
+
+        </ul>
+    </div>
+	<div style="height:20vmin;float: left;display: block;width: 100%;"></div>
+
+	<!-- 底部 -->
+	{include file="public/bottom" /}

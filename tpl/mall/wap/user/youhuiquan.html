@@ -1,0 +1,106 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,minimal-ui">
+  <title>宏八商城</title>
+  <link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+
+</head> -->
+<style>
+  .zichanmx ul li em{ width: 25%;  height: inherit; margin-top: -10vmin;}
+  .zichanmx ul li em i{font-size: 3vmin;color: #ccc}
+  .used a img{ width: 16%;display: inline-block;height: 13vmin;float: left;margin-top: -16vmin;margin-left: 59vmin;}
+</style>
+
+<body>
+  <!-- 轮播图 -->
+    <div class="fxm_header">
+       <div class="fxm_left"><a href="grqb.html"><img src="__IMG__/left0.png"></a></div>
+       <div class="fxm_center">我的优惠券</div>
+       <!-- <div class="fxm_right"><img src="__IMG__/zf.png"></div> -->
+    </div>
+
+<div style="margin-top: 13vmin"></div>
+ 
+    <div class="mywallet-top">
+      <strong style="color:#FF860E">0</strong>
+      <p>(张)优惠券</p>
+
+    </div>
+    <div class="yubei">
+      <ul>
+        <li onmouseover="show(0);">未使用</li>
+        <li onmouseover="show(1);">已使用</li>
+        <li onmouseover="show(2);">已过期</li>
+      </ul>
+    </div>
+    <div class="disnone">
+      <div class="zichanmx">
+        <ul>
+        <li>
+        <a href="yubei_xq.html">
+          <h1>商品优惠券</h1>
+          <span>购买满3800优惠200元优惠券</span>
+          <em style="color:#FC7C03;">200.00<br>
+                <i>2017-09-31</i>
+                </em>
+        </a>
+        </li>
+       
+      </ul>
+      </div>
+    </div>
+    <div class="zichanmx disnone" style="display:none;">
+      <ul>
+         </li>
+            <li class="used">
+            <a href="yubei_xq.html">
+                <h1>商品优惠券</h1>
+                <span>购买满3800优惠200元优惠券</span>
+                <em>200.00<br>
+                <i>2017-09-31</i>
+                </em>
+                <img src="__IMG__/used.png" alt="">
+            </a>
+            </li>
+      </ul>
+      <!-- <p class="kong"><img src="__IMG__/k.png"></p> -->
+    </div>
+    <div class="zichanmx disnone" style="display:none;">
+      <ul>
+        
+        <li class="used">
+        <a href="yubei_xq.html">
+          <h1>商品优惠券</h1>
+                <span>购买满3800优惠200元优惠券</span>
+                <em>200.00<br>
+                <i>2017-09-31</i>
+                </em>
+                <img src="__IMG__/passed.png" alt="">
+        </a>
+       
+      </ul>
+    </div>
+
+
+    <script type="text/javascript">
+function show(i){
+        var contentts = document.getElementsByClassName("disnone");
+        for(var c =0;c<contentts.length;c++){
+            var contentt =  contentts[c];
+            
+            if(c==i){
+                contentt.style.display="block";
+            }else{
+                contentt.style.display="none";
+            }
+           
+        }
+    }
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+    
+    <div style="padding-top: 13vmin;"></div>
+
+    <div class="fenfa_b">
+      <h3>库存积分</h3>
+      <h3>{$kucun_integral}</h3>
+      <p>可分发{$kucun_integral}<span><a href="{:url('buykucunintegral')}">购买</a></span></p>
+    </div>
+    <form class="postfrom" action="{:url('sellkucunintegral')}" >
+    <div class="shezhi xgmm">
+        <ul>
+            <li>买家： <span><input type="number" id="mobile" name="mobile" placeholder="请输入买家手机号" ></span></li>
+            <li>核对用户信息<span id="u_info" style="color:red" ></span></li>
+            <li>消费金额： <span><input type="number" id="num" name="num" placeholder="请输入买家消费金额"></span></li>
+           
+             <!--  <div class="grzqy">
+                <p>额度不够用？你可以申请 <a href="{:url('Wealth/updatesellnum')}">调额></a></p>
+              </div> -->
+           
+            <li>交易说明： <span><input type="text" name="content" placeholder="交易备注，以便您查询"></span></li>
+            <!-- <li>奖励比例：
+                <span>
+                    <select>
+                      <option value="100%">100%</option>
+                      <option value="90%">90%</option>
+                    </select>
+                </span>
+            </li> -->
+            <li>使用库存积分：<span id='jifen' >0</span></li>
+        </ul>
+        
+    </div>
+    </form>
+
+   <div class="grzqy">
+     <p>请确认该交易真实有效，如查实为虚假交易，平台将会对该账户进行封号处理。</p>
+     
+   </div>
+
+<span class="ajax-post" target-from="postfrom" id="anniu">分发</span>
+<div style="padding-bottom: 10vmin"></div>
+
+<script type="text/javascript">
+  $('#mobile').blur(function(){
+      var mobile=$(this).val();
+      if(mobile){
+        $.post("{:url('userinfo')}",{'mobile':mobile},function(str){
+          $('#u_info').text(str);
+        })
+      }
+  })
+
+  $('#num').blur(function(){
+    var num=$(this).val();
+    if(num){ 
+        num=num*100;
+      $('#jifen').text(num);
+    }else{
+      $('#jifen').text('0');
+    }
+  })
+
+</script>

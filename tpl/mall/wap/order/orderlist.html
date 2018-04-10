@@ -1,0 +1,156 @@
+  <link rel="stylesheet" href="__CSS__/product.css">
+  <link rel="stylesheet" href="__ICON__/iconfont.css">
+  <style type="text/css">
+    .wordcil{
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      width: 79%;
+      display: block;
+      float: right;
+    }
+    .myorder li{
+      width: 19%;
+    }
+  </style>
+  <div style="margin-top: 13vmin"></div>
+  <div id="tbh5v0">
+    <div class="td">
+        <div class="myorder" style="height:auto;">
+       <ul>
+         <li {eq name=":input('type')" value="all" }class="licolor"{/eq} ><a href="{:url('Order/orderlist',array('type'=>'all'))}">全部订单</a></li>
+         <li {eq name=":input('type')" value="0" }class="licolor"{/eq} ><a href="{:url('Order/orderlist',array('type'=>'0'))}">待付款</a></li>
+         <li {eq name=":input('type')" value="1" }class="licolor"{/eq} ><a href="{:url('Order/orderlist',array('type'=>'1'))}">待发货</a></li>
+         <li {eq name=":input('type')" value="2" }class="licolor"{/eq} ><a href="{:url('Order/orderlist',array('type'=>'2'))}">待收货</a></li>
+         <li {if condition="input('type') eq 3" }class="licolor"{/if} style="border-right:none" ><a href="{:url('Order/orderlist',array('type'=>'3'))}">已完成</a></li>
+       </ul>
+    </div>
+
+      <div style="background:#ededed" class="order_main">
+         <ul>
+         {php} $order_detail=db('order_detail'); {/php}
+          {volist name="list" id="vo" empty="<li style='text-align:center;height: 30vmin;' >暂无数据</li>"}
+            <li>
+              <h4 id="ddh">
+              <p style="color:#575656;font-size:14px;" >{$vo.seller_id|get_shop_name}</p>
+              订单号：{$vo.order_no}
+              <p id="wfk">{$status_name[$vo['order_status']]}</p>
+              </h4>
+              {php}
+                $detail=array();
+                $detail=$order_detail->field('good_id,good_name,good_num,good_price,attr_value,good_cover_img')->where('order_id',$vo['order_id'])->select();
+              {/php}
+              {volist name="detail" id="v"}
+              <div class="order_t" >
+                <div class="order_main_l">
+                  <a href="{:url('Good/details',array('good_id'=>$v['good_id']))}">
+                    <img src="{$v.good_cover_img}" alt="">
+                  </a>
+                </div>
+                <div class="order_main_r">
+                 
+                  <p>名称：<span class="wordcil" >{$v.good_name}</span></p>
+                  <p>数量：<span>{$v.good_num}</span></p>
+                  <p>价格：<span style="color:#ff0000;">￥{$v.good_price} </span></p>
+                  {notempty name="v['attr_value']"}
+                  <p>规格：<span class="wordcil" >{$v.attr_value}</span></p>
+                  {/notempty}
+                </div>
+              </div>
+              {/volist}
+              <div style="clear:both"></div>
+              <div style="text-align:right" class="order_main_r_b">
+                <span style="float:left;color:red;font-size:4.5vmin;height:7vmin" >￥{$vo.order_total_price}</span>
+                {eq name="vo['order_status']" value='0'}
+                <input class="orderan" style="color: white;background-color: #f23030;border: 0;" type="button" value="立即付款" onclick="GoPay(this)" url="{:url('Order/gopay',array('order_id'=>$vo['order_id']))}" style="margin-right: 5%;" >
+                <input class="orderan" type="button" onclick="QuitOrder(this)" value="取消订单" url="{:url('delete',array('id'=>$vo['order_id']))}" >
+                {/eq}
+                {eq name="vo['order_status']" value='2'}
+                  <input class="orderan" url="{:url('suregood',array('id'=>$vo['order_id']))}" onclick="SureGood(this)"  type="button" value="确认收货">
+                {/eq}
+              </div>
+              <div style="clear:both"></div>
+            </li>
+          {/volist}
+         </ul>
+      </div>
+    </div>
+
+</div>
+
+<div id="lighth" class="white_contenth" >
+  <p>确认您购买的【手提包】要申请退款!</p>
+  <p>价格：￥185.00</p>
+  <p class="xs">您对我们的服务有任何不满意请与我们联系，<i>服务电话：15014115554</i>。对于服务过程中的各种疑问，请您点击<i><a href="xssl.html">“新手上路”</a></i>进行了解！感谢您对我们的信任！ </p>
+  <a href="###" class="an">坚持退款</a>
+  <a href = "javascript:void(0)" onclick = "document.getElementById('lighth').style.display='none';document.getElementById('fadeh').style.display='none'" class="an">问题已解决</a>
+</div> 
+<div id="fadeh" class="black_overlayh"></div>
+
+<script type="text/javascript">
+  function SureGood(obj){
+    layer.open({
+      content: '确认要执行该操作吗?'
+      ,btn: ['确定', '关闭']
+      ,yes: function(index){
+
+        layer.close(index);
+        var url=$(obj).attr('url');
+        $.ajax({
+          url:url,
+          type:'get',
+          dataType:'json',
+          success:function(data){
+            if(data.status==1)
+              $(obj).parents('li').remove();
+            else
+              alert(data.info);
+          }
+        })
+
+      }
+    });
+  }
+
+
+
+  function QuitOrder(obj){
+    layer.open({
+      content: '您确定要取消吗？'
+      ,btn: ['确定', '关闭']
+      ,yes: function(index){
+
+        layer.close(index);
+        var url=$(obj).attr('url');
+        $.ajax({
+          url:url,
+          type:'get',
+          dataType:'json',
+          success:function(data){
+            if(data.status==1)
+              $(obj).parents('li').remove();
+            else
+              alert(data.info);
+          }
+        })
+
+      }
+    });
+  }
+
+  function GoPay(obj){
+        var url=$(obj).attr('url');
+        $.ajax({
+          url:url,
+          type:'get',
+          dataType:'json',
+          success:function(data){
+            if(data.status==1)
+              window.location.href=data.url;
+            else
+              alert(data.info);
+          }
+        })
+  }
+</script>
+

@@ -1,0 +1,104 @@
+
+<ul id="ulas">
+      <li class="currentas">全部</li>
+      <li>好评</li>
+      <li>中评</li>
+      <li>差评</li>
+    </ul>
+    <div id ="contentas">
+      <div class="show">
+          <div class="pinglun">
+            <ul>
+
+            {foreach name="list['all']" item="vo"}
+              <li>
+                <div class="pinglun_top">
+                  <span class="tx"><img src="__IMG__/tx.png"></span>
+                  <span class="mz">{:isset($vo['username']) ? mb_substr($vo['username'],0,1,'utf-8'):'匿名'}***</span>
+                  <span class="wx">
+                  {for start="0" end="max($vo['star_ability'],$vo['star_attitude'],$vo['star_price'])"}
+                  <img src="__IMG__/wx.png">&nbsp;
+                  {/for}
+                </div>
+                <p>{$vo.content}</p>
+                <p class="wz_b">{notempty name="vo['good_name']"}商品：{$vo.good_name} {else/}&nbsp;&nbsp; {/notempty}<span>{$vo.create_time|date='Y-m-d H:i',###}</span></p>
+              </li>
+            {/foreach}
+
+
+            </ul>        
+          </div>
+      </div>
+      <div class="das">
+          <div class="pinglun">
+            <ul>
+
+            {foreach name="list['high']" item="vo"}
+              <li>
+                <div class="pinglun_top">
+                  <span class="tx"><img src="__IMG__/tx.png"></span>
+                  <span class="mz">{:isset($vo['username']) ? mb_substr($vo['username'],0,1,'utf-8'):'匿名'}***</span>
+                  <span class="wx">
+                  {for start="0" end="max($vo['star_ability'],$vo['star_attitude'],$vo['star_price'])"}
+                  <img src="__IMG__/wx.png">&nbsp;
+                  {/for}
+                </div>
+                <p>{$vo.content}</p>
+                <p class="wz_b">{notempty name="vo['good_name']"}商品：{$vo.good_name} {else/}&nbsp;&nbsp; {/notempty}<span>{$vo.create_time|date='Y-m-d H:i',###}</span></p>
+              </li>
+            {/foreach}
+
+            </ul>        
+          </div>
+      </div>
+      <div class="das">
+          <div class="pinglun">
+            <ul>
+              {foreach name="list['middle']" item="vo"}
+                <li>
+                  <div class="pinglun_top">
+                    <span class="tx"><img src="__IMG__/tx.png"></span>
+                    <span class="mz">{:isset($vo['username']) ? mb_substr($vo['username'],0,1,'utf-8'):'匿名'}***</span>
+                    <span class="wx">
+                    {for start="0" end="max($vo['star_ability'],$vo['star_attitude'],$vo['star_price'])"}
+                    <img src="__IMG__/wx.png">&nbsp;
+                    {/for}
+                  </div>
+                  <p>{$vo.content}</p>
+                  <p class="wz_b">{notempty name="vo['good_name']"}商品：{$vo.good_name} {else/}&nbsp;&nbsp; {/notempty}<span>{$vo.create_time|date='Y-m-d H:i',###}</span></p>
+                </li>
+              {/foreach}
+            </ul>        
+          </div>
+      </div>
+      <div class="das">
+          <div class="pinglun">
+            <ul>
+              
+               {foreach name="list['low']" item="vo"}
+                <li>
+                  <div class="pinglun_top">
+                    <span class="tx"><img src="__IMG__/tx.png"></span>
+                    <span class="mz">{:isset($vo['username']) ? mb_substr($vo['username'],0,1,'utf-8'):'匿名'}***</span>
+                    <span class="wx">
+                    {for start="0" end="max($vo['star_ability'],$vo['star_attitude'],$vo['star_price'])"}
+                    <img src="__IMG__/wx.png">&nbsp;
+                    {/for}
+                  </div>
+                  <p>{$vo.content}</p>
+                  <p class="wz_b">{notempty name="vo['good_name']"}商品：{$vo.good_name} {else/}&nbsp;&nbsp; {/notempty}<span>{$vo.create_time|date='Y-m-d H:i',###}</span></p>
+                </li>
+              {/foreach}
+              
+            </ul>        
+          </div>
+      </div>
+    </div>
+    <script>
+    $('#ulas>li').click(function(){
+       $(this).addClass('currentas').siblings().removeClass('currentas');
+       $('#contentas>div').eq($(this).index()).show().siblings().hide();
+
+    })
+
+    </script>

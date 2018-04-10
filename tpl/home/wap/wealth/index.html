@@ -1,0 +1,85 @@
+{__NOLAYOUT__}
+<!-- 不使用布局文件 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,minimal-ui">
+    <title>宏八</title>
+    <link rel="stylesheet" href="__CSS__/style.css">
+
+</head>
+<body>
+    <div class="fxm_header">
+       <div class="fxm_left">&nbsp;&nbsp;</div>
+       <div class="fxm_center">财富</div>
+       <!-- <div class="fxm_right"><img src="__IMG__/zf.png"></div> -->
+    </div>
+
+<div style="margin-top: 16vmin"></div>
+
+    <div class="mywallet-top">
+      <strong>{$wealth.money}</strong>
+      <p>可用金额（元）</p>
+      <a href="{:url('Wealth/detail',array('type'=>'0','f_type'=>0))}">
+        详情
+        <img src="__IMG__/right2.png" alt="">
+      </a>
+    </div>
+    <div class="clear"></div>
+
+
+    <div class="wallet-cards">
+      <a href="{:url('Wealth/detail',array('type'=>'1','status'=>0))}">
+        <img src="__IMG__/cf1.png" alt="">
+        <p>积分</p>
+        <p>{$wealth.integral}</p>
+
+      </a>
+      <a href="{:url('Wealth/detail',array('type'=>'2','status'=>0))}" style="border:none">
+        <img src="__IMG__/cf2.png" alt="">
+      <p>宏宝</p>
+        <p>{$wealth.anzi}</p>
+      </a>
+      <a href="{:url('Wealth/kucunintegral')}">
+        <img src="__IMG__/cf3.png" alt="">
+        <p>库存积分</p>
+        <p>{$wealth.kucun_integral}</p>
+
+      </a>
+      <!-- <a href="{:url('Wealth/mywallet')}" style="border:none">
+        <img src="__IMG__/cf4.png" alt="">
+      <p>钱包</p>
+        <p>&nbsp;</p>
+      </a> -->
+      
+      <a href="{:url('Wealth/bankcard')}" style="border:none">
+        <img src="__IMG__/wallet03.png" alt="">
+      <p>我的银行卡</p>
+        <p>{$wealth.bank_count}</p>
+      </a>
+      <a href="{:url('Wealth/coupon')}">
+        <img src="__IMG__/wallet02.png" alt="">
+        <p>购物券</p>
+        <p>{$wealth['coupon']+0}</p>
+
+      </a>
+    </div>
+
+    <p id="jftj"><img src="__IMG__/cf5.png">上一天积分增长统计：<span>{$lastdate_integral|default=0}</span></p>
+
+    <div class="wallet-buttons">
+      <a href="{:url('Wealth/recharge')}">充值</a>
+      <a href="{:url('Wealth/getmoney')}">提现</a>
+    </div>
+<div style="padding-bottom: 20vmin;float: left;width: 100%"></div>
+ 
+
+
+<!-- 底部 -->
+{include file="public/bottom" /}
+
+   
+
+</body>
+</html>

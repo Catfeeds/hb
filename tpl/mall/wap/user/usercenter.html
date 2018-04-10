@@ -1,0 +1,117 @@
+    <div style="margin-top: 13vmin"></div>
+    <div class="mine-top">
+      <div class="touxiang">
+          <a href="javascript:">
+            <span>
+              {notempty name="u_info['head_img']"}
+              <img src="{$u_info['head_img']}">
+              {else/}
+              <img src="__IMG__/touxiang.png">
+              {/notempty}
+            </span>
+          </a>
+          <p>{$u_info.username}</p>
+          <p class="ps">账号:{$u_info.account}</p>
+      </div>
+      
+      <div class="links">
+          <a href="{:url('userinfo')}">个人资料</a>
+          <a href="{:url('wallet')}">个人钱包</a>
+      </div>
+    </div>
+
+    <div class="myorder">
+      <a href="{:url('Order/orderlist',array('type'=>'all'))}">
+          <p>
+              我的订单
+              <!-- <span>全部订单</span> -->
+          </p>
+      </a>
+        
+        <div class="optionss">
+            
+            <a href="{:url('Order/orderlist',array('type'=>'0'))}">
+                <img src="__IMG__/optionss01.png" alt="">
+                待付款
+                {notempty name="order['pay_count']"}
+                <span>{$order['pay_count']}</span>
+                {/notempty}
+            </a>
+            <a href="{:url('Order/orderlist',array('type'=>'1'))}">
+                <img src="__IMG__/optionss02.png" alt="">
+                待发货
+                {notempty name="order['waitf_count']"}
+                <span>{$order['waitf_count']}</span>
+                {/notempty}
+            </a>
+            
+            <a href="{:url('Order/orderlist',array('type'=>'2'))}" style="position:relative">
+                <img src="__IMG__/optionss03.png" alt="">
+               待收货
+                {notempty name="order['waits_count']"}
+                <span>{$order['waits_count']}</span>
+                {/notempty}
+            </a>
+            <a href="{:url('Order/orderlist',array('type'=>'2'))}">
+                <img src="__IMG__/optionss04.png" alt="">
+                已完成
+            </a>
+
+        </div>
+    </div>
+
+    <div class="additional" style="margin-bottom:5vmin;">
+        <p>
+            <a href="{:url('News/newslist')}">
+            <img src="__IMG__/additional01.png" alt="">
+                最新动态
+            </a>
+            <a href="{:url('home/usercenter/updatepassword')}">
+                <img src="__IMG__/additional02.png" alt="">
+                修改密码
+            </a>
+            <a href="{:url('home/usercenter/safepassword')}">
+                <img src="__IMG__/additional03.png" alt="">
+                安全密码
+            </a>
+            <a href="{:url('Usercomment/commentlist')}">
+            <img src="__IMG__/additional05.png" alt="">
+                我的评价
+            </a>
+        </p>
+
+        <p>
+           
+            <a href="{:url('User/listaddress',array('type'=>1))}">
+             <img src="__IMG__/additional06.png" alt="">
+                收货地址
+            </a>
+            <a href="{:url('Collection/collecgood')}">
+                <img src="__IMG__/additional07.png" alt="">
+                我的收藏
+            </a>
+            <a href="{:url('User/userhelp')}">
+                <img src="__IMG__/additional08.png" alt="">
+                新手上路
+            </a>
+            <a href="{:url('User/service')}">
+                <img src="__IMG__/additional09.png" alt="">
+                在线客服
+            </a>
+        </p>
+       <!--  <p>
+            <a href="tuikuan.html">
+           <img src="__IMG__/tui.png" alt="">
+                我的退款
+            </a>
+        </p> -->
+
+    </div>
+    
+    <div class="quit"><a href="{:url('home/login/logout')}" style="display: block;color:#a4a4a4">安全退出</a></div>
+
+
+<div style="height:10vmin;float: left;display: block;width: 100%;"></div>
+
+    <!-- 底部 -->
+    {include file="public/bottom" /}

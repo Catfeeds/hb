@@ -1,0 +1,128 @@
+{extend name="public/layout"/}
+{block name="style" }
+    <link rel="stylesheet" type="text/css" href="__ADMIN__/libs/lyui/dist/css/lyui.extend.min.css">
+    <link rel="stylesheet" type="text/css" href="__ADMIN__/css/style.css">
+    <script type="text/javascript" src="__ADMIN__/js/address.js" ></script>
+{/block}
+
+{block name="main"}
+   <div id="main" class="col-xs-12 col-sm-9 main" style="overflow-y: scroll;">
+        <!-- 面包屑导航 -->
+        <ul class="breadcrumb">
+            {foreach name="_menu_tab['name']" item="tab_v" }
+            <li class="text-muted">{$tab_v}</li>
+            {/foreach}
+            <li class="text-muted">设置代理</li>
+        </ul>
+
+        <!-- 主体内容区域 -->
+        <div class="tab-content ct-tab-content">
+            <div class="panel-body">
+                <div class="builder formbuilder-box">
+                    <div class="form-group"></div>
+                    <div class="builder-container" >
+                            <div class="row" >
+                                <div class="col-xs-12">
+                                    <form action="{:url('user_area')}" method="post" class="form-horizontal form form-builder">
+                                        <div class="form-type-list">
+                                            <div class="form-group hidden item_id ">
+                                                <label class="left control-label">ID：</label>
+                                                <div class="right">
+                                                    <input type="hidden" class="form-control input" name="userid" value="{$info.userid}">
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">账号：</label>
+                                                <div class="right">
+                                                   {$info.account}
+                                                </div>
+                                            </div>
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">姓名：</label>
+                                                <div class="right">
+                                                    {$info.username}
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">手机：</label>
+                                                <div class="right">
+                                                    {$info.mobile}
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">区域代理：</label>
+                                                <div class="right">
+                                                    <select style="width:20%" class="form-control left"  name="level"  >
+                                                        <option value="0">请选择</option>
+                                                        <option {eq name="info['level']" value="4" }selected="true"{/eq}  value="4">代理商</option>
+                                                        <option {eq name="info['level']" value="5" }selected="true"{/eq} value="5">GA代理商</option>
+                                                        <option {eq name="info['area_type']" value="6" }selected="true"{/eq} value="6">EA代理商</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                          
+                                            <div class="form-group ">
+                                                <label class="left control-label">代理地址：</label>
+                                                <div class="right">
+                                                    
+                                                    <select style="width:20%" class="form-control left"  name="area_type" onchange="area_select(this)" >
+                                                        <option value="0">请选择</option>
+                                                        <option {eq name="info['area_type']" value="1" }selected="true"{/eq}  value="1">省级代理</option>
+                                                        <option {eq name="info['area_type']" value="2" }selected="true"{/eq} value="2">市级代理</option>
+                                                        <option {eq name="info['area_type']" value="3" }selected="true"{/eq} value="3">区、县级代理</option>
+                                                    </select>
+
+                                                    <select style="width:20%" class="form-control left" id="province" name="area_province" ></select>
+                                                    <select style="width:20%; {if condition="($info['area_type'] neq 2) AND ($info['area_type'] neq 3)" }display:none {/if}" class="form-control left" id="city" name="area_city" ></select>
+                                                    <select style="width:20%;{if condition="($info['area_type'] neq 3)" }display:none{/if}" class="form-control left" id="district" name="area_district" ></select>
+                                                    
+                                                </div>
+                                                 <span class="check-tips text-muted small">设置区域代理，请选择对应区域代理，再设置代理地址</span>
+                                            </div>
+
+                                            <script type="text/javascript">
+                                            function area_select(obj){
+                                                var val=obj.value;
+                                                if(val=='1'){
+                                                    document.getElementById('province').style.display="block";
+                                                    document.getElementById('city').style.display="none";
+                                                    document.getElementById('district').style.display="none";
+                                                }
+                                                if(val=='2'){
+                                                    document.getElementById('province').style.display="block";
+                                                    document.getElementById('city').style.display="block";
+                                                    document.getElementById('district').style.display="none";
+                                                }
+                                                 if(val=='3'){
+                                                    document.getElementById('province').style.display="block";
+                                                    document.getElementById('city').style.display="block";
+                                                    document.getElementById('district').style.display="block";
+                                                }
+                                            }
+
+
+                                                addressInit('province', 'city', 'district',"{$info['area_province']}","{$info['area_city']}","{$info['area_district']}");//修改
+                                              </script>
+             
+                                        <div class="form-group"></div>
+                                        <div class="form-group bottom_button_list">
+                                            <a class="btn btn-primary submit ajax-post" type="submit" target-form="form-builder">确定</a>
+                                            <a class="btn btn-danger return" onclick="javascript:history.back(-1);return false;">取消</a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>                   
+</div>
+{/block}
+
+{block name="script"}
+    <script type="text/javascript" src="__ADMIN__/libs/lyui/dist/js/lyui.extend.min.js"></script>
+{/block}

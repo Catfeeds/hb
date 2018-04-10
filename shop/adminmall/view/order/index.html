@@ -1,0 +1,146 @@
+{extend name="admin@public/layout"/}
+{block name="style" }
+    <link rel="stylesheet" type="text/css" href="__ADMIN__/libs/lyui/dist/css/lyui.extend.min.css">
+    <link rel="stylesheet" type="text/css" href="__ADMIN__/css/style.css">
+{/block}
+
+{block name="main"}
+   <div id="main" class="col-xs-12 col-sm-9 main" style="overflow-y: scroll;">
+        <!-- 面包屑导航 -->
+        <ul class="breadcrumb">
+            <li><i class="fa fa-map-marker"></i></li>
+            {foreach name="_menu_tab['name']" item="tab_v" }
+            <li class="text-muted">{$tab_v}</li>
+            {/foreach}
+        </ul>
+            
+        <!-- 主体内容区域 -->
+        <div class="tab-content ct-tab-content">
+            <div class="panel-body">
+                <div class="builder formbuilder-box">
+                        
+                        <div class="form-group"></div>
+
+                        <!-- 顶部工具栏按钮 -->
+                        <div class="builder-toolbar">
+                            <div class="row">
+
+                                <!-- 搜索框 -->
+                                <div class="col-xs-12 col-sm-12 clearfix">
+                                        <form class="form" method="get" action="">
+                                            <div class="form-group right">
+                                                <!-- <div style="float:left;width:120px;margin-right:20px" class="">
+                                                    <select name="order_status" class="form-control lyui-select select">
+                                                        <option value="">状态：</option>
+                                                        <option {eq name=":input('get.order_status')" value="0" }selected="true"{/eq}  value="0">未支付</option>
+                                                        <option {eq name=":input('get.order_status')" value="1" }selected="true"{/eq}  value="1">已支付</option>
+                                                        <option {eq name=":input('get.order_status')" value="2" }selected="true"{/eq}  value="2">已发货</option>
+                                                        <option {eq name=":input('get.order_status')" value="3" }selected="true"{/eq}  value="2">已完成</option>
+                                                    </select>
+                                                </div> -->
+
+                                                <div style="float:left;width:150px;margin-right:20px" class="">
+                                                    <input type="text" name="date_start" class="search-input form-control date" value="{:input('get.date_start')}" placeholder="开始日期">
+                                                </div>
+                                                <div style="float:left;width:150px;margin-right:20px" class="">
+                                                    <input type="text" name="date_end" class="search-input form-control date" value="{:input('get.date_end')}" placeholder="结束日期">
+                                                </div>
+
+                                                <div style="float:left;width:120px;margin-right:20px" class="">
+                                                    <select name="querytype" class="form-control lyui-select select">
+                                                        <option value="order_no">订单号</option>
+                                                        <option {eq name=":input('get.querytype')" value="user_name" }selected="true"{/eq} value="user_name">收货姓名</option>
+                                                         <option {eq name=":input('get.querytype')" value="user_mobile" }selected="true"{/eq}  value="user_mobile">收货手机</option>
+                                                        <option {eq name=":input('get.querytype')" value="username" }selected="true"{/eq}  value="username">会员姓名</option>
+                                                        <option {eq name=":input('get.querytype')" value="mobile" }selected="true"{/eq}  value="mobile">会员手机</option>
+                                                    </select>                                            
+                                                </div>
+  
+                                                <div style="width:250px" class="input-group search-form">
+                                                    <input  type="text" name="keyword" class="search-input form-control" value="{:input('get.keyword')}" placeholder="输入搜索内容">
+                                                    <span class="input-group-btn"><a class="btn btn-default search-btn"><i class="fa fa-search"></i></a></span>
+                                                </div>
+                                            </div>
+                                        </form>
+                                </div>
+
+                            </div>
+                        </div>
+                        
+                        <!-- 数据列表 -->
+                        <div class="builder-container">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="builder-table">
+                                        <div class="panel panel-default table-responsive">
+                                            <table class="table table-bordered table-striped table-hover">
+                                              <thead>
+                                                <tr>
+                                                    <th>订单号</th>
+                                                    <th>收货人</th>
+                                                    <th>订单总额</th>
+                                                    <th>下单时间</th>
+                                                    <th>订单状态</th>
+                                                    <th>操作</th>
+                                                </tr>
+                                            </thead>
+                                                <tbody>
+                                                    {php}
+                                                        $status_name=array(0=>'未支付',1=>'已支付',2=>'已发货',3=>'已完成');
+                                                    {/php}
+                                                    {notempty name="list" }
+                                                    {volist name="list" id="data"}
+                                                        <tr>
+                                                            <td>{$data['order_no']}</td>
+                                                            <td>{$data['user_name']}:{$data['user_mobile']}</td>
+                                                            <td>{$data.order_total_price}</td>
+                                                            <td>{$data['order_create_time'|date="Y-m-d H:i",###]}</td>
+                                                             <td>{$status_name[$data['order_status']]}</td>
+                                                          
+                                                            <td>
+                                                                <a name="addnews" title="编辑" class="label label-primary-outline label-pill" href="{:url('detail',array('order_id'=>$data['order_id']))}">编辑</a>
+                                                                {eq name="data['order_status']" value="0" }
+                                                                <a name="delete" title="删除" class="label label-danger-outline label-pill ajax-get confirm" model="Admin" href="{:url('delete',array('order_id'=>$data['order_id']))}">删除</a>
+                                                                {/eq}
+                                                                </td>
+                                         
+                                                        </tr>
+                                                    {/volist}
+
+                                                    {else /}
+                                                        <tr class="builder-data-empty">
+                                                            <td class="text-center empty-info" colspan="20">
+                                                                <i class="fa fa-database"></i> 暂时没有数据<br>
+                                                            </td>
+                                                        </tr>
+                                                    {/notempty}
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        {notempty name="table_data_page"}
+                                            <ul class="pagination">{$table_data_page}</ul>
+                                        {/notempty}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+    </div>                   
+</div>
+{/block}
+
+{block name="script"}
+    <script type="text/javascript" src="__ADMIN__/libs/lyui/dist/js/lyui.extend.min.js"></script>
+    <script type="text/javascript">
+        $('.date').datetimepicker({
+            format: 'yyyy-mm-dd',
+            language:"zh-CN",
+            minView:2,
+            autoclose:true,
+            todayBtn:1, //是否显示今日按钮
+        });
+    </script>
+{/block}

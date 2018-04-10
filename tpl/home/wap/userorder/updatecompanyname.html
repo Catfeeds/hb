@@ -1,0 +1,35 @@
+  <script type="text/javascript" src="__COM__/js/ajaxfileupload.js"></script>
+  <div style="padding-top: 13vmin;"></div>
+    
+  <form class="postfrom" action="{:url('updatecompanyname')}" >
+    <div class="shezhi xgmm">
+        <h6 class="ts">修改信息</h6>
+        <ul>
+            <li>原公司名称： <span><input readonly="true" type="text" placeholder="{$username}"></span></li>
+            <li>新公司名称： <span><input name="new_companyname" type="text" placeholder="请输入新公司名称"></span></li>
+        </ul>
+        
+    </div>
+
+    <div class="shezhi xgmm">
+        <h6 class="ts">问题描述</h6>
+        <textarea name="content" rows="6" placeholder="在此输入需要解决的问题及发生的原因，请尽量描述清楚，以便工作人员更好的为你服务。" class="textarea"></textarea>
+        
+    </div>
+
+    <div class="shezhi xgmm">
+        <div class="upload">
+          <h6 class="ts">上传附件<i>请上传营业执照！</i></h6>
+          <div id="preview">
+
+              <img id="imghead" width=100% height=auto border=0 src="__IMG__/a1.png">
+          </div>
+           <input type="file" id="img_license" data="license" name="img_license" onchange="uploadFile('img_license','{:url('Common/uplodeimg')}')" class="tijiao" />  
+          
+        </div>        
+    </div>
+    <input type="hidden" name="license">
+  </form>
+
+<span id="anniu"><a class="ajax-post" target-from="postfrom" href="javascript:" >确定</a></span>
+<div style="padding-bottom: 10vmin"></div>

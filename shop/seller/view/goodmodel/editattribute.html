@@ -1,0 +1,92 @@
+{include file="public/head" /}
+<style type="text/css">
+    input[readonly]{
+        border: none !important;
+        background: #fff;
+        cursor: auto;
+        box-shadow: none;
+    }
+</style>
+<body>
+   <div class="dux-tools">
+        <div class="bread-head">规格信息
+            <span class="small"></span>
+        </div>
+    </div>
+        
+    <div class="admin-main">
+        <form method="post" class="form-x dux-form form-auto" id="form" action="{:url('saveattr')}">
+            <div class="panel dux-box  active">
+                <div class="panel-head">
+                    <strong>添加规格</strong>
+                </div>
+                <div class="panel-body">
+
+                        <div class="tab-content" >
+
+                                <div class="col-xs-12">
+                                    <div style="height:20px;" ></div>
+                                    <input type="hidden" name="id"  value="{$info.id|default=''}">
+
+                                    <div class="form-group">
+                                        <div class="label">
+                                            <label for="sitename">所属模型：</label>
+                                        </div>
+                                        <div class="field">
+                                            <select name="model_id" class="form-control cui-select select">
+                                                {empty name="info" }
+                                                <option value="">请选择：</option>
+                                                {/empty}
+                                                {foreach name="model_info" item="v" }
+                                                <option {if condition="isset($model_id) AND ($model_id eq $v['id']) " }selected="true"{/if} value="{$v.id}">{$v.model_name}</option>
+                                                {/foreach}
+                                            </select>
+                                        </div>
+                                    </div> 
+
+                                    <div class="form-group">
+                                        <div class="label">
+                                            <label for="sitename">规格名称：</label>
+                                        </div>
+                                        <div class="field">
+                                            <input type="text" class="form-control input" name="attr_name" value="{$info.attr_name|default=''}" placeholder="规格名称" >
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="label">
+                                            <label for="sitename">规格项：</label>
+                                        </div>
+                                        <div class="field">
+                                           <input type="text" class="form-control input" name="attr_value" value="{$info.attr_value|default=''}" placeholder="规格项" >
+                                            <p class="check-tips text-muted small">每个值间用英文‘,’号隔开</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="label">
+                                            <label for="sitename">排序：</label>
+                                        </div>
+                                        <div class="field">
+                                            <input type="text" class="form-control input" name="attr_order" value="{$info.attr_order|default=''}" placeholder="排序" >
+                                            <p style="color: #999;">根据排序进行由大到小排列显示。</p>
+                                        </div>
+                                    </div>
+
+                                </div> 
+
+                            <div class="form-group bottom_button_list">
+                                <input class="button bg-main ajax-post" type="submit" target-form="form-auto" value="保存" >
+                                <a class="button bg" onclick="javascript:history.back(-1);return false;">返回</a>
+                            </div>
+                            <div class="form-group"></div>
+                        </div>                    
+
+                </div>
+                
+            </div>
+        </form>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+
+  <link rel="stylesheet" href="__CSS__/product.css">
+  <link rel="stylesheet" href="iconfont/iconfont.css">
+  <div style="margin-top: 13vmin"></div>
+
+  <div id="tbh5v0">
+    <div class="td">
+      <div class="myorder pinglun" style="height:auto;">
+           <ul>
+             <li class="ab" style="border-top-left-radius: 2vmin; 
+     border-bottom-left-radius: 2vmin;padding-bottom: 0; border:none;padding:0;"><a href="{:url('Collection/collecgood')}">商品</a></li>
+             <li style="border:none;    border-top-right-radius: 2vmin;
+    border-bottom-right-radius: 2vmin;padding:0;"><a href="{:url('Collection/collecshop')}">店铺</a></li>
+           </ul>
+      </div>
+
+      <div class="order_main">
+         <ul>
+           {volist name="list" id="v" empty="<div class='order_main'><p class='kong'><img src='/static/home/wap/mall/images/k.png'></p></div>" }
+            <li style="float: left;width: 96%;" >
+              <div class="order_main_l">
+              <a href="{:url('Good/details',array('good_id'=>$v['good_id']))}">
+              <img src="{$v.good_cover_img}" alt="">
+              </a>
+              </div>
+              <div class="order_main_r">
+                <h4>{$v.good_name}</h4>
+                <p>价格：<span style="color:#ff0000;">￥{$v.good_price} </span></p>
+                <div class="order_main_r_b">
+                  <input data="{$v.id}" class="orderan" type="button" value="取消收藏">
+                </div>
+              </div>
+            </li>
+            {/volist}
+         </ul>
+      </div>
+
+    </div>
+  </div>
+  <script type="text/javascript">
+  
+    $('.orderan').click(function(){
+        var that=$(this);
+        //询问框
+        layer.open({
+          content: '确实要取消收藏？'
+          ,btn: ['确定', '取消']
+          ,yes: function(index){
+            layer.close(index);
+            guitcollect(that);
+          }
+        });
+    })
+
+    function guitcollect(that){
+      var id=that.attr('data');
+      $.ajax({
+        url:"{:url('guitcollect')}",
+        data:{'id':id,'type':1},
+        dataType:'json',
+        type:"post",
+        success:function(data){
+          if(data.status==1){
+            that.parents('li').remove();
+          }else{
+            layer.open({
+               style: 'top:0'
+              ,content: data.info
+              ,skin: 'msg'
+              ,time: 1 
+            })
+          }
+        }
+      });
+    }
+  </script>

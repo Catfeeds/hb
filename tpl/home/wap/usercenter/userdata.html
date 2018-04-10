@@ -1,0 +1,12 @@
+<div style="padding-top: 13vmin;"></div>
+    <div class="shezhi">
+        <ul>
+            <li><a href="{:url('Usercenter/usermessage')}">个人信息</a></li>
+            <li><a href="{:url('Usercenter/updatepassword')}">修改密码</a></li>
+            {empty name="safety_pwd"}
+            <li><a href="{:url('Usercenter/updatesafepassword')}">安全密码</a></li>
+            {else /}
+            <li><a href="{:url('Usercenter/safepassword')}">安全密码</a></li>
+            {/empty}
+        </ul>
+    </div>

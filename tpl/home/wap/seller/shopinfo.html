@@ -1,0 +1,61 @@
+    <link rel="stylesheet" type="text/css" href="__CSS__/jquery-weui.min.css" />
+    <script src="__JS__/datePicker.js"></script>
+   <div style="padding-top: 13vmin;"></div>
+    <div class="shezhi qyrz1">
+        <form class="postfrom" action="{:url('shopinfo')}">
+        <ul>
+            <li>店铺名称<span><input type="text" placeholder="请填写店铺名称" name="s_name" value="" /></span></li>
+            <li>负责人姓名<span><input type="text" name="fz_name" value="" placeholder="请填写负责人姓名"></span></li>
+            <li>负责人手机<span><input type="text" name="fz_mobile" value="" placeholder="请填写负责人手机"></span></li>
+            <li>负责人邮箱<span><input type="text" name="fz_email" value="" placeholder="请填写负责人邮箱"></span></li>
+            <li>店铺所在地
+                <span style="margin-left:9%" >
+                    <input type='text' name="addresss" value="" id='city-picker' placeholder='请选择所在区域' />
+                </span>    
+            </li>
+            <li>店铺详细地址
+                <span style="margin-left:9%" >
+                    <input type='text' name="addresss_detail" value="" id='city-picker' placeholder='店铺详细地址' />
+                </span>    
+            </li>
+            <li>所属行业
+                <span>
+                    <select name="industry_name" style="width: 60%;" >
+                      <option value ="0">请选择</option>
+                      {foreach name="list" item="v"}
+                      <option value ="{$v.id}">{$v.name}</option>
+                      {/foreach}
+                    </select>
+                </span>
+            </li>
+             <li>服务费系数
+                <span>
+                    <select name="fee" style="width: 60%;" >
+                      <option value ="7.4">7.4%</option>
+                    </select>
+                </span>
+            </li>
+
+        </ul>
+
+        </form>
+        <p>您正在申请成为联盟商家</p>
+    </div>
+
+    <span id="anniu"><a href="javascript:" class="post ajax-post"  target-from="postfrom" >提交</a></span>
+    <div style="padding-bottom: 10vmin"></div>
+
+    <script type="text/javascript" src="__JS__/jquery-weui.min.js"></script>
+    <script type="text/javascript" src="__JS__/city-picker.min.js"></script>
+    <script>
+     
+
+        $("#city-picker").cityPicker({
+            title: "选择省市区/县",
+            onChange: function (picker, values, displayValues) {
+                // console.log(values, displayValues);
+            }
+        });
+    </script>
+
+   

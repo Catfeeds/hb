@@ -1,0 +1,82 @@
+{extend name="admin@public/layout"/}
+{block name="style" }
+    <link rel="stylesheet" type="text/css" href="__ADMIN__/libs/lyui/dist/css/lyui.extend.min.css">
+    <link rel="stylesheet" type="text/css" href="__ADMIN__/css/style.css">
+{/block}
+
+{block name="main"}
+   <div id="main" class="col-xs-12 col-sm-9 main" style="overflow-y: scroll;">
+        <!-- 面包屑导航 -->
+        <ul class="breadcrumb">
+            <li><i class="fa fa-map-marker"></i></li>
+            {foreach name="_menu_tab['name']" item="tab_v" }
+            <li class="text-muted">{$tab_v}</li>
+            {/foreach}
+            <li class="text-muted">{:isset($info)?'修改':'新增'}</li>
+        </ul>
+
+        <!-- 主体内容区域 -->
+        <div class="tab-content ct-tab-content">
+            <div class="panel-body">
+                <div class="builder formbuilder-box">
+                    <div class="form-group"></div>
+                    <div class="builder-container" >
+                            <div class="row" >
+                                <div class="col-xs-12">
+                                    <form action="{:url('save')}" method="post" class="form-horizontal form form-builder" enctype="multipart/form-data" >
+                                        <div class="form-type-list">
+                                            <div class="form-group hidden item_id ">
+                                                <label class="left control-label">ID：</label>
+                                                <div class="right">
+                                                    <input type="hidden" class="form-control input" name="id" value="{$info.id|default=''}">
+                                                </div>
+                                            </div>
+
+                                            
+                                            <div class="form-group">
+                                                <label class="left control-label">上级行业：</label>
+                                                <div class="right">
+                                                    <select name="pid" class="form-control lyui-select select">
+                                                        <option value="">请选择</option>
+                                                        <option {if condition="isset($info) AND $info['pid'] eq 0" }selected="true"{/if} value="0">顶级行业</option>
+                                                        {$parent|default=''}
+                                                    </select>
+                                                </div>
+                                                <span style="color: #999;margin-left:140px;">最多分为两级</span>
+                                            </div>
+
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">行业名称：</label>
+                                                <div class="right">
+                                                    <input  type="text" class="form-control input" name="name" value="{$info.name|default=''}" placeholder="名称" >
+                                                </div>
+                                            </div>
+
+
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">行业排序：</label>
+                                                <div class="right">
+                                                    <input type="text" class="form-control input text" name="sort_order" placeholder="排序" value="{$info.sort_order|default=''}" >
+                                                    <span style="color: #999;">根据排序进行由大到小排列显示。</span>
+                                                </div>
+                                            </div>
+
+                                        <div class="form-group"></div>
+                                        <div class="form-group bottom_button_list">
+                                           <a class="btn btn-primary submit ajax-post" type="submit" target-form="form-builder">确定</a>
+                                            <a class="btn btn-danger return" onclick="javascript:history.back(-1);return false;">取消</a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>                   
+</div>
+{/block}
+
+{block name="script"}
+    <script type="text/javascript" src="__ADMIN__/libs/lyui/dist/js/lyui.extend.min.js"></script>
+{/block}

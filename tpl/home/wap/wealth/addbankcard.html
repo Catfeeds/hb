@@ -1,0 +1,37 @@
+<div style="padding-top: 13vmin;"></div>
+    <style type="text/css">
+        .setpassword select,.setpassword input {
+            display: block;
+            width: 90%;
+            height: 12vmin;
+            margin-top: 5vmin;
+            margin-left: 4.5vmin;
+            border: 0.2vmin solid #ccc;
+            border-radius: 1vmin;
+            text-indent: 3vmin;
+            font-size: 4vmin;
+        }
+    </style>
+    <form class="postfrom" action="{:url('addbankcard')}">
+    <div class="setpassword">
+          <select name="bankname" >
+            <option value="">请选择开户银行</option>
+            {foreach name="list" item="v"}
+            <option value="{$v.id}">{$v.bank_name}</option>
+            {/foreach}
+          </select>
+          <input name="bank_branch" type="text" placeholder="开户支行" onfocus="this.placeholder=''" onblur="this.placeholder='开户支行'">
+          <input name="username" type="text" placeholder="开户名" onfocus="this.placeholder=''" onblur="this.placeholder='开户名'">
+          <input type="text" name="bankno" placeholder="银行卡号" onfocus="this.placeholder=''" onblur="this.placeholder='银行卡号'">
+      </div>
+
+      <div class="setting-natrue">
+          <label for="">设置该卡默认提现</label><br>
+          <input name="default" type="radio" checked="true" value="1`" class="xuanze">是 
+          <input name="default" type="radio"  value="0" class="xuanze">否 
+      </div>
+      </form>
+
+      <div class="buttones">
+        <a class="ajax-post" target-from="postfrom" href="javascript:">添 加</a>
+      </div>

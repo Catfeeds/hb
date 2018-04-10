@@ -1,0 +1,83 @@
+{include file="public/head" /}
+<body>
+   <div class="dux-tools">
+        <div class="bread-head">商品管理
+            <span class="small">评论列表</span>
+        </div>
+
+        <div class="tools-function clearfix">
+            <div class="float-left">
+                <a class="button button-small bg-dot icon-plus" href="{:url('edit')}">添加</a>
+                </div>
+        </div>
+    </div>
+        
+    <div class="admin-main">
+    <div class="panel dux-box">
+	<div class="table-tools clearfix ">
+        <div class="float-left">
+            <form method="GET" action="?">
+                <div class="form-inline">
+                    
+                    <div class="form-group">
+                        <div class="field">
+                            <input type="text" class="input" id="keyword" name="keyword" size="20" value="{:input('get.keyword')}" placeholder="输入搜索内容">
+                        </div>
+                    </div>
+                    <div class="form-button">
+                        <button class="button" type="submit">搜索</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="float-right">
+
+        </div>
+    </div>
+    <div class="table-responsive">
+        <table id="table" class="table table-hover ">
+            <tbody>
+                <tr>
+                    <th>ID</th>
+                    <th>评论内容</th>
+                    <th>评论商品</th>
+                    <th>评论星级</th>
+                    <th>用户</th>
+                    <th>时间</th>
+                </tr>
+
+				{volist name="list" id="data"}
+                    <tr>
+                        <td>{$data['id']}</td>
+
+                        <td><p style="width: 208px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;margin: 0;padding: 0;" >{$data['content']}</p></td>
+                        <td>{$data['good_name']}<br />{$data['good_item']}</td>
+                        <td>
+                            服务能力：<span style="color:red" >{$data.star_ability}星</span><br />
+                            服务态度：<span style="color:red" >{$data.star_attitude}星</span><br />
+                            价格合理：<span style="color:red" >{$data.star_price}星</span>
+                        </td>
+                        <td>
+                            {$data.username}({$data.mobile})
+                        </td>
+                        <td>{$data['create_time'|date="Y-m-d H:i",###]}</td>
+     
+                    </tr>
+                {/volist}
+
+                {empty name="list"}
+                    <tr class="builder-data-empty">
+                        <td class="text-center empty-info" colspan="20">
+                            <i class="fa fa-database"></i> 暂时没有数据<br>
+                        </td>
+                    </tr>
+                {/empty}
+               </tbody>
+        </table>
+    </div>
+
+    <div class="panel-foot table-foot clearfix">{$table_data_page}</div>
+</div>
+</div>
+</body>
+</html>

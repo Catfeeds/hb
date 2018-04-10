@@ -1,0 +1,101 @@
+    
+    <div style="margin-top: 13vmin"></div>
+    <script type="text/javascript" src="__COM__/js/ajaxfileupload.js"></script>
+    <div class="myselves">
+        <div class="self-informations2">
+            <p style="background: none" >
+              <em>头像</em>
+              <span style="overflow:hidden;">
+                <a href="javascript:updatehead()" data-reveal-id="myModal">
+                  {notempty name="u_info['head_img']"}
+                  <img id="img" style="width: 90%;height: auto;" src="{$u_info['head_img']}">
+                  {else/}
+                  <img id="img" style="width: 90%;height: auto;" src="__IMG__/a1.png">
+                  {/notempty}
+                </a>
+              </span>
+            </p>
+             <input style="display:none" id="up_img" data="head_img" name="up_img" type="file" onchange="uploadhead('up_img','{:url('home/Common/uplodeimg')}');" >
+            <p style="background: none">
+                <em>姓名</em>
+                <strong>{$u_info.username}</strong>
+            </p>
+            <p style="background: none">
+                <em>账号</em>
+                <strong>{$u_info.account}</strong>
+            </p>
+            <p style="background: none">
+                <em>手机</em>
+                <strong>{$u_info.mobile}</strong>
+            </p>
+            <p style="background: none">
+                <em style="width:30%" >注册时间</em>
+                <strong>{$u_info.reg_date|date='Y-m-d',###}</strong>
+            </p>
+
+        </div>
+      </div>
+
+      <div class="clear"></div>
+
+    <div style="height:10vmin;float: left;display: block;width: 100%;"></div>
+
+  <script type="text/javascript">
+  function updatehead(){
+    $('#up_img').click();
+  }
+
+  //上传图片
+  function uploadhead(eid,url) { 
+      //正在加载
+      var index=layer.open({
+        type: 2
+        ,content: '上传中'
+      });
+     
+      $.ajaxFileUpload({
+      
+          url:url,
+          secureuri:false ,
+          fileElementId:eid,
+          dataType: 'text',
+          success: function (data,status)  
+          {
+            layer.close(index);//关闭加载
+            var data = $.parseJSON(data);
+             if(data.status){
+               $('#img').attr('src',data.path);
+               var pdata={head_img:data.path}
+                   postdata(pdata);
+             }else{
+               msg_alert(data.error);
+             }
+            
+          },
+          error: function (data, status, e)
+          {
+            alert(e);
+          }
+        });
+      return false;
+
+    }
+    function postdata(pdata,txt){
+      $.ajax({
+             type: "POST",
+             url: "{:url('home/usercenter/usermessage')}",
+             data:pdata,
+             dataType: "json",
+             success: function(data){
+                if(data.status==1){
+                  if(txt){
+                    $('.email span').text(txt);
+              layer.closeAll()
+                  }
+                }else{
+                    msg_alert(data.info);
+                }      
+              }     
+        });
+    }
+  </script>

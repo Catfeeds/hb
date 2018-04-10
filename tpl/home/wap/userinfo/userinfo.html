@@ -1,0 +1,28 @@
+<div style="padding-top: 13vmin;"></div>
+    <div class="shezhi qyrz">
+        <ul>
+            <li>状态<span class="wrz">
+            {notempty name="info['is_check_user']"}
+                {eq name="info.is_check_user" value='1' }审核中{/eq}
+                {eq name="info.is_check_user" value='2' }已认证{/eq}
+                {eq name="info.is_check_user" value='3' }审核不通过{/eq}
+            {else /}
+                未认证
+            {/notempty}
+            </span></li>
+            <li>账号<span>{$Think.session.user_login.account|default=''}</span></li>
+            <li>姓名<span>{$info.username|default=''}</span></li>
+            <li>手机号<span>{$Think.session.user_login.mobile|default=''}</span></li>
+            {php}$arr=array(0=>'大陆身份证',1=>'非大陆身份证'){/php}
+            <li>证件类型<span>{$arr[$info.idcard_type]|default=''}</span></li>
+            <li>身份证<span>{$info.idcard|default=''}</span></li>
+            <li>证件有效期<span>{$info.idcar_startdate|default=''} 至 {$info.idcar_endtdate|default=''}</span></li>
+            <!-- <li>行业分类</li> -->
+            <li>所在区域 <span>{$info.area|default=''}</span></li>
+        </ul>
+        <p>认证提交后，工作人员会在7个工作日内完成审核，如有疑问，请联系客服<i>{$tel}</i></p>
+    </div>
+    {if condition="($info['is_check_user'] neq 1) AND ($info['is_check_user'] neq 2)"}
+    <span id="anniu"><a href="{:url('Userinfo/checkuser')}">认证</a></span>
+    {/if}
+<div style="padding-bottom: 10vmin"></div>

@@ -1,0 +1,40 @@
+<div class="pt45">
+        <div class="pl15 bg_white solid_last_a mb20 pt10">
+          <a href="{:url('Usercenter/parent')}" class="db solid_b pr15 pt10">
+            <p class="mg0 pb10 c-222">我的分享人
+              <span class="fr text_blue">{$pid|get_parent}<img class="fr mt3" width="14" src="__IMG__/right2.png" style="width: 12%"></span>
+            </p>
+          </a>
+        </div>
+      
+
+      <div class="pl15 bg_white solid_last_a mb20">
+        <a class="db solid_b pr15 pt10">
+          <p class="mg0 pb10 c-222">您已经分享用户</p>
+        </a>
+        
+        <div class="db solid_b">
+            <a class="db solid_b pr15 pt10" href="{:url('Usercenter/children',array('level'=>0))}">
+              <p class="mg0 pb10 c-222">消费商
+              <span class="fr text_blue">{:isset($level_count[0]) ? $level_count[0] : 0}人<img class="fr mt3" width="14" src="__IMG__/right2.png" ></span>
+              </p>
+            </a>
+            <a class="db solid_b pr15 pt10" href="{:url('Usercenter/children',array('level'=>1))}">
+              <p class="mg0 pb10 c-222">宏客
+              <span class="fr text_blue">{:isset($level_count[1])?$level_count[1]:0}人<img class="fr mt3" width="14" src="__IMG__/right2.png"></span>
+              </p>
+            </a>
+            <a class="db solid_b pr15 pt10" href="{:url('Usercenter/children',array('level'=>2))}">
+              <p class="mg0 pb10 c-222">宏投
+              <span class="fr text_blue">{:isset($level_count[2])?$level_count[2]:0}人<img class="fr mt3" width="14" src="__IMG__/right2.png"></span>
+              </p>
+            </a>
+            <a class="db solid_b pr15 pt10" href="{:url('Usercenter/children',array('level'=>3))}">
+              <p class="mg0 pb10 c-222">联盟商
+              <span class="fr text_blue">{:isset($level_count[3])?$level_count[3]:0}人<img class="fr mt3" width="14" src="__IMG__/right2.png"></span>
+              </p>
+            </a>
+        </div>
+      </div>
+       
+  </div>

@@ -1,0 +1,115 @@
+{__NOLAYOUT__}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>{$site_info.WEB_SITE_TITLE}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,minimal-ui">
+    <meta name="description" content="{$site_info.WEB_SITE_DESCRIPTION}">
+    <meta name="Keywords" content="{$site_info.WEB_SITE_KEYWORD}">
+    <link rel="stylesheet" href="__CSS__/style.css">
+    <script type="text/javascript" src="__JS__/jquery-1.7.1.min.js"></script>
+    <script src="http://api.map.baidu.com/api?v=2.0&ak=1byTpUa3aXZvRKON0c2Ybd5NpQCb3no0"></script>  
+    <script type="text/javascript">  
+        function search(){
+            var keyword=$('#keyword').val();
+            if(keyword=='' || keyword==null){
+                return false;
+            }
+
+            // 浏览器可显示
+            var geolocation = new BMap.Geolocation();    
+            var gc = new BMap.Geocoder();     
+              
+            //定位结果对象会传递给r变量  
+            geolocation.getCurrentPosition(function(r) {
+                        
+                    //通过Geolocation类的getStatus()可以判断是否成功定位。  
+                    if(this.getStatus() == BMAP_STATUS_SUCCESS)  
+                    {  
+                        var pt = r.point;    
+                        gc.getLocation(pt, function(rs){    
+                            var addComp = rs.addressComponents;    
+                        });  
+                        var longitude=  r.longitude;
+                        var latitude=  r.latitude;
+                        // 开始坐标
+                        var map = new BMap.Map();
+                        var pointA = new BMap.Point(longitude,latitude); 
+                        var d_url="{:url('Around/detail')}";
+
+                        $.ajax({
+                            data:{'longitude':longitude,'latitude':latitude,'keyword':keyword},
+                            type:"POST",
+                            async:false,
+                            url:"{:url('distance')}",
+                            dataType:"json",
+                            success:function(data){
+                                var str='';
+                                $.each(data,function(k,v){
+                                    var pointB = new BMap.Point(v.shop_j,v.shop_w);  // 结束点坐
+                                    var long=((map.getDistance(pointA,pointB))/1000).toFixed(2);
+
+                                    str+='<li>';
+                                        str+='<a href="'+d_url+'?id='+v.uid+'">';
+                                            str+='<div class="zb_left"><img src="'+v.shop_logo+'"></div> ';
+                                            str+='<div class="zb_right">';
+                                                str+='<h3>'+v.shop_name+'<span><img src="__IMG__/dw.jpg">'+long+'km</span></h3>';
+                                                str+='<p>'+v.province+v.city+v.district+v.addresss_detail+'</p>';
+                                            str+='</div>';
+                                        str+='</a>';
+                                    str+='</li>';
+                                });
+                                if(str=='')
+                                    $('#list').html('<li>暂无数据</li>');
+                                else
+                                    $('#list').html(str);
+                            }
+                        })
+
+                        
+                        // alert(long);
+
+                    }  
+                },  
+                {enableHighAccuracy: true}  
+            )
+        } 
+        </script>
+</head>
+<body>
+    <!-- 轮播图 -->
+    <div class="header zhoubian" style="line-height: 13vmin">
+        <div class="ss_center">
+            <form>
+                <input id="keyword" type="text" placeholder="搜索联盟商家">
+                <span onclick="search()" ><img src="__IMG__/ss2.png"></span>
+            </form>
+        </div>
+        <div class="ss_right" >
+            <a href="javascript:history.go(-1)">返回</a>
+        </div>
+    </div>
+    
+
+
+    <div style="clear: both;"></div>
+    <!-- 搜索记录 -->
+    
+    <!-- 搜索内容 -->
+    <div class="zb_bottom fenlei" style="margin-top: 13vmin;">
+        <ul id="list" >
+            <li>
+               暂无数据
+            </li>
+             
+        </ul>
+        <div style="height:5vmin;float: left;display: block;width: 100%;"></div>
+    </div>
+
+
+<!-- 底部 -->
+{include file="public/bottom" /}
+
+</body>
+</html>

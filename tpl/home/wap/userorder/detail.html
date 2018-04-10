@@ -1,0 +1,49 @@
+<div style="padding-top: 13vmin;"></div>
+
+    <div id="tbh5v0">
+    <div class="td">
+        <div class="myorder">
+       <ul>
+         <li {eq name=":input('type')" value="0"} class="licolor"{/eq} ><a href="{:url('Userorder/detail',array('type'=>0))}">受理中</a></li>
+         <li {eq name=":input('type')" value="1"} class="licolor"{/eq} ><a href="{:url('Userorder/detail',array('type'=>1))}">已通过</a></li>
+         <li {eq name=":input('type')" value="2"} class="licolor"{/eq} ><a href="{:url('Userorder/detail',array('type'=>2))}">不通过</a></li>
+       </ul>
+    </div>
+
+      <div class="order_main">
+         <ul>
+         {empty name="list"}
+         <p class="kong">
+          <img src="__IMG__/kong.jpg"><br>
+          没有工单记录
+        </p>
+        {/empty}
+         {php} 
+          $arr=array(1=>'手机号码',2=>'姓名',3=>'企业名称'); 
+          $status_name=array(0=>'受理中',1=>'已通过',2=>'不通过'); 
+         {/php}
+          {foreach name="list" item="v"}
+            <li> 
+              <div class="order_main_r">
+                <h4>修改{$arr[$v['update_type']]}</h4>
+                <p>新{$arr[$v['update_type']]}：<span>{$v.new_info}</span></p>
+                <p>问题描述：<span style="color:#ff0000;">{$v.content} </span></p>
+                {notempty name="v['reply']"}
+                <p>回馈：<span style="color:#ff0000;">{$v.reply} </span></p>
+                {/notempty}
+                <p id="wfk">{$status_name[$v['status']]}</p>
+                {eq name="v['status']" value='0' }
+                <div class="order_main_r_b">
+                  <a data="{$v['id']}" url="{:url('Userorder/deledatail')}" onclick="deletedata(this);" href="javascript:"><input class="orderan" type="button" value="删除"></a>
+                </div>
+                {/eq}
+              </div>
+            </li>
+            {/foreach}
+         </ul>
+      </div>
+    </div>
+
+	</div>
+
+  <div style="padding-bottom: 10vmin"></div>

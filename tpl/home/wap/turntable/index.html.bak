@@ -1,0 +1,39 @@
+{__NOLAYOUT__}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,minimal-ui">
+    <title>宏八商城</title>
+    <link rel="stylesheet" href="__CSS__/style.css">
+
+</head>
+<body class="zp_bg">
+    <div class="fxm_header">
+       <div class="fxm_left"><a href="javascript:history.back();"><img src="__IMG__/left.png"></a></div>
+       <div class="fxm_center" style="width: 70%;">{$title}</div>
+       <div class="fxm_right" style="width: 18%;line-height: 13vmin;padding-right: 1%;"><a href="{:url('Turntable/detail')}" style="color: #fff;font-size: 4vmin;"><img src="__IMG__/lw.png" style="margin-top: 0"></a></div>
+    </div>
+    <div style="padding-top: 13vmin;"></div>
+
+    <div class="dzp_top">
+      <p>d</p>
+    </div>
+    
+    <div class="dzp_bottom">
+      <img src="__IMG__/gz.jpg">
+      <div class="guize">
+        <p>1.所有的现金券及优惠券均由网站大商城的商家提供；</p>
+        <p>2.所有的现金券及优惠券均由网站大商城的商家提供；</p>
+        <p>3.所有的现金券及优惠券均由网站大商城的商家提供；</p>
+        <p>4.所有的现金券及优惠券均由网站大商城的商家提供；</p>
+        <p>5.所有的现金券及优惠券均由网站大商城的商家提供；</p>
+        <p>6.所有的现金券及优惠券均由网站大商城的商家提供；</p>
+        <p>7.所有的现金券及优惠券均由网站大商城的商家提供；</p>
+        <p>8.所有的现金券及优惠券均由网站大商城的商家提供；</p>
+      </div>
+    </div>
+<div style="height:10vmin;float: left;display: block;width: 100%;"></div>
+
+</body>
+</html>

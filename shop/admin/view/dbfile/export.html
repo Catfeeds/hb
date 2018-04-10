@@ -1,0 +1,101 @@
+{extend name="public/layout"/}
+{block name="style" }
+    <link rel="stylesheet" type="text/css" href="__ADMIN__/libs/lyui/dist/css/lyui.extend.min.css">
+    <link rel="stylesheet" type="text/css" href="__ADMIN__/css/style.css">
+{/block}
+
+{block name="main"}
+   <div id="main" class="col-xs-12 col-sm-9 main" style="overflow-y: scroll;">
+        <!-- 面包屑导航 -->
+        <ul class="breadcrumb">
+            <li><i class="fa fa-map-marker"></i></li>
+            {foreach name="_menu_tab['name']" item="tab_v" }
+            <li class="text-muted">{$tab_v}</li>
+            {/foreach}
+        </ul>
+
+        <!-- 主体内容区域 -->
+        <div class="tab-content ct-tab-content">
+            <div class="panel-body">
+                <div class="builder formbuilder-box">
+                        <div class="builder-tabs builder-form-tabs">
+	                        <ul class="nav nav-tabs">
+	                             <li class="active">
+	                                <a href="{:url('Dbfile/index')}">备份数据</a>
+	                            </li>
+	                            <li >
+	                                <a href="{:url('Dbfile/import')}">还原数据</a>
+	                            </li>
+	                        </ul>
+	                    </div>
+                        <div class="form-group"></div>
+
+                        <!-- 顶部工具栏按钮 -->
+                        <div class="builder-toolbar">
+                            <div class="row">
+                                <!-- 工具栏按钮 -->
+                                    <div class="col-xs-12 col-sm-8 button-list clearfix">
+                                        <div class="form-group">
+                                            <a title="备份数据库" class="btn btn-primary-outline btn-pill ajax-get confirm" model="Database" href="{:url('export')}">备份数据库</a>&nbsp;
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 数据列表 -->
+                        <div class="builder-container">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="builder-table">
+                                        <div class="panel panel-default table-responsive">
+                                            <table class="table table-bordered table-striped table-hover">
+                                              <thead>
+                                                <tr>
+                                                    <th>表名</th>
+                                                    <th>数据量</th>
+                                                    <th>数据大小</th>
+                                                    <th>创建时间</th>
+                                                    <th>操作</th>
+                                                </tr>
+                                            </thead>
+                                                <tbody>
+                                                    {notempty name="list" }
+                                                    {volist name="list" id="data"}
+                                                        <tr>
+                                                            <td>{$data['Name']}</td>
+                                                            <td>{$data['Rows']}</td>
+                                                            <td>{$data['Data_length']|byte_Format}</td>
+                                                            <td>{$data['Create_time']}</td>
+                                                            <td>
+                                                               
+                                                                <a name="edit" title="优化表" class="label label-primary-outline label-pill ajax-get confirm" href="{:url('optimize',array('tables'=>$data['Name']))}">优化表</a>
+
+                                 
+                                                                <a name="forbid" title="修复表" class="label label-success-outline label-pill ajax-get confirm" href="{:url('repair',array('tables'=>$data['Name']))}">修复表</a>
+                                                        </tr>
+                                                    {/volist}
+
+                                                    {else /}
+                                                        <tr class="builder-data-empty">
+                                                            <td class="text-center empty-info" colspan="20">
+                                                                <i class="fa fa-database"></i> 暂时没有数据<br>
+                                                            </td>
+                                                        </tr>
+                                                    {/notempty}
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+    </div>                   
+</div>
+{/block}
+{block name="script"}
+    <script type="text/javascript" src="__ADMIN__/libs/lyui/dist/js/lyui.extend.min.js"></script>
+{/block}

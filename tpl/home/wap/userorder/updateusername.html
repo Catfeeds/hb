@@ -1,0 +1,43 @@
+    <script type="text/javascript" src="__COM__/js/ajaxfileupload.js"></script>  
+    <div style="padding-top: 13vmin;"></div>
+    <form class="postfrom" action="{:url('updateusername')}" >
+    <div class="shezhi xgmm">
+        <h6 class="ts">修改信息</h6>
+        <ul>
+            <li>原真实姓名： <span><input type="text" readonly="true" placeholder="{$username}"></span></li>
+            <li>新真实姓名： <span><input type="text" name="new_username" placeholder="请输入要修改的真实姓名"></span></li>
+        </ul>
+        
+    </div>
+
+    <div class="shezhi xgmm">
+        <h6 class="ts">问题描述</h6>
+        <textarea name="content" rows="6" placeholder="在此输入需要解决的问题及发生的原因，请尽量描述清楚，以便工作人员更好的为你服务。" class="textarea"></textarea>
+        
+    </div>
+      
+        <div class="shezhi xgmm">
+            <div class="upload">
+              <h6 class="ts">上传附件<i>请上个人身份证正反面原件照片！</i></h6>
+
+              <div id="preview">
+                  正面
+                  <img id="imghead" width=100% height=auto border=0 src="__IMG__/a1.png">
+              </div>
+               <input type="file" id="img_license" data="license" name="img_license" onchange="uploadFile('img_license','{:url('Common/uplodeimg')}')" class="tijiao" />  
+            </div>  
+
+            <div id="preview1">
+                  反面
+                  <img id="imghead1" width=100% height=auto border=0 src="__IMG__/a1.png">
+              </div>
+               <input type="file" id="img_back" data="back" name="img_back" onchange="uploadFile('img_back','{:url('Common/uplodeimg')}')" class="tijiao" />  
+          </div>
+          <input type="hidden" name="back">
+          <input type="hidden" name="license">
+
+  </div>
+  </form>
+
+  <span id="anniu"><a  class="ajax-post" target-from="postfrom" href="javascript:">确定</a></span>
+  <div style="padding-bottom: 10vmin"></div>

@@ -1,0 +1,126 @@
+<div style="margin-top: 13vmin"></div>
+{notempty name="list.good_list"}
+{foreach name="list.good_list" item="vo"}
+  {foreach name="vo" item="v"}
+  <div class="commodity" id="commodity1"> 
+    <input type="hidden" class="dede" value="{$v.good_price}">
+    <div class="commodity-left">
+      <a href="{:url('Good/details',array('good_id'=>$v.good_id))}"><img src="{$v.good_cover_img}" alt=""></a>
+    </div>
+      <div class="commodity-right">
+        <h1>{$v.good_name}</h1>
+        <p>
+        {$v.good_attr|default=''}
+        </p>
+        <h3>
+          <strong>￥{$v.good_price}</strong>
+          <em>×</em>
+          <input class="jian" name=""  style=" width:20px; height:18px;border:1px solid #ccc;" type="button" value="-" />
+          <input data="{$v.good_id}" item="{$v.attr_id|default=""}" class="dedemun" id="text_box1" name="" type="text" value="{$v.good_num}" style=" width:30px; text-align:center; border:1px solid #ccc;" />
+          <input class="jia" name="" style=" width:20px; height:18px;border:1px solid #ccc;" type="button" value="+" />
+        </h3>
+        <img src="__IMG__/deldete.png" alt="" class="shanchu">
+    </div>
+  </div>
+  {/foreach}
+{/foreach}
+{else/}
+  <div style="height:10vmin;" ></div>
+  <div style="width: 60%;margin: auto;text-align: center;" >
+    <img style="width: 60%;" src="__IMG__/k.png" alt="">
+  </div>
+{/notempty}
+<div class="footerss">
+  <p>
+  共<span class="oss">{$list.total_num|default='0'}</span>件
+  合计:<span style="color:#ff5500;font-size:4vmin; font-weight:bold;">￥</span><label id="total2" class="tot" style="color:#ff5500;font-size:5vmin; font-weight:bold;">{$list.total_price|default='0'}</label>
+  <a href="{:url('Shopcar/goorder')}">去结算</a>
+  </p>
+</div>
+<script type="text/javascript">
+  $(function () {   
+    $(".jia").click(function () {
+      var t =$(this).prev().val();
+        var newmun=parseInt(t)+1;
+        $(this).prev().val(newmun);
+        setTotal();
+        //修改数量
+        setNum($(this).prev());
+    })
+    $(".jian").click(function () {
+      var t = $(this).next().val();
+      if(t>1){
+        var newmun=t-1;
+      }else{
+        var newmun=1;
+      }
+      $(this).next().val(newmun);
+       setTotal();
+       //修改数量
+        setNum($(this).next());
+    })
+  })
+
+  //修改数量
+  function setNum(obj){
+    var num=$(obj).val();
+    var good_id=$(obj).attr('data');
+    var item_id=$(obj).attr('item');
+    $.ajax({
+      type:"POST",
+      url:"{:url('Shopcar/ajaxaddcart')}",
+      data:{'good_id':good_id,'good_num':num,'attr_id':item_id},
+      dataType:'json',
+      success:function(data){
+        if(data.status == 2)  //直接购买
+        {
+          location.href = data.url;
+          return false;
+        }
+      }
+    })
+  }
+
+
+  //计算总价格 
+   function setTotal() {
+        var totss=0;
+        var totmunss=0;
+        $('.commodity').each(function(){
+            var one= $(this).find('input[class="dede"]').val();
+            var onemun= $(this).find('.commodity-right .dedemun').val();
+            var tatosl=one*onemun;
+            totss=totss+tatosl;
+            totmunss=parseInt(totmunss)+parseInt(onemun);
+        }); 
+        totss=totss.toFixed(2)
+        $("#total2").html(totss);
+        $(".oss").html(totmunss);
+    }
+
+  //删除
+  $('.shanchu').click(function(){
+    var that=$(this);
+    var p= that.parents('.commodity');
+
+    var good_id=p.find('.dedemun').attr('data');
+
+    var item_id=p.find('.dedemun').attr('item');
+
+  //底部对话框
+    layer.open({
+      content: '确实删除？'
+      ,btn: ['确认', '取消']
+      ,skin: 'footer'
+      ,yes: function(index){
+        that.parents('.commodity').remove();
+        layer.close(index);
+        $.post("{:url('Shopcar/ajaxdeletecart')}",{'good_id':good_id,'attr_id':item_id},function(res){
+          // alert(res);
+          setTotal();
+        });
+      }
+    });
+    
+  })
+  </script>

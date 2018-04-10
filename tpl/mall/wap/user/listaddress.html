@@ -1,0 +1,39 @@
+
+<div style="margin-top: 13vmin"></div>
+{foreach name="list" item="v"}
+<div class="shdz">
+    <p class="xm"><span>姓名：</span><i>{$v.user_name}</i><em>{$v.user_mobile}</em></p>
+    <p>{$v.province}{$v.city}{$v.district}{$v.detail_address}</p>
+    <p class="moren">
+    	{eq name="v.is_default" value="1"}
+    	<input url="{:url('Shopcar/goorder',array('id'=>$v.id))}" type="checkbox">&nbsp;&nbsp;&nbsp;&nbsp;默认地址
+    	{else /}
+    	<input url="{:url('Shopcar/goorder',array('id'=>$v.id))}" type="checkbox">
+    	{/eq}
+	    <span>
+	    	<a href="{:url('User/editaddress',array('id'=>$v.id))}">编辑</a>
+	    </span>
+    </p>
+</div>
+{/foreach}
+
+<div class="add_address">
+{empty name="list"}
+  <img src="__IMG__/kong.png">
+{/empty}
+  <p>
+    <a href="{:url('User/editaddress')}">添加收货地址</a>
+  </p>
+</div>
+
+{php}$type=session('cometype');{/php}
+{eq name="type" value="2"}
+
+<script type="text/javascript">
+	$("input[type='checkbox']").click(function(){
+		location.href=$(this).attr('url');
+	})
+  
+</script>
+
+{/eq}

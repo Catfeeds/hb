@@ -1,0 +1,126 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,minimal-ui">
+  <title>宏八商城</title>
+  <link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+
+
+</head> -->
+<body>
+  <!-- 轮播图 -->
+    <div class="fxm_header">
+       <div class="fxm_left"><a href="grqb.html"><img src="__IMG__/left0.png"></a></div>
+       <div class="fxm_center">充值</div>
+       <!-- <div class="fxm_right"><img src="__IMG__/zf.png"></div> -->
+    </div>
+
+<div style="margin-top:20vmin"></div>
+ 
+    <div class="recharge-top">
+		<a href="#" onmouseover="show(0);">在线充值</a>
+		<a href="#" onmouseover="show(1);">下线转账</a>
+	</div>
+<!-- 第一个recharge -->
+<div class="recharge">
+	<input type="number" placeholder="金额(元)" onfocus="this.placeholder=''" onblur="this.placeholder='金额(元)'">
+	<p>
+		<span>*</span>提示：现在支持支付宝和微信充值
+	</p>
+	<div class="buttones">
+        <a href="wancheng5.html">下一步</a>
+    </div>
+</div>
+<!-- 第二个recharge -->
+<div class="recharge"  style="display:none;">
+	<p><span>*</span>汇款后请及时通知客服！</p>
+	<!-- 第一个recharge-second -->
+	<div class="recharge-second" >
+		<div class="rechage-choice">
+		<p>(建设银行)广州乐嘉路支行</p>
+		<p>开户名:黄桂玲</p>
+		<p>6217&nbsp;&nbsp;0020&nbsp;&nbsp;0206&nbsp;&nbsp;6558&nbsp;&nbsp;990</p>
+		<span class="spans" style="display:none;">
+    	<img src="__IMG__/gou.png" alt="">
+    	</span>
+		</div>
+	</div>
+	<!-- 第二个recharge-second -->
+	<div class="recharge-second">
+		<div class="rechage-choice">
+		<p>(建设银行)广州乐嘉路支行</p>
+		<p>开户名:黄桂玲</p>
+		<p>6217&nbsp;&nbsp;0020&nbsp;&nbsp;0206&nbsp;&nbsp;6558&nbsp;&nbsp;990</p>
+		<span class="spans" style="display:none;">
+    	<img src="__IMG__/gou.png" alt="">
+    	</span>
+		</div>
+	</div>
+	<!-- 第三个recharge-second -->
+	<div class="recharge-second">
+		<div class="rechage-choice">
+		<p>支付宝</p>
+		<p>开户名:黄桂玲</p>
+		<p>150&nbsp;&nbsp;1411&nbsp;&nbsp;5554</p>
+		<span class="spans" style="display:none;">
+    	<img src="__IMG__/gou.png" alt="">
+    	</span>
+		</div>
+	</div>
+	<div class="inputnumber">
+		<input type="number" placeholder="充值金额" onfocus="this.placeholder=''" onblur="this.placeholder='充值金额'">
+	</div>
+	<div class="addpictrue">
+		<p>上传打款凭证</p>
+		<img src="__IMG__/camerous.png" alt="上传打款凭证">
+		<a href="#">上传照片</a>
+	</div>
+	<div class="buttones" style="margin-bottom: 10vmin">
+        <a href="wancheng4.html">下一步</a>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+   window.onload=function(){
+      var recharge = document.getElementsByClassName("recharge-second");
+      for(var i=0 ; i <= recharge.length ; i++){
+            recharge[i].index = i;
+            recharge[i].onclick = function(){
+                var index = this.index;
+                recharge[index].lastElementChild.style.display = "block";
+                        console.log(22);
+                var spans = document.getElementsByClassName("spans");
+                    for(var j=0 ; j <= spans.length ; j++){
+                        spans[j].style.display = "none";
+                        spans[index].style.display = "block";
+                }
+          }
+          
+      }
+     
+   }
+
+</script>
+
+<script type="text/javascript">
+    function show(i){
+        var contentts = document.getElementsByClassName("recharge");
+        for(var c =0;c<contentts.length;c++){
+            var contentt =  contentts[c];
+            
+            if(c==i){
+                contentt.style.display="block";
+            }else{
+                contentt.style.display="none";
+            }
+           
+        }
+    }
+</script>
+</div>
+
+</body>
+</html>

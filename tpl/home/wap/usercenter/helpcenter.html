@@ -1,0 +1,47 @@
+
+<div style="padding-top: 13vmin;"></div>
+    <div class="zxzx bzzxa">
+        <img src="__IMG__/kf.jpg" >
+        <div class="bzzx">
+            <h3>客服电话：{php} echo db('config')->where('id=9')->value('value');{/php}</h3>
+            <p>客服时间：08:30-12:00</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;13:30-18:00</p>
+            <p>需要帮助，联系在线客服</p>
+        </div>
+
+        <ul id="ulao">
+        {foreach name="help_son" item="v" }
+ <a href="{:url('usercenter/helpcenter',array('new_ids'=>$v['id']))}" >
+ <li  <?php if($v['id'] == input('new_ids')){echo 'class="currentao"';}?>>{$v['title']}</li>
+ </a>
+{/foreach}
+        </ul>
+        <div id ="contentao">
+
+
+            <div class="show">
+                <div class="zxzx_bottom zxzxa bzzxb">
+                    <ul>
+                    {foreach name="tit" item="v"}
+                        <li>
+                            <a href="{:url('news/newsdetail',array('news_id'=>$v['id']))}">{$v['title']}</a>
+                            <span>{$v['addtime']|date='Y-m-d',###}</span>
+                        </li>
+            {/foreach}
+
+                    </ul>
+                </div>
+            </div>
+
+        
+        </div>
+        <script>
+        $('#ulao>li').click(function(){
+           $(this).addClass('currentao').siblings().removeClass('currentao');
+           $('#contentao>div').eq($(this).index()).show().siblings().hide();
+
+        })
+        </script>
+    </div>
+
+    <div style="padding-bottom: 10vmin;float: left;width: 100%"></div>

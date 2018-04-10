@@ -1,0 +1,47 @@
+    <link rel="stylesheet" href="__CSS__/product.css">
+    <link rel="stylesheet" href="__ICON__/iconfont.css">
+    <div style="margin-top: 13vmin"></div>
+
+    <div id="tbh5v0">
+        <div class="td">
+          <div class="myorder pinglun" style="height:auto;">
+               <ul>
+                 <li {empty name=":input('type')"}class="ab"{/empty} style="border-top-left-radius: 2vmin; 
+         border-bottom-left-radius: 2vmin;padding-bottom: 0; border:none;padding:0;">
+                  <a href="{:url('Usercomment/commentlist')}">待评价</a></li>
+                 <li {eq name=":input('type')" value="1" }class="ab"{/eq} style="border:none;    border-top-right-radius: 2vmin;
+        border-bottom-right-radius: 2vmin;padding:0;">
+                  <a href="{:url('Usercomment/commentlist',array('type'=>1))}">已评价</a>
+                 </li>
+               </ul>
+          </div>
+          {volist name="list" id="v" empty="<div class='order_main'><p class='kong'><img src='/static/home/wap/mall/images/k.png'></p></div>" }
+          <div class="order_main">
+             <ul>
+                <li style="float: left;width: 96%;">
+                  <div class="order_main_l">
+                  <a href="{:url('Good/details',array('good_id'=>$v['good_id']))}">
+                  <img src="{$v.good_cover_img}" alt="">
+                  </a>
+                  </div>
+                  <div class="order_main_r">
+                    <h4>{$v.good_name}</h4>
+                    <p>数量：<span>{$v.good_num}</span></p>
+                    <p>价格：<span style="color:#ff0000;">￥{$v.good_price} </span></p>
+                    <p id="wfk">{$v['is_comment']==1 ? '已评价':'未评价'}</p>
+
+                    <div class="order_main_r_b">
+                      {eq name="$v['is_comment']" value="0"}
+                      <a href="{:url('gocomment',array('id'=>$v['id']))}"><input class="orderan" type="button" value="去评价"></a>
+                      {/eq}
+                    </div>
+                  </div>
+                </li>
+             </ul>
+          </div>
+          {/volist}
+          
+
+        </div>
+    </div>
+

@@ -1,0 +1,88 @@
+    <div style="padding-top: 13vmin;"></div>
+    <div class="shezhi xgmm">
+        <ul>
+            <li>订单号： <span>{$order_no}</span></li>
+            <li>收款方： <span>宏八</span></li>
+        </ul>
+        
+    </div>
+
+    <div class="shezhi xgmm xgfxr">
+        <form class="postfrom" action="{:url('savepay')}" >
+        <ul>
+          <li>
+              <div class="solid_b">
+                <a data-toggle="collapse" data-expanded="2" href="###" class="db solid_b pr15 pt10" >
+                    <p class="mg0 pb10 c-222">支付方式</p>
+                </a>
+            </div>
+
+            <div class="panel-collapse xgfxra" style="display: block;">
+                <div class="panel-body">
+                    <div class="db solid_b">
+                        {neq name=":input('type')" value="cz"}
+                        <a class="db solid_b pr15" href="javascript:">
+                            <p class="mg0 pb10 c-222">
+                                <label for="money" style="width: 90%;display: inline-block;" >
+                                  <img src="__IMG__/zfy.jpg">余额支付({$user_money})  
+                                </label>
+                                <input id="money" name="paytype" type="radio" value="1" />
+                            </p>
+                        </a>
+                        {/neq}
+                        <a class="db solid_b pr15 pt10" href="javascript:">
+                            <p class="mg0 pb10 c-222">
+                                <label for="wx" style="width: 90%;display: inline-block;"  >
+                                <img src="__IMG__/zf3.jpg">微信
+                                </label>
+                                <input id="wx" name="paytype" type="radio" value="2" />
+                            </p>
+                        </a>
+                        <a class="db solid_b pr15 pt10" href="javascript:">
+                            <p class="mg0 pb10 c-222">
+                                <label for="zfb" style="width: 90%;display: inline-block;" >
+                                <img src="__IMG__/zf2.jpg">支付宝
+                                </label>
+                                <input id="zfb" name="paytype" type="radio" value="3" />
+                            </p>
+                        </a>
+                       
+                       
+                        <!-- <a class="db solid_b pr15" href="javascript:">
+                            <p class="mg0 pb10 c-222">
+                                <label for="bank" style="width: 90%;display: inline-block;" >
+                                    <img src="__IMG__/zf1.jpg">网银在线
+                                </label>
+                               <input id="bank" name="paytype" type="radio" value="4" />
+                            </p>
+                        </a> -->
+                        <!-- <a class="db solid_b pr15 pt10" href="javascript:">
+                            <p class="mg0 pb10 c-222">
+                                <img src="__IMG__/zf4.jpg">QQ钱包
+                                <span class="fr text_blue"><input name="paytype" type="radio" value="" /></span>
+                            </p>
+                        </a> -->
+                    </div>
+                </div>
+            </div>
+
+
+          </li>
+        </ul>
+        <h5>请选择对应的支付方式进行支付。</h5>
+        <div class="fukuan_ts">
+            <!-- <h3>注意事项提示区！</h3> -->
+            <p>用户名：{$Think.session.user_login.account}</p>
+            <input type="hidden" name="order_no" value="{$order_no}">
+            <input type="hidden" name="id" value="{$id}">
+            <input name="pwd" placeholder="请输入安全密码" onfocus="this.placeholder=''" onblur="this.placeholder='请输入安全密码'" type="password">
+            <p class="hongse">如您未设置安全密码,请到个人中心先设置。<a href="{:url('usercenter/updatesafepassword')}">去设置>></a></p>
+        </div>
+        </form>
+    </div>
+
+    <div class="zhifua">
+        <p class="zhifu1">需要支付：<i>¥{$money}</i></p>
+        <p class="zhifu2"><a class="ajax-post" target-from="postfrom" href="javascript:">立即支付</a></p>
+    </div>
+    <div style="padding-bottom: 18vmin;float: left;width: 100%"></div>

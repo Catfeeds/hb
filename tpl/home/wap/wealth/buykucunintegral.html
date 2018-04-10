@@ -1,0 +1,58 @@
+﻿<div style="padding-top: 13vmin;"></div>
+
+    <div class="goumai">
+      <p>现金账户金额</p>
+      <h3>{$info.money|default=0}</h3>
+    </div>
+    <div class="goumai tbzh">
+      <p>宏宝账户金额</p>
+      <h3>{$info.anzi|default=0}</h3>
+    </div>
+    <div style="clear: both;"></div>
+    <form class="postfrom" action="{:url('savekucunintegral')}" >
+    <div class="shezhi qyrz1">
+        <ul>
+            <li>购买金额<span><input type="number" id="num" name="num" placeholder="请输入购买金额"></span></li>
+            <li>可换取库存积分<span id="total" >0</span></li>
+            <li>支付方式<span style="float: inherit;">
+                <a href="javascript:"><i data="1" >现金支付</i></a>
+                <a href="javascript:" class="fou"><i data="2" >宏宝支付</i></a>
+                </span>
+            </li>
+            <li>库存积分比例为1元-1350库存积分</li>
+        </ul>
+        
+    </div>
+
+    <div class="fukuan_ts">
+        <h3>默认单笔最多发放500w库存积分，每天最多10次即5000W库存积分！</h3>
+        <p>手机：{$Think.session.user_login.mobile|default=''}<i id="yzm" settime="{$Think.session.set_time|default=''}" nowtime="{:time()}" class="sendmsg" onclick="sendMessage('{:url('Common/sendCode')}')" >获取验证码</i></p>
+        <input placeholder="短信验证码" onfocus="this.placeholder=''" onblur="this.placeholder='短信验证码'" type="number" name="code" >
+
+        <p>用户名：{$Think.session.user_login.account}</p>
+        <input placeholder="安全密码" onfocus="this.placeholder=''" onblur="this.placeholder='安全密码'" type="password" name="pwd" > 
+        
+    </div>
+        <input type="hidden" id="paytype" name="paytype">
+    </form>
+    <span id="anniu"><a class="ajax-post" target-from="postfrom" href="javascript:">确定购买</a></span>
+    <div style="padding-bottom: 10vmin"></div>
+    <script type="text/javascript" src="__COM__/js/sendmessage.js" ></script>
+    <script type="text/javascript">
+        $('.shezhi a').click(function(){
+            $(this).find('i').addClass('on');
+            $('#paytype').val($(this).find('i').attr('data'));
+            $(this).siblings('a').find('i').removeClass('on');
+        })
+
+        $('#num').blur(function(){
+            var v=$(this).val();
+            if(v){
+                v=v*1350;
+                $('#total').text(v);
+            }else{
+                $('#total').text('0');
+            }
+            
+        })
+    </script>

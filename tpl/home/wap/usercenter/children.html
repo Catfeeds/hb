@@ -1,0 +1,48 @@
+
+
+    <div class="centent_640 pt45">
+    <div class="pl15 bg_white solid_last_a mb20">
+            {php} $user=db('user'); {/php}
+            {foreach name="list" key="k" item="v"}
+            <div class="solid_b">
+                <a data-toggle="collapse" data-expanded="{$k}" href="javascript:" class="db solid_b pr15 pt10" >
+                    <p class="mg0 pb10 c-222">{$v.account}
+                        <span class="fr text_blue">{$v.reg_date|date='Y-m-d H:i:s',###}<img class="fr mt3" width="14" src="__IMG__/right2.png" style="width: 8%"></span>
+                    </p>
+                </a>
+            </div>
+            
+            <div class="panel-collapse panel-default collapse in" expanded="{$k}">
+                <div class="panel-body">
+                    <div class="db solid_b">
+                        <a class="db solid_b pr15" href="javascript:">
+                            <p class="mg0 pb10 c-222">分享人数：
+                                <span class="fr text_blue">{php} echo $user->where('pid',$v['userid'])->count(1);{/php}人</span>
+                            </p>
+                        </a>
+                      
+                        <a class="db solid_b pr15 pt10" href="javascript:">
+                            <p class="mg0 pb10 c-222">手机：
+                                <span class="fr text_blue">{$v.mobile}</span>
+                            </p>
+                        </a>
+                        <a class="db solid_b pr15 pt10" href="javascript:">
+                            <p class="mg0 pb10 c-222">姓名：
+                                <span class="fr text_blue">{$v.username}</span>
+                            </p>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+            {/foreach}
+    </div>
+</div>
+<script type="text/javascript">
+    $('[data-toggle="collapse"]').click(function(){
+        var i=$(this).attr('data-expanded');
+        $('[expanded="'+i+'"]').slideToggle();
+    });
+</script>
+
+

@@ -1,0 +1,24 @@
+
+    <div style="height:13vmin"></div>
+
+    <div class="register" >
+     <a href="{:url('Login/register',array('pid'=>$pid))}">
+       <div class="bg_white">
+         <img src="__IMG__/zc-gr-logo.png">
+         <p>个人注册</p>
+       </div>
+     </a>
+
+     <a href="{:url('Login/companyregister',array('pid'=>$pid))}">
+       <div class="bg_white">
+         <img src="__IMG__/zc-qy-logo.png">
+         <p>企业注册</p>
+       </div>
+     </a>
+    </div>
+
+  <style>
+  .bg_white {border: 3px dashed #e8e8e8;padding: 2%;margin: 4%;text-align: center;}
+  .bg_white img {width: 25%}
+  .bg_white p {color: #4794de;font-size: 5vmin}
+  </style>

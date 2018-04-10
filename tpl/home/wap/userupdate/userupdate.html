@@ -1,0 +1,54 @@
+{__NOLAYOUT__}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,minimal-ui">
+    <title>宏八商城</title>
+    <link rel="stylesheet" href="__CSS__/style.css">
+    <script type="text/javascript" src="__JS__/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="__HOME__/layer_mobile/layer.js"></script>
+    <script type="text/javascript" src="__COM__/js/home_index.js"></script>
+</head>
+<body class="body_bg">
+    <div class="fxm_header">
+       <div class="fxm_left"><a href="javascript:history.back()"><img src="__IMG__/left.png"></a></div>
+       <div class="fxm_center" style="width: 75%;">升级会员</div>
+       <div class="fxm_right" style="width: 13%;line-height: 13vmin;padding-right: 1%;"><a href="{:url('Wealth/recharge')}" style="color: #fff;font-size: 4vmin">充值</a></div>
+    </div>
+    <div style="padding-top: 13vmin;"></div>
+    
+    <form class="postfrom" action="{:url('userupdate')}" >
+    <div class="shezhi sjhy2">
+        <ul>
+            <li>用户等级
+                <span>
+                    <select name="update_level" onchange="ChangeUpdate(this)" >
+                        {foreach name="list" item="v"} 
+                        <option data="{$v.level_fee+0}"  value="{$v.level}">{$v.level_name}</option> 
+                        {/foreach}
+                    </select>
+                </span>
+            </li>
+            <li>金额<span id="updatemoney" class="sj">{$list[0]['level_fee']+0}</span></a></li>
+            <li>现金账户余额<span class="sj">{$money}</span></li>
+        </ul>
+    </div>
+    <span id="anniu"><a class="ajax-post" target-from="postfrom" href="javascript:">去付款</a></span>
+    </form>
+
+    <div style="padding-bottom: 10vmin"></div>
+        
+    <script type="text/javascript">
+        function ChangeUpdate(obj){
+            var txt=$(obj).find('option:selected').attr('data');
+            var level="{$level}";
+            if(level==1 && txt==9999){
+                txt=9000;
+            }
+            $('#updatemoney').text(txt);
+        }
+    </script>
+
+</body>
+</html>

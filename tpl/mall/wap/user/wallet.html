@@ -1,0 +1,48 @@
+<div style="margin-top: 18vmin"></div>
+    <div class="mywallet-top">
+      <strong>{$info.money}</strong>
+      <p>可用金额(元)</p>
+      <a href="{:url('home/Wealth/detail',array('type'=>'0','f_type'=>0))}">
+        详情
+        <img src="__IMG__/left.png" alt="">
+      </a>
+    </div>
+
+    <div class="mywallet-top">
+      <strong style="color:#FF860E">{$info.anzi}</strong>
+      <p>宏宝</p>
+      <a href="{:url('home/Wealth/detail',array('type'=>'2','status'=>0))}">
+        详情
+        <img src="__IMG__/left.png" alt="">
+      </a>
+    </div>
+
+    <div class="mywallet-top">
+      <strong style="color:#FF860E">{$info.integral}</strong>
+      <p>积分</p>
+      <a href="{:url('home/Wealth/detail',array('type'=>'1','status'=>0))}">
+        详情
+        <img src="__IMG__/left.png" alt="">
+      </a>
+    </div>
+
+    <div class="clear"></div>
+
+
+    <div class="wallet-cards">
+      <a href="youhuiquan.html">
+        <img src="__IMG__/wallet02.png" alt="">
+        <p>优惠券</p>
+        <p>{$info.coupon_count}</p>
+
+      </a>
+      <a href="{:url('home/Wealth/bankcard')}" style="border:none">
+        <img src="__IMG__/wallet03.png" alt="">
+      <p>我的银行卡</p>
+        <p>{$info.bank_count}</p>
+      </a>
+    </div>
+    <div class="wallet-buttons">
+      <a href="{:url('home/Wealth/recharge')}">充值</a>
+      <a href="{:url('home/Wealth/getmoney')}">提现</a>
+    </div>

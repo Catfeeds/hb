@@ -1,0 +1,21 @@
+<div style="padding-top: 13vmin;"></div>
+    
+    <div class="kefu_b yubei_xq">  
+        <p>名称：<span>{$info.type_name}</span></p>
+        <p>数量：<span class="lanse">{$info.money}</span></p>
+        {notempty name="info['fee']"}
+        <p>手续费：<span style="color:red;" >{$info['fee']}</span></p>
+        {/notempty}
+        <p>操作：{$status_name[$info['status']]}</p>
+        {notempty name="info['reply']"}
+        <p>回复：<span style="color:red;" >{$info['reply']}</span></p>
+        {/notempty}
+        <p>说明：<span>{$info.content}</span></p>
+        {notempty name="info['card_no']"}
+        <p>银行卡：<span>{$info['user_name']}-{$info['bank_name']}(***{$info['card_no']|substr=###,-4})</span></p>
+        {/notempty}
+        <p>时间：<span>{$info.create_time|date="Y-m-d H:i",###}</span></p>
+    </div>
+
+    
+    <div style="padding-bottom: 10vmin;float: left;width: 100%"></div>

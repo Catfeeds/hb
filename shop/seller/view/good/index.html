@@ -1,0 +1,126 @@
+{include file="public/head" /}
+<body>
+   <div class="dux-tools">
+        <div class="bread-head">商品管理
+            <span class="small">商品列表</span>
+        </div>
+        <div class="tools-function clearfix">
+            <div class="float-left">
+                <a class="button button-small bg-dot icon-plus" href="{:url('Good/add')}">添加</a>
+                </div>
+        </div>
+    </div>
+        
+    <div class="admin-main">
+    <div class="panel dux-box">
+    <div class="table-tools clearfix ">
+        <div class="float-left">
+            <form method="GET" action="?">
+                <div class="form-inline">
+                    <div class="form-group">
+                        <div class="field">
+                            <input type="text" class="input" id="keyword" name="keyword" size="20" value="{:input('get.keyword')}" placeholder="输入搜索内容">
+                        </div>
+                    </div>
+                    <div class="form-button">
+                        <button class="button" type="submit">搜索</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="float-right">
+
+        </div>
+    </div>
+    <div class="table-responsive">
+        <table id="table" class="table table-hover ">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>名称</th>
+                        <th>编号</th>
+                        <th>分类</th>
+                        <th>价格</th>
+                        <th>库存</th>
+                        <th>销量</th>
+                        <th>排序</th>
+                        <th>上/下架</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {notempty name="list" }
+                {volist name="list" id="data"}
+                    <tr>
+                        <td>{$data['good_id']}</td>
+                        <td><p style="width: 208px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;margin: 0;padding: 0;" >{$data['good_name']}</p></td>
+                        <td>{$data['good_no']}</td>
+                        <td>{$data['category_id']|category_name}</td>
+                        <td>{$data['good_price']}</td>
+                        <td>{$data['good_store']}</td>
+                        <td>{$data['good_sell_num']}</td>
+                        <td>
+                            <input class="inputtxt" data="{$data['good_id']}" type="text" onkeyup="this.value=this.value.replace(/[^\d]/g,'')" onpaste="this.value=this.value.replace(/[^\d]/g,'')" size="4" value="{$data['good_sort']}">
+                        </td>
+                        <td>
+                           {eq name="data['status']" value="1" }
+                                 <a name="forbid" title="下架" class="label label-warning-outline label-pill ajax-get confirm" href="{:url('setStatus',array('status'=>'forbid','ids'=>$data['good_id']))}">下架</a>
+                           {else /}
+                                <a name="forbid" title="上架" class="label label-success-outline label-pill ajax-get confirm" href="{:url('setStatus',array('status'=>'resume','ids'=>$data['good_id']))}">上架</a>
+                           {/eq}
+                        </td>
+                        <td>
+                            <a class="button bg-blue button-small icon-pencil" href="{:url('edit',array('ids'=>$data['good_id']))}">编辑</a>
+                           <a class="button bg-red button-small icon-trash-o js-del ajax-get confirm" model="Admin" href="{:url('setStatus',array('status'=>'delete','ids'=>$data['good_id']))}">删除</a>
+                    </tr>
+                {/volist}
+
+                {else /}
+                    <tr class="builder-data-empty">
+                        <td class="text-center empty-info" colspan="20">
+                            <i class="fa fa-database"></i> 暂时没有数据<br>
+                        </td>
+                    </tr>
+                {/notempty}
+            </tbody>
+        </table>
+    </div>
+
+    <div class="panel-foot table-foot clearfix">{$table_data_page}</div>
+</div>
+    <script type="text/javascript">
+        // 表格快速编辑功能，input失去焦点时自动保存数据。
+        $(document).on('change', '.inputtxt', function() {
+
+            var id = $(this).attr('data');
+            var val = $(this).val();
+            if(val=='' || val==null){
+              layer.msg('请填写一个值');
+              return false;
+            }
+            
+            var url="{:url('changeorder')}";
+            $.ajax({
+                dataType: "json",
+                url: url,
+                data:{id:id,sort_order:val},
+                type:'POST',
+                success:function(data){
+                    if (data.code == 1) {
+                        layer.msg(data.msg,{time:500});
+                    } else {
+                        layer.msg(data.msg);
+                    }
+                },
+                error: function(e) {
+                    if (e.responseText) {
+                        alert(e.responseText);
+                    }
+                }
+            });
+        });
+
+    </script>
+</div>
+</body>
+</html>

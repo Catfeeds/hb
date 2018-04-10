@@ -1,0 +1,27 @@
+<div style="padding-top: 3rem;"></div>
+<div class="sxy2">
+	<div class="sxy2_top">
+		<img src="{$one.image}">
+		<p>姓名：<span style="color: #00b7f1">{$one.name}</span></p>
+		<p>地区：<span>{$one.addres}</span></p>
+		<p>年龄：<span>{$one.age}岁</span></p>
+		<p>粉丝：<span style="color: #00b7f1">{$one.fans}人</span></p>
+		<p>评分：<span style="color: #f00;">{$one.graded}</span></p>
+		<p>总播放数：<span>{$one.numeration}</span></p>
+		<div class="sxy2_jj">
+			{$one.content}
+		</div>
+	</div>
+	<div class="sxy2_bottom">
+		<ul>
+			{foreach name='all' item='v'}
+			<li>
+			<a href="{:url('news/sxy3',array('id'=>$v.id))}">
+			<span><img src="__IMG__/img02.jpg"></span>
+			<p>{$v.title}</p>
+			</a>
+			</li>
+			{/foreach}
+		</ul>
+	</div>
+</div>

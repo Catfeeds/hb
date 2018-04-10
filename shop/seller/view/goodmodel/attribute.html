@@ -1,0 +1,100 @@
+{include file="public/head" /}
+<body>
+   <div class="dux-tools">
+        <div class="bread-head">规格管理
+            <span class="small">规格列表</span>
+        </div>
+
+        <div class="tools-function clearfix">
+            <div class="float-left">
+                <a class="button button-small bg-gray  icon-arrow-left" href="{:url('index')}">返回模型列表</a>
+                <a class="button button-small bg-dot icon-plus" href="{:url('Editattribute',array('model_id'=>input('model_id')))}">添加规格</a>
+                </div>
+        </div>
+    </div>
+        
+    <div class="admin-main">
+    <div class="panel dux-box">
+	<div class="table-tools clearfix ">
+        <div class="float-left">
+        </div>
+        <div class="float-right">
+
+        </div>
+    </div>
+    <div class="table-responsive">
+        <table id="table" class="table table-hover ">
+            <tbody>
+                <tr>
+                    <th>ID</th>
+                    <th>规格名称</th>
+                    <th>规格项</th>
+                    <th>排序</th>
+                    <th>操作</th>
+                </tr>
+
+				{notempty name="list" }
+                {volist name="list" id="data"}
+                    <tr>
+                        <td>{$data['id']}</td>
+                        <td>{$data['attr_name']}</td>
+                        <td>{$data['attr_value']}</td>
+                        <td>
+                            <input class="inputtxt" data="{$data['id']}" type="text" onkeyup="this.value=this.value.replace(/[^\d]/g,'')" onpaste="this.value=this.value.replace(/[^\d]/g,'')" size="4" value="{$data['attr_order']}">
+                        </td>
+                        <td>
+                            <a class="button bg-blue button-small icon-pencil" title="编辑"  href="{:url('Editattribute',array('id'=>$data['id'],'model_id'=>$data['model_id']))}">编辑</a>
+
+                            <a class="button bg-red button-small icon-trash-o js-del ajax-get confirm" title="删除"  href="{:url('deleteattr',array('id'=>$data['id']))}">删除</a>
+                    </tr>
+                {/volist}
+                {else /}
+                    <tr class="builder-data-empty">
+                        <td class="text-center empty-info" colspan="20">
+                            <i class="fa fa-database"></i> 暂时没有数据<br>
+                        </td>
+                    </tr>
+                {/notempty}
+               </tbody>
+        </table>
+    </div>
+        
+        <script type="text/javascript">
+        // 表格快速编辑功能，input失去焦点时自动保存数据。
+        $(document).on('change', '.inputtxt', function() {
+
+            var id = $(this).attr('data');
+            var val = $(this).val();
+            if(val=='' || val==null){
+              layer.msg('请填写一个值', 'danger');
+              return false;
+            }
+            
+            var url="{:url('changeorder')}";
+            $.ajax({
+                dataType: "json",
+                url: url,
+                data:{id:id,sort_order:val},
+                type:'POST',
+                success:function(data){
+                    if (data.code == 1) {
+                        layer.msg(data.msg,{time:500});
+                    } else {
+                        layer.msg(data.msg);
+                    }
+                },
+                error: function(e) {
+                    if (e.responseText) {
+                        alert(e.responseText);
+                    }
+                }
+            });
+        });
+
+    </script>
+
+
+</div>
+</div>
+</body>
+</html>

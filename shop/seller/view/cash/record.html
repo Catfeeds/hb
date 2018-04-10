@@ -1,0 +1,76 @@
+{include file="public/head" /}
+<body>
+   <div class="dux-tools">
+        <div class="bread-head">订单管理
+            <span class="small">订单列表</span>
+        </div>
+    </div>
+        
+    <div class="admin-main">
+    <div class="panel dux-box">
+	<div class="table-tools clearfix ">
+        <div class="float-left">
+            <form method="GET" action="?">
+                <div class="form-inline">
+                    <div class="form-group">
+                        <div class="field">
+                            <select name="status" class="input">
+                                <option value="order_no">状态</option>
+                                <option {eq name=":input('get.status')" value="0" }selected="true"{/eq} value="0">等待审核</option>
+                                 <option {eq name=":input('get.status')" value="1" }selected="true"{/eq}  value="1">审核通过</option>
+                                <option {eq name=":input('get.status')" value="2" }selected="true"{/eq}  value="2">审核不通过</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="field"></div>
+                        <input type="date" name="date_start" class="input date" value="{:input('get.date_start')}" placeholder="开始日期">
+                        至
+                        <input type="date" name="date_end" class="input date" value="{:input('get.date_end')}" placeholder="结束日期">
+                    </div>
+					
+                    <div class="form-group">
+                        <div class="field">
+                            <input type="text" class="input" id="keyword" name="keyword" size="20" value="{:input('get.keyword')}" placeholder="输入搜索内容">
+                        </div>
+                    </div>
+                    <div class="form-button">
+                        <button class="button" type="submit">搜索</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="float-right">
+
+        </div>
+    </div>
+    <div class="table-responsive">
+        <table id="table" class="table table-hover ">
+            <tbody>
+                <tr>
+                    <th>提现金额</th>
+                    <th>收款账户</th>
+                    <th>提现时间</th>
+                    <th>平台回复</th>
+                    <th>状态</th>
+                </tr>
+                    {php} $arr=array(0=>'等待审核',1=>'审核通过',2=>'审核不通过'); {/php}
+                    {foreach name="list" item="v"}
+                    <tr>
+                        <td>{$v.money}</td>
+                        <td>{$v.bank_username} {$v.bank_name}({$v.bank_no})</td>
+                        <td>{$v.create_time|date='Y-m-d H:i:s',###}</td>
+                        <td>{$v.reply}</td>
+                        <td>{$arr[$v['status']]}</td>
+                    </tr>
+                    {/foreach}
+               </tbody>
+        </table>
+    </div>
+    
+    <div class="panel-foot table-foot clearfix">{$list->render()}</div>
+</div>
+</div>
+</body>
+</html>

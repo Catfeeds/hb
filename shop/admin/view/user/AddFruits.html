@@ -1,0 +1,134 @@
+{extend name="public/layout"/}
+{block name="style" }
+    <link rel="stylesheet" type="text/css" href="__ADMIN__/libs/lyui/dist/css/lyui.extend.min.css">
+    <link rel="stylesheet" type="text/css" href="__ADMIN__/css/style.css">
+{/block}
+
+{block name="main"}
+   <div id="main" class="col-xs-12 col-sm-9 main" style="overflow-y: scroll;">
+        <!-- 面包屑导航 -->
+        <ul class="breadcrumb">
+            <li><i class="fa fa-map-marker"></i></li>
+            {foreach name="_menu_tab['name']" item="tab_v" }
+            <li class="text-muted">{$tab_v}</li>
+            {/foreach}
+            <li class="text-muted">财富</li>
+        </ul>
+
+        <!-- 主体内容区域 -->
+        <div class="tab-content ct-tab-content">
+            <div class="panel-body">
+                <div class="builder formbuilder-box">
+                    <div class="form-group"></div>
+                    <div class="builder-container" >
+                            <div class="row" >
+                                <div class="col-xs-12">
+                                <form method="post" class="form-horizontal form form-builder">
+                                        <div class="form-type-list">
+                                            <div class="form-group hidden item_id ">
+                                                <label class="left control-label">ID：</label>
+                                                <div class="right">
+                                                    <input type="hidden" class="form-control input" name="uid" value="{$info.userid}">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">账号：</label>
+                                                <div class="right">
+                                                    {$info.account}
+                                                </div>
+                                            </div>
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">姓名：</label>
+                                                <div class="right">
+                                                   {$info.username}
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">手机：</label>
+                                                <div class="right">
+                                                    {$info.mobile}
+                                                </div>
+                                            </div>
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">金额：</label>
+                                                <div class="right">
+                                                    <label style="width:200px" >{$info['money']+0}</label>
+                                                    <input style="height: 35px;" type="text" name="num" value="" placeholder="请输入金额">
+                                                    <a class="btn btn-primary submit" field="money" data="add" url="{:url('AddFruits')}" onclick="UpdateNum(this)" >增加</a>
+                                                    <a class="btn btn-danger return" field="money" data="dec" url="{:url('AddFruits')}" onclick="UpdateNum(this)" >扣减</a>
+                                                </div>
+                                            </div>
+                                             <div class="form-group item_title ">
+                                                <label class="left control-label">积分：</label>
+                                                <div class="right">
+                                                    <label style="width:200px" >{$info['integral']+0} </label>
+                                                    <input style="height: 35px;" type="text" name="num" value="" placeholder="请输入金额">
+                                                    <a class="btn btn-primary submit" field="integral" data="add" url="{:url('AddFruits')}" onclick="UpdateNum(this)" >增加</a>
+                                                    <a class="btn btn-danger return" field="integral" data="dec" url="{:url('AddFruits')}" onclick="UpdateNum(this)" >扣减</a>
+                                                </div>
+                                            </div>
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">宏宝：</label>
+                                                <div class="right">
+                                                    <label style="width:200px" >{$info['anzi']+0} </label>
+                                                    <input style="height: 35px;" type="text" name="num" value="" placeholder="请输入金额">
+                                                    <a class="btn btn-primary submit" field="anzi" data="add" url="{:url('AddFruits')}" onclick="UpdateNum(this)" >增加</a>
+                                                    <a class="btn btn-danger return" field="anzi" data="dec" url="{:url('AddFruits')}" onclick="UpdateNum(this)" >扣减</a>
+                                                </div>
+                                            </div>
+
+             
+                                        <div class="form-group"></div>
+                                        <div class="form-group bottom_button_list">
+                                            <a class="btn btn-danger return" onclick="javascript:history.back(-1);return false;">返回</a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>                   
+</div>
+{/block}
+
+{block name="script"}
+    <script type="text/javascript">
+    function UpdateNum(obj){
+
+        var url=$(obj).attr('url');
+        var type=$(obj).attr('data');
+        var field=$(obj).attr('field');
+        var uid=$("input[name='uid']").val();
+        var num=$(obj).parent('div').find("input[name='num']").val();
+        if(num==''){
+            $.alertMessager('请输入一个数值', 'danger');
+            return;
+        }
+
+        $.ajax({
+            dataType: "json",
+            url: url,
+            data:{uid:uid,type:type,field:field,num:num},
+            type:'POST',
+            success:function(data){
+                if (data.status == 1) {
+                    $.alertMessager(data.info, 'success','',setTimeout(function(){window. location.reload();},1000));
+                } else {
+                    $.alertMessager(data.info, 'danger');
+                }
+            },
+            error: function(e) {
+                if (e.responseText) {
+                    alert(e.responseText);
+                }
+            }
+        }); 
+    }
+
+    </script>
+    <script type="text/javascript" src="__ADMIN__/libs/lyui/dist/js/lyui.extend.min.js"></script>
+{/block}

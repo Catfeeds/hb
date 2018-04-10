@@ -1,0 +1,73 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,minimal-ui">
+  <title>宏八商城</title>
+  <link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+
+</head> -->
+<style>
+  .zichanmx ul li em{ width: 25%;  height: inherit; margin-top: -10vmin;}
+  .zichanmx ul li em i{font-size: 3vmin;color: #ccc}
+  .used a img{ width: 16%;display: inline-block;height: 13vmin;float: left;margin-top: -16vmin;margin-left: 59vmin;}
+</style>
+
+<body>
+  <!-- 轮播图 -->
+    <div class="fxm_header">
+       <div class="fxm_left"><a href="grqb.html"><img src="__IMG__/left0.png"></a></div>
+       <div class="fxm_center">我的银行卡</div>
+       <!-- <div class="fxm_right"><img src="__IMG__/zf.png"></div> -->
+    </div>
+
+<div style="margin-top: 20vmin"></div>
+    
+
+    <div class="bankcards">
+      <img src="__IMG__/mycard01.png" alt="">
+      <h1>深圳中国银行</h1>
+      <i>储蓄卡</i>
+      <em>****&nbsp;&nbsp;****&nbsp;&nbsp;****&nbsp;&nbsp;****&nbsp;&nbsp;6890</em>
+      <span class="spans" style="display: none;">
+      <strong>默认</strong>
+      </span>
+    </div>
+
+    <div class="bankcards">
+      <img src="__IMG__/mycard02.png" alt="">
+      <h1>深圳交通银行</h1>
+      <i>储蓄卡</i>
+      <em>****&nbsp;&nbsp;****&nbsp;&nbsp;****&nbsp;&nbsp;****&nbsp;&nbsp;6890</em>
+      <span class="spans" style="display: none;">
+      <strong>默认</strong>
+      </span>
+    </div>
+
+    <div class="bankcards-buttons">
+      <a href="tianjia.html">添加银行卡</a>
+    </div>
+
+    <script type="text/javascript">
+   window.onload=function(){
+      var banks = document.getElementsByClassName("bankcards");
+      for(var i=0 ; i < banks.length ; i++){
+            banks[i].index = i;
+            var spans = document.getElementsByClassName("spans");
+            spans[0].style.display = "block";
+            banks[i].onclick = function(){
+                var index = this.index;
+                banks[index].lastElementChild.style.display = "block";
+                    for(var j=0 ; j < spans.length ; j++){
+                        spans[j].style.display = "none";
+                }
+                 spans[index].style.display = "block";
+          }   
+      }
+   }
+</script>
+
+
+</body>
+</html>

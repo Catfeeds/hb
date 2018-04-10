@@ -1,0 +1,57 @@
+<link rel="stylesheet" href="__CSS__/product.css">
+<div class="banner">
+  <form action="{:url('goodlist/index')}" method="get" id="formsearch">
+    <input type="text" name="keywork" placeholder="搜索商品" onfocus="this.placeholder=''" onblur="this.placeholder='搜索商品'"/>
+    <div onclick="document.getElementById('formsearch').submit()" class="search">
+      <img src="__IMG__/search.png" alt="">
+    </div>
+  </form>
+</div>
+<div class="choices">
+    <ul>
+    {foreach name="cate_list" key="k" item="v" }
+      <li >
+        <a {eq name="k" value="0"}class="on"{/eq}  href="javascript:">{$v.name}</a>
+      </li>
+    {/foreach} 
+    </ul>
+</div>
+
+<div class="menu-two" >
+    {foreach name="cate_list" key="k1" item="v1" }
+    <div class="item" {eq name="k1" value="0"}style="display:block;"{else/}style="display:none;"{/eq}>
+    {notempty name="v1['_child']"}
+    {foreach name="v1['_child']"  key="k2" item="v2"  }
+      <h3>{$v2.name}</h3>
+      <ul>
+       {notempty name="v2['_child']"}
+       {foreach name="v2['_child']"  key="k3" item="v3"  }
+        <li>
+          <a href="{:url('Goodlist/index',array('id'=>$v3['id']))}" class="tpdiv">
+            <span><img src="{$v3.image}" alt=""></span>
+            <p>{$v3.name}</p>
+          </a>
+        </li>
+        {/foreach}
+        {/notempty}
+      </ul>
+      {/foreach}
+      {/notempty}
+      <a href="#" class="ckgd"></a>
+    </div>
+    {/foreach} 
+    
+</div>
+
+  <script type="text/javascript">
+    $('.choices li').click(function(){
+      $(this).siblings('li').children('a').removeClass('on');
+      $(this).children('a').addClass('on');
+      var index=$(this).index();
+      $('.menu-two .item').eq(index).show().siblings('.item').hide();
+    })
+  </script>
+
+
+	<!-- 底部 -->
+	{include file="public/bottom" /}

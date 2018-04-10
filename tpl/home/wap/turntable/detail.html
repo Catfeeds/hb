@@ -1,0 +1,26 @@
+    <style type="text/css">
+        body{
+            background-color: #f0f0f0;
+        }
+    </style>
+
+    <div style="padding-top: 13vmin;"></div>
+
+    <div class="zjjl">
+      <ul>
+      {foreach name="list" item="v"}
+        <li>
+          <div class="zjjl_left">
+            <p><i>{$v['bill_num']+0}</i></p>
+            <p>奖项</p>
+          </div>
+          <div class="zjjl_right">
+            <h3>{$v.bill_name}</h3>
+            <p>&nbsp;</p>
+            <p class="sj">{$v.bill_time|date="Y-m-d H:i:s",###}</p>
+          </div>
+        </li>
+        {/foreach}
+      </ul>
+    </div>
+    <div style="height:10vmin;float: left;display: block;width: 100%;"></div>

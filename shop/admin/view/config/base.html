@@ -1,0 +1,156 @@
+{extend name="public/layout"/}
+{block name="style" }
+    <link rel="stylesheet" type="text/css" href="__ADMIN__/libs/lyui/dist/css/lyui.extend.min.css">
+    <link rel="stylesheet" type="text/css" href="__ADMIN__/css/style.css">
+{/block}
+
+{block name="main"}
+   <div id="main" class="col-xs-12 col-sm-9 main" style="overflow-y: scroll;">
+        <!-- 面包屑导航 -->
+        <ul class="breadcrumb">
+            <li><i class="fa fa-map-marker"></i></li>
+            {foreach name="_menu_tab['name']" item="tab_v" }
+            <li class="text-muted">{$tab_v}</li>
+            {/foreach}
+            <li class="text-muted">系统配置</li>
+        </ul>
+
+        <!-- 主体内容区域 -->
+        <div class="tab-content ct-tab-content">
+            <div class="panel-body">
+                <div class="builder formbuilder-box">
+                    <div class="builder-tabs builder-form-tabs">
+                        <ul class="nav nav-tabs">
+                             <li class="active">
+                                <a href="{:url('Config/group',array('group'=>1))}">系统配置</a>
+                            </li>
+                            <li >
+                                <a href="{:url('Config/group',array('group'=>2))}">基本设置</a>
+                            </li>
+                            <li class="">
+                                <a href="{:url('Config/group',array('group'=>4))}">分销设置</a>
+                            </li>
+                            <li class="">
+                                <a href="{:url('Config/turntable')}">转盘配置</a>
+                            </li>
+                            <li class="">
+                                <a href="{:url('Config/group',array('group'=>3))}">网站开关</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="form-group"></div>
+                    <div class="builder-container" >
+                        <div class="row" >
+                            <div class="col-xs-12" >
+                                <form action="{:url('Config/groupSave')}" method="post" class="form-horizontal form form-builder" enctype="multipart/form-data">
+                                <div class="form-type-list">
+                                    
+                                    <div class="form-group ">
+                                        <label class="left control-label">网站logo：</label>
+                                        <div style="width:61.5%" class="input-group">
+                                            <notempty name="info['WEB_SITE_LOGO']" >
+                                                <img id='cover_img' style="max-width:100px;max-heignt:100px" src="{$info['WEB_SITE_LOGO']}" alt="">
+                                            </notempty>
+                                            <br />
+                                            <input type="button" name="button" id="button1" value="选择上传..." class="btn btn-primary" onClick="GetUploadify('{:url('admin/Uploadify/upload',array('num'=>1,'func'=>'UplodeImgCallBack'))}')" >
+                                            <input   type="hidden" name="WEB_SITE_LOGO" id='imagetext' value="{$info['WEB_SITE_LOGO']}" >
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group ">
+                                        <label class="left control-label">网站名称：</label>
+                                        <div style="width:61.5%" class="input-group">
+                                            <input type="text" name="WEB_SITE_NAME" class="form-control" value="{$info['WEB_SITE_NAME']}" >
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group ">
+                                        <label class="left control-label">网站标题：</label>
+                                        <div style="width:61.5%" class="input-group">
+                                            <input type="text" name="WEB_SITE_TITLE" class="form-control" value="{$info['WEB_SITE_TITLE']}" >
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="left control-label">网站描述：</label>
+                                        <div class="right">
+                                            <textarea class="form-control textarea" rows="5" name="WEB_SITE_DESCRIPTION">{$info['WEB_SITE_DESCRIPTION']}</textarea>
+                                            <span class="check-tips text-muted small">网站描述</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="left control-label">网站关键字：</label>
+                                        <div class="right">
+                                            <textarea class="form-control textarea" rows="5" name="WEB_SITE_KEYWORD">{$info['WEB_SITE_KEYWORD']}</textarea>
+                                            <span class="check-tips text-muted small">网站关键字</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group ">
+                                        <label class="left control-label">网站备案号：</label>
+                                        <div style="width:61.5%" class="input-group">
+                                            <input type="text" name="WEB_SITE_ICP" class="form-control" value="{$info['WEB_SITE_ICP']}" >
+                                        </div>
+                                    </div>
+                                    <div class="form-group ">
+                                        <label class="left control-label">联系电话：</label>
+                                        <div style="width:61.5%" class="input-group">
+                                            <input type="text" name="WEB_TEL" class="form-control" value="{$info['WEB_TEL']}" >
+                                        </div>
+                                    </div>
+                                    <div class="form-group ">
+                                        <label class="left control-label">联系手机：</label>
+                                        <div style="width:61.5%" class="input-group">
+                                            <input type="text" name="WEB_MOBILE" class="form-control" value="{$info['WEB_MOBILE']}" >
+                                        </div>
+                                    </div>
+                                    <div class="form-group ">
+                                        <label class="left control-label">平台客服QQ1：</label>
+                                        <div style="width:61.5%" class="input-group">
+                                            <input type="text" name="WEB_QQ1" class="form-control" value="{$info['WEB_QQ1']}" >
+                                        </div>
+                                    </div>
+                                    <div class="form-group ">
+                                        <label class="left control-label">平台客服QQ2：</label>
+                                        <div style="width:61.5%" class="input-group">
+                                            <input type="text" name="WEB_QQ2" class="form-control" value="{$info['WEB_QQ2']}" >
+                                        </div>
+                                    </div>
+                                    <div class="form-group ">
+                                        <label class="left control-label">平台客服微信：</label>
+                                        <div style="width:61.5%" class="input-group">
+                                            <notempty name="info['WEB_WX']" >
+                                                <img id="wx_img" style="max-width:100px;max-heignt:100px" src="{$info['WEB_WX']}" alt="">
+                                            </notempty>
+                                            <br />
+                                            <input type="button" name="button" id="button1" value="选择上传..." class="btn btn-primary" onClick="GetUploadify('{:url('admin/Uploadify/upload',array('num'=>1,'func'=>'img_call_back'))}')" >
+                                            <input   type="hidden" name="WEB_WX" id='wx_txt' value="{$info['WEB_WX']}" >
+                                        </div>
+                                    </div>
+
+                                <div class="form-group"></div>
+                                <div class="form-group bottom_button_list">
+                                    <a class="btn btn-primary submit ajax-post" type="submit" target-form="form-builder">确定</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>                   
+</div>
+{/block}
+
+{block name="script"}
+    <script type="text/javascript">
+    function img_call_back(fileurl_tmp)
+        {
+            $("#wx_txt").val(fileurl_tmp);
+            $("#wx_img").attr('src', fileurl_tmp);
+        }
+
+
+    </script>
+    <script type="text/javascript" src="__ADMIN__/libs/lyui/dist/js/lyui.extend.min.js"></script>
+{/block}

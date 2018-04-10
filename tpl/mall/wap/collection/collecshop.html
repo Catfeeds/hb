@@ -1,0 +1,78 @@
+  <link rel="stylesheet" href="__CSS__/product.css">
+  <link rel="stylesheet" href="iconfont/iconfont.css">
+  <div style="margin-top: 13vmin"></div>
+
+  <div id="tbh5v0">
+    <div class="td">
+      <div class="myorder pinglun" style="height:auto;">
+          <ul>
+            <li style="border-top-left-radius: 2vmin; 
+     border-bottom-left-radius: 2vmin;padding-bottom: 0; border:none;padding:0;"><a href="{:url('Collection/collecgood')}">商品</a></li>
+            <li class="ab" style="border:none;    border-top-right-radius: 2vmin;
+    border-bottom-right-radius: 2vmin;padding:0;"><a href="{:url('Collection/collecshop')}">店铺</a></li>
+          </ul>
+      </div>
+    <div style="height: 14vmin;"></div>
+  
+      {volist name="list" id="v" empty="<div><p class='kong'><img src='/static/home/wap/mall/images/k.png'></p></div>" }
+      <div class="dianpu">
+        <div class="dianpu_left">
+          <div class="dp_logo"><img src="{$v.shop_logo}"></div>
+            <div class="dp_mc">
+              <h3>{$v.shop_name}</h3>
+              <p>综合评价：5</p>
+            </div>
+          </div>
+          <div class="dianpu_right">
+            <ul>
+              <li>描述相符<span>5</span></li>
+              <li>服务态度<span>5</span></li>
+              <li>服务态度<span>5</span></li>
+            </ul>
+          </div>
+       
+          <span class="anniuc"><a href="{:url('shoplist/index',array('bid'=>$v['seller_id']))}">进入店铺</a></span>
+          <span class="anniuc quitcollect" data="{$v.id}" ><a href="javascript:">取消收藏</a></span>
+      </div>
+      {/volist}
+    </div>
+  </div>
+
+  <script type="text/javascript">
+  
+    $('.quitcollect').click(function(){
+        var that=$(this);
+        //询问框
+        layer.open({
+          content: '确实要取消收藏？'
+          ,btn: ['确定', '取消']
+          ,yes: function(index){
+            layer.close(index);
+            guitcollect(that);
+          }
+        });
+    })
+
+    function guitcollect(that){
+      var id=that.attr('data');
+      $.ajax({
+        url:"{:url('guitcollect')}",
+        data:{'id':id,'type':2},
+        dataType:'json',
+        type:"post",
+        success:function(data){
+          if(data.status==1){
+            that.parents('.dianpu').remove();
+          }else{
+            layer.open({
+               style: 'top:0'
+              ,content: data.info
+              ,skin: 'msg'
+              ,time: 1 
+            })
+          }
+        }
+      });
+    }
+  </script>
+

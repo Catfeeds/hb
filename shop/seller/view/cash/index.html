@@ -1,0 +1,110 @@
+{include file="public/head" /}
+<body>
+    <div class="dux-tools">
+        <div class="bread-head">首页
+            <span class="small">网站首页</span>
+        </div>
+    </div>
+    <div class="admin-main">
+        <form method="post" class="form-x dux-form form-auto" id="form" action="{:url('save')}">
+        <div class="line-big">
+            <div class="xm12">
+                <div class="alert alert-yellow"><strong>提示：</strong>每天提现一次，500起提</div>
+            </div>
+        </div>
+        <div class="line-big">
+            <div class="xm3">
+                <div class="panel dux-box dux-dashboard">
+                    <div class="clearfix">
+                        <div class="media media-x ">
+                            <div class="float-left">
+                                <div class="txt dashboard-head radius-small bg-red icon-database"></div>
+                            </div>
+                            <div class="media-body text-center">
+                                <h2><strong>{$info.cash|default=0}</strong></h2>
+                                账户余额
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </div>
+            <div class="xm3">
+                <div class="panel dux-box dux-dashboard">
+                    <div class="clearfix">
+                        <div class="media media-x ">
+                            <div class="float-left">
+                                <div class="txt dashboard-head radius-small bg-yellow  icon-upload"></div>
+                            </div>
+                            <div class="media-body text-center">
+                                <h2><strong>{$info.total_cash|default=0}</strong></h2>
+                                累计总额
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </div>
+            <br>
+        </div>
+
+        <div class="line-big">
+            <div class="xm12">
+                <div class="panel dux-box">
+                    <div class="panel-head">提现申请</div>
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <div class="label">
+                                <label for="sitename">提现金额：</label>
+                            </div>
+                            <div class="field">
+                                <input type="text"  name="money" class="input"   placeholder="最少提现额度500" >
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="label">
+                                <label for="sitename">银行卡名称：</label>
+                            </div>
+                            <div class="field">
+                                <select class="input" name="bank_name" id="">
+                                    <option value="">请选择</option>
+                                    {foreach name="list" item="v"}
+                                    <option {eq name="info['bank_name']" value="$v['bank_name']" } selected="true"{/eq} value="{$v.bank_name}">{$v.bank_name}</option>
+                                    {/foreach}
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="label">
+                                <label for="sitename">银行卡账号：</label>
+                            </div>
+                            <div class="field">
+                                <input type="text" class="input" name="bank_no" value="{$info.bank_no}" >
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="label">
+                                <label for="sitename">开户名：</label>
+                            </div>
+                            <div class="field">
+                                <input type="text" class="input" name="bank_username" value="{$info.bank_username}" >
+                            </div>
+                        </div>
+
+                        <div class="form-group bottom_button_list">
+                            <input class="button bg-main ajax-post" type="submit" target-form="form-auto" value="提交" >
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </form>
+    </div>
+
+</body>
+</html>
+

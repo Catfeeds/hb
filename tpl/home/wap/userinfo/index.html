@@ -1,0 +1,24 @@
+    <div style="padding-top: 13vmin;"></div>
+    <div class="shezhi rzzx">
+        <ul>
+            <li><a href="{:url('Userinfo/checkmobile')}">手机认证<span>{eq name="checkinfo.is_check_mobile" value='1' }已认证{else /}未认证{/eq}</span></a></li>
+            {neq name="user_type" value="1"}
+            <li><a href="{:url('Userinfo/userinfo')}">个人认证<span>
+            {eq name="checkinfo.is_check_user" value='1' }审核中{/eq}
+            {eq name="checkinfo.is_check_user" value='2' }已认证{/eq}
+            {eq name="checkinfo.is_check_user" value='3' }认证不通过{/eq}
+            {eq name="checkinfo.is_check_user" value='0' }未认证{/eq}
+            </span></a></li>
+            <!-- <li><a href="javascript:">个人行业推展<span>未认证</span></a></li> -->
+            {else /}
+            <li><a href="{:url('Userinfo/checkcompany')}">企业认证<span>
+                {eq name="checkinfo.is_check_company" value='1' }审核中{/eq}
+                {eq name="checkinfo.is_check_company" value='2' }已认证{/eq}
+                {eq name="checkinfo.is_check_company" value='3' }认证不通过{/eq}
+                {eq name="checkinfo.is_check_company" value='0' }未认证{/eq}
+            </span></a></li>
+            <!-- <li><a href="javascript:">联盟商家认证<span>未认证</span></a></li>
+            <li><a href="javascript:">购买牌匾<span>未认证</span></a></li> -->
+            {/neq}
+        </ul>
+    </div>

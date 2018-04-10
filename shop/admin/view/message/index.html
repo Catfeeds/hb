@@ -1,0 +1,152 @@
+{extend name="public/layout"/}
+{block name="style" }
+    <link rel="stylesheet" type="text/css" href="__ADMIN__/libs/lyui/dist/css/lyui.extend.min.css">
+    <link rel="stylesheet" type="text/css" href="__ADMIN__/css/style.css">
+{/block}
+
+{block name="main"}
+   <div id="main" class="col-xs-12 col-sm-9 main" style="overflow-y: scroll;">
+        <!-- 面包屑导航 -->
+        <ul class="breadcrumb">
+            <li><i class="fa fa-map-marker"></i></li>
+            {foreach name="_menu_tab['name']" item="tab_v" }
+            <li class="text-muted">{$tab_v}</li>
+            {/foreach}
+        </ul>
+            
+        <!-- 主体内容区域 -->
+        <div class="tab-content ct-tab-content">
+            <div class="panel-body">
+                <div class="builder formbuilder-box">
+                        
+                        <div class="form-group"></div>
+
+                        <!-- 顶部工具栏按钮 -->
+                        <div class="builder-toolbar">
+                            <div class="row">
+                                <!-- 工具栏按钮 -->
+                                    <div class="col-xs-12 col-sm-8 button-list clearfix">
+                                        <div class="form-group">
+                                            <a title="发布" class="btn btn-primary-outline btn-pill" href="{:url('add')}">发布</a>&nbsp;
+                                        </div>
+                                    </div>
+
+                                <!-- 搜索框 -->
+                                <div class="col-xs-12 col-sm-4 clearfix">
+                                    <form class="form" method="get" action="">
+                                        <div class="form-group">
+                                            <div class="input-group search-form">
+                                                <input type="text" name="keyword" class="search-input form-control" value="{:input('get.keyword')}" placeholder="请输入id/关键字">
+                                                <span class="input-group-btn"><a class="btn btn-default search-btn"><i class="fa fa-search"></i></a></span>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 数据列表 -->
+                        <div class="builder-container">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="builder-table">
+                                        <div class="panel panel-default table-responsive">
+                                            <table class="table table-bordered table-striped table-hover">
+                                              <thead>
+                                                <tr>
+                                                    <th>ID</th>
+                                                    <th>指定会员</th>
+                                                    <th>标题</th>
+                                                    <th>分类</th>
+                                                    <th>时间</th>
+                                                    <th>操作</th>
+                                                </tr>
+                                            </thead>
+                                                <tbody>
+                                                    
+                                                    {notempty name="list" }
+                                                    {volist name="list" id="data"}
+                                                        <tr>
+                                                            <td>{$data['id']}</td>
+                                                            <td>
+                                                                {notempty name="data['uid']"}
+                                                                {$data['uid']|get_parent=###,'mobile'}
+                                                                {else/}
+                                                                全体会员
+                                                                {/notempty}
+                                                            </td>
+                                                            <td><p style="width: 208px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;margin: 0;padding: 0;" >{$data['title']}</p></td>
+                                                            
+                                                            <td>{$typelist[$data['type']]}</td>
+                                                
+                                                            <td>{$data['create_time'|date="Y-m-d H:i",###]}</td>
+                                                          
+                                                            <td>
+                                                                 <a name="addnews" title="编辑" class="label label-primary-outline label-pill" href="{:url('add',array('ids'=>$data['id']))}">编辑</a>
+                                                                <a name="delete" title="删除" class="label label-danger-outline label-pill ajax-get confirm" model="Admin" href="{:url('delete',array('ids'=>$data['id']))}">删除</a>
+                                                                </td>
+                                         
+                                                        </tr>
+                                                    {/volist}
+
+                                                    {else /}
+                                                        <tr class="builder-data-empty">
+                                                            <td class="text-center empty-info" colspan="20">
+                                                                <i class="fa fa-database"></i> 暂时没有数据<br>
+                                                            </td>
+                                                        </tr>
+                                                    {/notempty}
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        {notempty name="table_data_page"}
+                                            <ul class="pagination">{$table_data_page}</ul>
+                                        {/notempty}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+    </div>                   
+</div>
+{/block}
+
+{block name="script"}
+    <script type="text/javascript" src="__ADMIN__/libs/lyui/dist/js/lyui.extend.min.js"></script>
+    <script type="text/javascript">
+        // 表格快速编辑功能，input失去焦点时自动保存数据。
+        $(document).on('change', '.inputtxt', function() {
+
+            var id = $(this).attr('data');
+            var val = $(this).val();
+            if(val=='' || val==null){
+              $.alertMessager('请填写一个值', 'danger');
+              return false;
+            }
+            
+            var url="{:url('changeorder')}";
+            $.ajax({
+                dataType: "json",
+                url: url,
+                data:{id:id,sort_order:val},
+                type:'POST',
+                success:function(data){
+                    if (data.status == 1) {
+                        $.alertMessager(data.info, 'success');
+                    } else {
+                        $.alertMessager(data.info, 'danger');
+                    }
+                },
+                error: function(e) {
+                    if (e.responseText) {
+                        alert(e.responseText);
+                    }
+                }
+            });
+        });
+
+    </script>
+{/block}

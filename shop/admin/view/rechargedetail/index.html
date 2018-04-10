@@ -1,0 +1,203 @@
+{extend name="public/layout"/}
+{block name="style" }
+    <link rel="stylesheet" type="text/css" href="__ADMIN__/libs/lyui/dist/css/lyui.extend.min.css">
+    <link rel="stylesheet" type="text/css" href="__ADMIN__/css/style.css">
+{/block}
+
+{block name="main"}
+   <div id="main" class="col-xs-12 col-sm-9 main" style="overflow-y: scroll;">
+        <!-- 面包屑导航 -->
+        <ul class="breadcrumb">
+            <li><i class="fa fa-map-marker"></i></li>
+            {foreach name="_menu_tab['name']" item="tab_v" }
+            <li class="text-muted">{$tab_v}</li>
+            {/foreach}
+        </ul>
+
+        <!-- 主体内容区域 -->
+        <div class="tab-content ct-tab-content">
+            <div class="panel-body">
+                <div class="builder formbuilder-box">
+                    <div class="form-group"></div>
+                    <div class="builder-container" >
+                        <div class="form-group"></div>
+
+                        <!-- 顶部工具栏按钮 -->
+                        <div class="builder-toolbar">
+                            <div class="row">
+                                <!-- 工具栏按钮 -->
+                                    <div class="col-xs-12 col-sm-8 button-list clearfix">
+                                    </div>
+                                   
+                                <!-- 搜索框 -->
+                                <div class="col-xs-12 col-sm-12 clearfix">
+                                        <form class="form" method="get" action="">
+                                            <div class="form-group right">
+
+                                                <div style="float:left;width:120px;margin-right:20px" class="">
+                                                    <select name="type" class="form-control lyui-select select">
+                                                        <option value="">充值类型：</option>
+                                                        <option {eq name=":input('get.type')" value="online" }selected="true"{/eq}  value="online">在线充值</option>
+                                                        <option {eq name=":input('get.type')" value="underline" }selected="true"{/eq}  value="underline">线下充值</option>
+                                                    </select>                                            
+                                                </div>
+
+                                                <div style="float:left;width:120px;margin-right:20px" class="">
+                                                    <select name="paytype" class="form-control lyui-select select">
+                                                        <option value="">支付方式：</option>
+                                                        <option {eq name=":input('get.paytype')" value="微信支付" }selected="true"{/eq}  value="微信支付">微信支付</option>
+                                                        <option {eq name=":input('get.paytype')" value="支付宝支付" }selected="true"{/eq}  value="支付宝支付">支付宝支付</option>
+                                                        <option {eq name=":input('get.paytype')" value="网银支付" }selected="true"{/eq}  value="网银支付">网银支付</option>
+                                                    </select>                                            
+                                                </div>
+
+
+                                                <div style="float:left;width:150px;margin-right:20px" class="">
+                                                    <input type="text" name="date_start" class="search-input form-control date" value="{:input('get.date_start')}" placeholder="开始日期">
+                                                </div>
+                                                <div style="float:left;width:150px;margin-right:20px" class="">
+                                                    <input type="text" name="date_end" class="search-input form-control date" value="{:input('get.date_end')}" placeholder="结束日期">
+                                                </div>
+
+                                                <div style="float:left;width:120px;margin-right:20px" class="">
+                                                    <select name="querytype" class="form-control lyui-select select">
+                                                        <option  value="username">姓名</option>
+                                                         <option {eq name=":input('get.querytype')" value="mobile" }selected="true"{/eq}  value="mobile">手机</option>
+                                                    </select>                                            
+                                                </div>
+  
+                                                <div style="width:250px" class="input-group search-form">
+                                                    <input  type="text" name="keyword" class="search-input form-control" value="{:input('get.keyword')}" placeholder="输入搜索内容">
+                                                    <span class="input-group-btn"><a class="btn btn-default search-btn"><i class="fa fa-search"></i></a></span>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 数据列表 -->
+                        <div class="builder-container">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="builder-table">
+                                        <div class="panel panel-default table-responsive">
+                                            <table class="table table-bordered table-striped table-hover">
+                                              <thead>
+                                                <tr><th colspan="20" >金额合计：<span style="color: red" >{$total}</span></th></tr>
+                                                <tr>
+                                                    <th>ID</th>
+                                                    <th>类型</th>
+                                                    <th>充值金额</th>
+                                                    <th>用户</th>
+                                                    <th>时间</th>
+                                                    <th>状态</th>
+                                                </tr>
+                                            </thead>
+                                                <tbody>
+                                                {notempty name="list"}
+                                                    {php} $this_total=0; {/php}
+                                                    {volist name="list" id="data"}
+                                                        <tr>
+                                                            <td>{$data['id']}</td>
+                                                            <td>
+                                                                {$data['type_name']}
+                                                                {php}
+                                                                    if($data['paytype'])
+                                                                        echo '-'.$data['paytype'];
+                                                                {/php}
+                                                            </td>
+                                                            <td>{$data['money']+0}</td>
+                                                            <td>{$data['username']}({$data['mobile']})</td>
+                                                            <td>{$data['create_time']|date='Y-m-d H:i',###}</td>
+                                                            <td>
+                                                                {eq name="data['status']" value="0"}未完成{/eq}
+                                                                {eq name="data['status']" value="1"}完成{/eq}
+                                                            </td>
+                                                            
+                                                        </tr>
+
+                                                        {php} $this_total=$this_total+$data['money']; {/php}
+
+                                                    {/volist}
+                                                    <tr>
+                                                        <td style="background: #c7e7ff;" >本页合计</td>
+                                                        <td style="border:none" ></td>
+                                                        <td style="border:none; color:red;" >{$this_total}</td>
+                                                        <td style="border:none" ></td>
+                                                        <td style="border:none" ></td>
+                                                        <td style="border:none" ></td>
+                                                    </tr>
+
+                                                    {else /}
+                                                        <tr class="builder-data-empty">
+                                                            
+                                                            <td class="text-center empty-info" colspan="20">
+                                                                <i class="fa fa-database"></i> 暂时没有数据<br>
+                                                            </td>
+                                                        </tr>
+                                                    {/notempty}
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        {notempty name="table_data_page"}
+                                            <ul class="pagination">{$table_data_page}</ul>
+                                        {/notempty}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>                   
+</div>
+{/block}
+
+{block name="script"}
+    <script type="text/javascript">
+        $('.date').datetimepicker({
+            format: 'yyyy-mm-dd',
+            language:"zh-CN",
+            minView:2,
+            autoclose:true,
+            todayBtn:1, //是否显示今日按钮
+        });
+
+        //审核
+        $('.shenghe').click(function(){
+            layer.open({
+              type: 1,
+              skin: 'layui-layer-rim', //加上边框
+              area: ['400px', '250px'], //宽高
+              content: '<div style="padding:20px" ><div class="form-group" ><label class="left control-label">回复：</label><div style="width:100%"  class="input-group"><input data="'+$(this).attr('data')+'" type="text" id="replay" class="form-control" value="" placeholder="请输入回复内容" ></div></div></div><div style="padding: 0 50px;" class="form-group bottom_button_list"><a class="btn btn-primary" onclick="setStatus(1)" >通 过</a><a class="btn btn-danger" style="float: right;" onclick="setStatus(2)"  >拒 绝</a></div>'
+            });
+        });
+
+        function setStatus(type){
+           var val=$('#replay').val();
+           var id=$('#replay').attr('data');
+           if(type==2 && val==''){
+                layer.msg('请输入拒绝理由');
+                return false;
+           }
+           $.ajax({
+                type:'post',
+                dataType:'json',
+                data:{'reply':val,'status':type,'id':id},
+                url:"{:url('setDataStatus')}",
+                success:function(data){
+                    if(data.status==1){
+                        layer.msg(data.info);
+                        window.location.reload();
+                    }else{
+                        layer.msg(data.info);
+                    }
+                }
+           });
+                        
+        }
+    </script>
+    <script type="text/javascript" src="__ADMIN__/libs/lyui/dist/js/lyui.extend.min.js"></script>
+{/block}

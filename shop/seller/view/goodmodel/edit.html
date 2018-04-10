@@ -1,0 +1,55 @@
+{include file="public/head" /}
+<style type="text/css">
+    input[readonly]{
+        border: none !important;
+        background: #fff;
+        cursor: auto;
+        box-shadow: none;
+    }
+</style>
+<body>
+   <div class="dux-tools">
+        <div class="bread-head">模型信息
+            <span class="small"></span>
+        </div>
+    </div>
+        
+    <div class="admin-main">
+        <form method="post" class="form-x dux-form form-auto" id="form" action="{:url('save')}">
+            <div class="panel dux-box  active">
+                <div class="panel-head">
+                    <strong>模型信息</strong>
+                </div>
+                <div class="panel-body">
+
+                        <div class="tab-content" >
+
+                                <div class="col-xs-12">
+                                    <div style="height:20px;" ></div>
+                                    <input type="hidden" name="id"  value="{$info.id|default=''}">
+
+                                    <div class="form-group">
+                                        <div class="label">
+                                            <label for="sitename">商品模型：</label>
+                                        </div>
+                                        <div class="field">
+                                            <input type="text" class="form-control input" name="model_name" value="{$info.model_name|default=''}" placeholder="模型名称" >
+                                        </div>
+                                    </div> 
+                                </div> 
+
+                            <div class="form-group bottom_button_list">
+                                <input class="button bg-main ajax-post" type="submit" target-form="form-auto" value="保存" >
+                                <a class="button bg" onclick="javascript:history.back(-1);return false;">返回</a>
+                            </div>
+                            <div class="form-group"></div>
+                        </div>                    
+
+                </div>
+                
+            </div>
+        </form>
+
+    </div>
+</body>
+</html>

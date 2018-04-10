@@ -1,0 +1,20 @@
+    <div style="padding-top: 13vmin;"></div>
+
+    <div class="czjl">
+      <ul>
+        {foreach name="list" item="v"}
+        <li>
+          <a href="{:url('Wealth/recdetail',array('id'=>$v['id']))}">
+            <h3><i>{$v.type_name}</i><span>￥{$v.money}</span></h3>
+            <p>{$v.create_time|date="Y-m-d H:i",###} {$status_name[$v['status']]}</p>
+          </a>
+        </li>
+        {/foreach}
+      </ul>
+      {empty name="list"}
+      <img src="__IMG__/kong.jpg">
+      <p class="wu">没有充值记录</p>
+      {/empty}
+    </div>
+
+    <div style="padding-bottom: 10vmin"></div>

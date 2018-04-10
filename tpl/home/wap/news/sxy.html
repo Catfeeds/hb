@@ -1,0 +1,24 @@
+<div style="padding-top: 3rem;"></div>
+{foreach name='pple' item='v'}
+<div class="sxy">
+	<div class="sxy_top">
+	<div class="sxy_img"><img src="{$v['image']}"></div>
+	<div class="sxy_right">
+		<p>姓名：<span style="color: #00b7f1">{$v['name']}</span></p>
+		<p>地区：<span>{$v['addres']}</span></p>
+		<p>年龄：<span>{$v['age']}岁</span></p>
+		<p>粉丝：<span style="color: #00b7f1">{$v.fans}人</span></p>
+		<p style="width: 50%">评分：<span style="color: #f00;">{$v['graded']}</span></p>
+		<p style="width: 50%">总播放数：<span >{$v['numeration']}</span></p>
+		<!-- <div class="sxy_jj">
+			{$v['content']}
+		</div> -->
+	</div>
+	</div>
+	<div class="sxy_bottom">
+		<a href="{:url('sxy2',array('people_id'=>$v['id']))}">展示全部</a>
+	</div>
+</div>
+{/foreach}
+
+

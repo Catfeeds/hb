@@ -1,0 +1,248 @@
+{extend name="admin@public/layout"/}
+{block name="style" }
+    <link rel="stylesheet" type="text/css" href="__ADMIN__/libs/lyui/dist/css/lyui.extend.min.css">
+    <link rel="stylesheet" type="text/css" href="__ADMIN__/css/style.css">
+{/block}
+
+{block name="main"}
+   <div id="main" class="col-xs-12 col-sm-9 main" style="overflow-y: scroll;">
+        <!-- 面包屑导航 -->
+        <ul class="breadcrumb">
+            <li><i class="fa fa-map-marker"></i></li>
+           {foreach name="_menu_tab['name']" item="tab_v" }
+            <li class="text-muted">{$tab_v}</li>
+            {/foreach}
+            <li class="text-muted">添加商品</li>
+        </ul>
+
+        <!-- 主体内容区域 -->
+        <div class="tab-content ct-tab-content">
+                <div class="builder formbuilder-box">
+                  <div class="panel-body">
+                  <form action="{:url('save')}" method="post" class="form-horizontal form form-builder" enctype="multipart/form-data" >
+                        <div class="tab-content" >
+
+                                <div class="col-xs-12">
+                                        <div style="height:20px;" ></div>
+                                        <div class="form-type-list">
+                                            <input type="hidden" name="order_id" value="{$info.order_id}">
+                                            <div class="form-group item_title">
+                                                <label class="left control-label">收货信息</label>
+                                                <div style="width:60%" class="right">
+                                                <table class="table table-bordered">
+                                                    <tr>
+                                                        <td><span style="color:#999" >姓名：</span>{$info.user_name}</td>
+                                                        <td><span style="color:#999" >联系方式：</span>{$info.user_mobile}</td>
+                                                    </tr>
+                                                     <tr>
+                                                        <td colspan="2" ><span style="color:#999" >收货地址：</span>{$info.user_province}、{$info.user_city}、{$info.user_district}、{$info.user_address}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2" ><span style="color:#999" >留言：</span>{$info.order_user_note}</td>
+                                                    </tr>
+                                                </table>
+                                                
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-type-list">
+                                            <input type="hidden" name="order_id" value="{$info.order_id}">
+                                            <div class="form-group item_title">
+                                                <label class="left control-label">基本信息</label>
+                                                <div style="width:60%" class="right">
+                                                <table class="table table-bordered">
+                                                <tr>
+                                                    <td><span style="color:#999" >订单ID：</span>{$info.order_id}</td>
+                                                    <td><span style="color:#999" >订单号：</span>{$info.order_no}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span style="color:#999" >订单总额：</span>{$info.order_total_price}</td>
+                                                    <td> <span style="color:#999" >会员：</span>{$info.username|default=''} &nbsp;&nbsp;{$info.mobile|default=''}</td>
+                                                </tr>
+                                                
+                                                </table>
+                                               
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                         <div class="form-type-list">
+                                            <input type="hidden" name="order_id" value="{$info.order_id}">
+                                            <div class="form-group item_title">
+                                                <label class="left control-label">商品信息</label>
+                                                <div style="width:60%" class="right">
+                                                    <table class="table table-bordered">
+                                                        <tr>
+                                                            <th>商品</th>
+                                                            <th>规格属性</th>
+                                                            <th>数量</th>
+                                                            <th>单价</th>
+                                                            <th>小计</th>
+                                                        </tr>
+                                                        {foreach name="list" item="v" }
+                                                        <tr>
+                                                            <td>
+                                                                <a href="{:url('good/edit',array('ids'=>$v['good_id']))}">
+                                                                <span style="width: 150px;white-space: nowrap;overflow:  hidden;text-overflow: ellipsis;margin:0;display: inline-block;" >{$v.good_name}</span></a>
+                                                                <img style="width:50px" src="{$v.good_cover_img}" alt="">
+                                                            </td>
+                                                            <td>{$v.attr_text}</td>
+                                                            <td>{$v.good_num}</td>
+                                                            <td>{$v['good_price']+0}</td>
+                                                            <td>{$v['good_price']*$v['good_num']}</td>
+                                                        </tr>
+                                                        {/foreach}
+                                                        <tr>
+                                                            <td colspan="5" style="text-align: right;" ><span style="color:#999" >订单总额：</span>{$info.order_total_price}</td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div> 
+                                <hr />
+                                
+                                {if condition="$info['order_status'] lt 3"}
+                                <div class="form-group item_type ">
+                                    <label class="left control-label">
+                                        <span>当前状态：</span>
+                                    </label>
+                                    <div class="right">
+                                        {php}
+                                           $status_name=array(0=>'未支付',1=>'已支付',2=>'已发货',3=>'已完成');
+                                        {/php}
+                                        <span style="color: #2699ed;" >{$status_name[$info['order_status']]}</span>
+                                    </div>
+                                </div>
+                        
+                                <div class="form-group item_type ">
+                                    <label class="left control-label">
+                                        <span>订单状态：</span>
+                                    </label>
+                                    <div class="right">
+                                        {if condition="$info['order_status'] lt 1"}
+                                        <div class="radio-inline lyui-control lyui-radio">
+                                            <label for="typemodule">
+                                                <input type="radio" id="typemodule" class="radio" name="order_status" value="1"> 
+                                                <span class="lyui-control-indicator"></span>
+                                                <span>已支付</span>
+                                            </label>
+                                        </div>
+                                        {/if}
+                                        {if condition="$info['order_status'] lt 2"}
+                                        <div class="radio-inline lyui-control lyui-radio">
+                                            <label for="typetheme">
+                                                <input type="radio" id="typetheme" class="radio" name="order_status" value="2"> 
+                                                <span class="lyui-control-indicator"></span>
+                                                <span>已发货</span>
+                                            </label>
+                                        </div>
+                                        {/if}
+                                        
+                                         <div class="radio-inline lyui-control lyui-radio">
+                                            <label for="three">
+                                                <input type="radio" id="three" class="radio" name="order_status" value="3"> 
+                                                <span class="lyui-control-indicator"></span>
+                                                <span>已完成</span>
+                                            </label>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                {/if}
+
+                            <div class="form-group bottom_button_list">
+                                {if condition="$info['order_status'] lt 3"}
+                                <a class="btn btn-primary submit ajax-post" type="submit" target-form="form">保存</a>
+                                {/if}
+                                <a class="btn btn-danger return" onclick="javascript:history.back(-1);return false;">返回</a>
+                            </div>
+                            <div class="form-group"></div>
+                        </div>
+                    </form>
+                </div>
+        </div>
+    </div>                   
+</div>
+{/block}
+{block name="script"}
+    <script type="text/javascript">
+        var editor;
+        KindEditor.ready(function(K) {
+            editor = K.create('textarea[name="content"]', {
+                allowFileManager : true,
+                afterBlur: function () { this.sync(); }
+            });
+        });
+        
+
+       /** 以下 商品规格相关 js*/
+        $(document).ready(function(){   
+            // 商品模型切换时 ajax 调用  返回不同的属性输入框
+            $("#spec_type").change(function(){  
+                var goods_id = $("input[name='good_id']").val();
+                var spec_type = $(this).val();
+                    $.ajax({
+                            type:'GET',
+                            data:{goods_id:goods_id,spec_type:spec_type}, 
+                            url:"{:url('Good/ajaxGetSpecSelect')}",
+                            success:function(data){                            
+                                   $("#ajax_spec_data").html('')
+                                   $("#ajax_spec_data").append(data);
+                                    // ajaxGetSpecInput();  // 触发完  马上触发 规格输入框
+                            }
+                    });           
+            });
+            // 触发商品规格
+            $("#spec_type").trigger('change'); 
+            
+        });
+
+        function img_call_back(fileurl_tmp)
+        {
+                $("#imagetext").val(fileurl_tmp);
+                $("#cover_img").attr('src', fileurl_tmp);
+        }
+
+        // 上传商品相册回调函数
+        function call_back2(paths){
+            
+            var  last_div = $(".goods_xc:last").prop("outerHTML");  
+            for (i=0;i<paths.length ;i++ )
+            {                    
+                $(".goods_xc:eq(0)").before(last_div);  // 插入一个 新图片
+                    $(".goods_xc:eq(0)").find('a:eq(0)').attr('href',paths[i]).attr('onclick','').attr('target', "_blank");// 修改他的链接地址
+                $(".goods_xc:eq(0)").find('img').attr('src',paths[i]);// 修改他的图片路径
+                    $(".goods_xc:eq(0)").find('a:eq(1)').attr('onclick',"ClearPicArr2(this,'"+paths[i]+"')").text('删除');
+                $(".goods_xc:eq(0)").find('input').val(paths[i]); // 设置隐藏域 要提交的值
+            }              
+        }
+        /*
+         * 上传之后删除组图input     
+         * @access   public
+         * @val      string  删除的图片input
+         */
+        function ClearPicArr2(obj,path)
+        {
+            $.ajax({
+                type:'GET',
+                url:"{:url('admin/Uploadify/delupload')}",
+                data:{action:"del", filename:path},
+                success:function(){
+                       $(obj).parent().remove(); // 删除完服务器的, 再删除 html上的图片                
+                }
+            });
+            // 删除数据库记录
+            // $.ajax({
+            //             type:'GET',
+            //             url:"{:url('admin/Goods/del_goods_images')}",
+            //             data:{filename:path},
+            //             success:function(){
+            //                   //         
+            //             }
+            // });     
+        }
+
+    </script>
+    <script type="text/javascript" src="__ADMIN__/libs/lyui/dist/js/lyui.extend.min.js"></script>
+{/block}

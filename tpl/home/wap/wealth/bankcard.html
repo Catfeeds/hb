@@ -1,0 +1,47 @@
+<div style="padding-top: 13vmin;"></div>
+    
+    {foreach name="list" item="v"}
+    <div class="del">
+      删除
+    </div>
+    <div data="{$v.id}" class="bankcards">
+      <p><img src="__IMG__/bank.png" alt=""></p>
+      <h1 style="font-size: 3.5vmin;" >{$v.bank_name}{notempty name="v['bank_branch']"}（{$v.bank_branch}）{/notempty}</h1>
+      <i>储蓄卡</i>
+      <em>{$v.bank_no}</em>
+      <span class="spans" {neq name="v['is_default']" value='1'} style="display: none;"{/neq} >
+        <strong>默认</strong>
+      </span>
+    </div>
+   {/foreach}
+
+    <div class="bankcards-buttons">
+      <a href="{:url('Wealth/addbankcard')}">添加银行卡</a>
+    </div>
+    <input type="hidden" id="gotype" value="{$Think.session.gotype|default=''}">
+
+<script type="text/javascript">
+    $('.del').click(function(){
+      if(!confirm('确实要删除?')){
+        return false;
+      }
+       var id=$(this).next('.bankcards').attr('data');
+        $.post("{:url('Wealth/deletebank')}",{id:id},function(data){
+            if(data.status==1)
+              location.reload();
+            else
+              alert(data.info);
+        },'json');
+    });
+    $('.bankcards').click(function(){
+      $(this).find('.spans').show();
+      $(this).siblings().find('.spans').hide();
+      var id=$(this).attr('data');
+      if(id){
+        $.post("{:url('Wealth/setdefault')}",{id:id},function(data){
+            // alert(data);
+        },'json');
+      }
+    })
+
+</script>

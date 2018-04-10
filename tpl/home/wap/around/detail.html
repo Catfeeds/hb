@@ -1,0 +1,75 @@
+    <script src="http://api.map.baidu.com/api?v=2.0&ak=1byTpUa3aXZvRKON0c2Ybd5NpQCb3no0"></script>  
+    <script type="text/javascript">
+        $(function(){
+          var map = new BMap.Map();
+          var pointA = new BMap.Point({$Think.session.lon_lat.longitude|default=""},{$Think.session.lon_lat.latitude|default=""}); 
+          var pointB = new BMap.Point({$info.shop_j},{$info.shop_w});  // 结束点坐
+          var long=((map.getDistance(pointA,pointB))/1000).toFixed(2);
+          $('#long').text(long+'km');
+        })
+        
+    </script>
+    <div style="padding-top: 13vmin;"></div>
+    <div class="sjxq">
+        <p class="sjxq_img"><img src="{$info.shop_img}"></p>
+        <div class="sjxq_b">
+            <h3>{$info.shop_name}</h3>
+        </div>
+        <div class="sjxq_b">
+            <h3>商家地址</h3>
+            <p class="dwtp">{$info.province}{$info.city}{$info.district}{$info.addresss_detail}</br><img src="__IMG__/dw.jpg"><span id="long">距离获取失败</span></p>
+        </div>
+        <div class="sjxq_b">
+            <h3>营业时间</h3>
+            <p>{$info.work_time}</p>
+        </div>
+        <div class="sjxq_b">
+            <h3>商家信息</h3>
+            <p>
+            {notempty name="info['content']"}
+              {$info.content}
+            {else/}
+            暂无介绍
+            {/notempty}
+            </p>
+        </div>
+        <!-- <div class="sjxq_b">
+            <h3>商家详情</h3>
+            <p>
+              <img src="__IMG__/xq.jpg">
+            </p>
+        </div> -->
+
+        <div class="sjxq_b">
+            <h3>热门评论</h3>
+            <div class="pinglun">
+                <ul>
+                  {foreach name="list" item="vo"}
+                  <li>
+                    <div class="pinglun_top">
+                      <span class="tx"><img src="__IMG__/tx.png"></span>
+                      <span class="mz">{:isset($vo['username']) ? mb_substr($vo['username'],0,1,'utf-8'):'匿名'}***</span>
+                      <span class="wx">
+                      {for start="0" end="max($vo['star_ability'],$vo['star_attitude'],$vo['star_price'])"}
+                      <img src="__IMG__/x1.png">&nbsp;
+                      {/for}
+                      </span>
+                    </div>
+                    <p>{$vo.content}</p>
+                    <p class="wz_b">时间：{$vo.create_time|date='Y-m-d H:i',###}</p>
+                  </li>
+                  {/foreach}
+                </ul>        
+          </div>
+        </div>
+        
+    </div>
+    
+   <div class="xq_footer">
+       <ul>
+           <li><img src="__IMG__/f1.jpg"><a href="tel:{$info.server_tel}">联系商家</a></li>
+           <li><!-- <img src="__IMG__/f2.jpg"><a href="javascript:">评论</a> --> &nbsp;</li>
+           <li style="border:none"><img src="__IMG__/f3.jpg"><a href="http://api.map.baidu.com/direction?origin=latlng:{$Think.session.lon_lat.latitude|default=""},{$Think.session.lon_lat.longitude|default=""}|name:&destination=latlng:{$info.shop_w},{$info.shop_j}|name:&mode=driving&region=中国&output=html&src=yourCompanyName|yourAppName">到这里</a></li>
+       </ul>
+   </div>
+   <div style="padding-bottom: 10vmin;float: left;width: 100%"></div>

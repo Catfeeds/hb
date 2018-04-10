@@ -1,0 +1,127 @@
+{extend name="admin@public/layout"/}
+{block name="style" }
+	<link rel="stylesheet" type="text/css" href="__ADMIN__/libs/lyui/dist/css/lyui.extend.min.css">
+	<link rel="stylesheet" type="text/css" href="__ADMIN__/css/style.css">
+{/block}
+
+{block name="main"}
+    <div id="main" class="col-xs-12 col-sm-9 main" style="overflow-y: scroll;">
+	    <!-- 面包屑导航 -->
+	    <ul class="breadcrumb">
+			<li><i class="fa fa-map-marker"></i></li>
+			{foreach name="_menu_tab['name']" item="tab_v" }
+			<li class="text-muted">{$tab_v}</li>
+			{/foreach}
+			<li class="text-muted">{:isset($info)?'修改':'新增'}</li>
+		</ul>
+
+	<!-- 主体内容区域 -->
+	<div class="tab-content ct-tab-content">
+	<div class="panel-body">
+	<div class="builder formbuilder-box">
+	<div class="form-group"></div>
+	<div class="builder-container" >
+	<div class="row" >
+	<div class="col-xs-12">
+			<form action="{:url('save_people')}" method="post" class="form-horizontal form form-builder" enctype="multipart/form-data" >
+			<div class="form-type-list">
+
+				<div class="form-group hidden item_id ">
+				<label class="left control-label">ID：</label>
+				<div class="right">
+				<input type="hidden" class="form-control input" name="id" value="{$info.id|default=''}">
+				</div>
+				</div>
+
+				<div class="form-group item_title ">
+				<label class="left control-label">姓名：</label>
+				<div class="right">
+				<input  type="text" class="form-control input" name="name" value="{$info.name|default=''}" placeholder="姓名" >
+				</div>
+				</div>
+
+
+				<div class="form-group item_title ">
+				<label class="left control-label">头像：</label>
+				<div class="right">
+				<img id='cover_img' style="max-width:300px;max-height:300px;" src="{$info.image|default=''}" alt="">
+				<br />
+				<input  type="button" name="button" id="button1" value="选择上传..." class="btn btn-primary" onClick="GetUploadify('{:url('admin/Uploadify/upload',array('num'=>1,'func'=>'UplodeImgCallBack'))}')" >
+
+				<input id='imagetext' type="hidden" class="form-control input" name="image" value="{$info.image|default=''}"  >
+				</div>
+				</div>
+
+				<div class="form-group item_title ">
+				<label class="left control-label">年龄：</label>
+				<div class="right">
+				<input name="age" type="text" class="form-control input" value="{$info.age|default=''}" placeholder="年龄" onkeyup="value=this.value.replace(/\D+/g,'')">
+				</div>
+				</div>
+
+				<div class="form-group item_title ">
+				<label class="left control-label">地址：</label>
+				<div class="right">
+				<input  type="text" class="form-control input" name="addres" value="{$info.addres|default=''}" placeholder="地址" >
+				</div>
+				</div>
+
+				<div class="form-group item_title ">
+				<label class="left control-label">粉丝：</label>
+				<div class="right">
+				<input name="fans" type="text" class="form-control input" value="{$info.name|default=''}" placeholder="粉丝" onkeyup="value=this.value.replace(/\D+/g,'')">
+				</div>
+				</div>
+
+				<div class="form-group item_title ">
+				<label class="left control-label">评分：</label>
+				<div class="right">
+				<input class="form-control input" name="graded" value="{$info.graded|default=''}" placeholder="评分" onKeypress="return (/[\d.]/.test(String.fromCharCode(event.keyCode)))" style="ime-mode:Disabled">                 
+
+				</div>
+				</div>
+				<div class="form-group item_title ">
+				<label class="left control-label">排序：</label>
+				<div class="right">
+				<input name="sort" type="text" class="form-control input" value="{$info.sort|default=''}" placeholder="排序" onkeyup="value=this.value.replace(/\D+/g,'')">
+				</div>
+				</div>
+				
+				<div class="form-group">
+				<label class="left control-label">新闻内容：</label>
+				<div class="right">
+				<textarea style="min-height:400px" class="form-control" rows="5" name="content">{$info.content|default=''}</textarea>
+				</div>
+				</div>
+
+				<div class="form-group"></div>
+				<div class="form-group bottom_button_list">
+				<a class="btn btn-primary submit ajax-post" type="submit" target-form="form-builder">确定</a>
+				<a class="btn btn-danger return" onclick="javascript:history.back(-1);return false;">取消</a>
+				</div>
+			</div>
+			</form>
+	</div>    
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>                   
+	</div>
+{/block}
+
+
+{block name="script"}
+	<script type="text/javascript">
+		var editor;
+		KindEditor.ready(function(K)
+		{
+			editor = K.create('textarea[name="content"]', 
+			{
+				allowFileManager : true,
+				afterBlur: function () { this.sync(); }
+			});
+		});       
+	</script>
+	<script type="text/javascript" src="__ADMIN__/libs/lyui/dist/js/lyui.extend.min.js"></script>
+{/block}

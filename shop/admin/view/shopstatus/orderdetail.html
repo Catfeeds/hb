@@ -1,0 +1,138 @@
+{extend name="public/layout"/}
+{block name="style" }
+    <link rel="stylesheet" type="text/css" href="__ADMIN__/libs/lyui/dist/css/lyui.extend.min.css">
+    <link rel="stylesheet" type="text/css" href="__ADMIN__/css/style.css">
+{/block}
+
+{block name="main"}
+   <div id="main" class="col-xs-12 col-sm-9 main" style="overflow-y: scroll;">
+        <!-- 面包屑导航 -->
+        <ul class="breadcrumb">
+            <li><i class="fa fa-map-marker"></i></li>
+            {foreach name="_menu_tab['name']" item="tab_v" }
+            <li class="text-muted">{$tab_v}</li>
+            {/foreach}
+            <li class="text-muted">审核</li>
+        </ul>
+
+        <!-- 主体内容区域 -->
+        <div class="tab-content ct-tab-content">
+            <div class="panel-body">
+                <div class="builder formbuilder-box">
+                    <div class="form-group"></div>
+                    <div class="builder-container" >
+                            <div class="row" >
+                                <div class="col-xs-12">
+                                    <form action="{:url('setOrderStatus')}" method="post" class="form-horizontal form form-builder">
+                                        <div class="form-type-list">
+                                            <div class="form-group hidden item_id ">
+                                                <label class="left control-label">ID：</label>
+                                                <div class="right">
+                                                    <input type="hidden" class="form-control input" name="id" value="{$info.id}">
+                                                </div>
+                                            </div>
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">类型：</label>
+                                                <div class="right">
+                                                    {$info.user_type==1 ? '企业用户':'个人用户'}
+                                                </div>
+                                            </div>
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">用户：</label>
+                                                <div class="right">
+                                                   {$info.username}({$info.mobile}) 
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">修改信息：</label>
+                                                <div class="right">
+                                                    {eq name="$info['update_type']" value="1"}
+                                                        手机号码
+                                                    {/eq}
+                                                    {eq name="$info['update_type']" value="2"}
+                                                        姓名
+                                                    {/eq}
+                                                    {eq name="$info['update_type']" value="3"}
+                                                        企业名称
+                                                    {/eq}修改为 <span style="color:red" >{$info.new_info}</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">说明信息：</label>
+                                                <div class="right">
+                                                   {$info.content}
+                                                </div>
+                                            </div>
+                                            <hr />
+                                            
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">证件照片：</label>
+                                                <div class="right">
+                                                        <a style="margin-right:5vmin" class="left" href="{$info.img}">
+                                                           <img style="width:100%" src="{$info.img}" alt=""> 
+                                                        </a>
+                                                        {notempty name="info['img_back']"}
+                                                        <a style="margin-right:5vmin" class="left" href="{$info.img_back}">
+                                                           <img style="width:100%" src="{$info.img_back}" alt=""> 
+                                                        </a>
+                                                        {/notempty}
+                                                </div>
+                                            </div>
+                                            <hr />
+                                            {if condition="($info['status'] eq 0)" }
+
+                                            <div class="form-group">
+                                                <label class="left control-label">备注说明：</label>
+                                                <div class="right">
+                                                    <textarea class="form-control textarea" rows="5" name="reply"></textarea>
+                                                    <span class="check-tips text-muted small">请在此输入拒绝理由</span>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="form-group item_type ">
+                                                <label class="left control-label">
+                                                    <span>是否通过：</span>
+                                                </label>
+                                                <div class="right">
+                                                    <div class="radio-inline lyui-control lyui-radio">
+                                                        <label for="typemodule">
+                                                            <input type="radio" id="typemodule" class="radio" name="agree" value="1"> 
+                                                            <span class="lyui-control-indicator"></span>
+                                                            <span>通过</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio-inline lyui-control lyui-radio">
+                                                        <label for="typetheme">
+                                                            <input type="radio" id="typetheme" class="radio" name="agree" value="2"> 
+                                                            <span class="lyui-control-indicator"></span>
+                                                            <span>拒绝</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {/if}
+             
+                                        <div class="form-group"></div>
+                                        <div class="form-group bottom_button_list">
+                                        {if condition="($info['status'] eq 0)" }
+                                            <a class="btn btn-primary submit ajax-post" type="submit" target-form="form-builder">确定</a>
+                                        {/if}
+                                            <a class="btn btn-danger return" onclick="javascript:history.back(-1);return false;">返回</a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>                   
+</div>
+{/block}
+
+{block name="script"}
+    <script type="text/javascript" src="__ADMIN__/libs/lyui/dist/js/lyui.extend.min.js"></script>
+{/block}

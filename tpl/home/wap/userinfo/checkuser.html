@@ -1,0 +1,132 @@
+    <link rel="stylesheet" type="text/css" href="__CSS__/jquery-weui.min.css" />
+    <script src="__JS__/datePicker.js"></script>
+   <div style="padding-top: 13vmin;"></div>
+    <div class="shezhi qyrz1">
+        <form class="postfrom" action="{:url('checkuser')}">
+        <ul>
+            <!-- <li>店铺名称<span><input type="text" placeholder="请填写店铺名称" name="shop_name" value="{$info.shop_name|default=''}" /></span></li> -->
+            <li>姓&nbsp;&nbsp;&nbsp;&nbsp;名<span><input type="text" name="username" value="{$info.username}" placeholder="请填写姓名"></span></li>
+            <li>国&nbsp;&nbsp;&nbsp;&nbsp;家
+                <span>
+                  中国
+                    <!-- <select>
+                      <option value ="中国">中国</option>
+                      <option value ="法国">法国</option>
+                    </select> -->
+                </span>
+            </li>
+           <li>证件类型
+                <span style="margin-left:9%" >
+                    <select name="idcard_type" >
+                      <option {eq name="info.idcard_type" value="0"}selected="true"{/eq}  value ="0">大陆身份证</option>
+                      <option {eq name="info.idcard_type" value="1"}selected="true"{/eq} value ="1">非大陆身份证</option>
+                    </select>
+                </span>
+            </li>
+            <!-- <li>行业分类
+                <span>
+                    <select>
+                      <option value ="请选择">请选择</option>
+                      <option value ="行业分类">行业分类</option>
+                      <option value ="行业分类">行业分类</option>
+                      <option value ="行业分类">行业分类</option>
+                    </select>
+                </span>
+            </li> -->
+            <li>身份证<span><input type="text" name="idcard" value="{$info.idcard|default=''}" placeholder="请填写身份证" onfocus="this.placeholder=''" onblur="this.placeholder='请填写身份证'" maxlength="18"></span></li>
+            <li>证件有效期
+                <span style="margin-left:5%" >
+                   <input id="demo1" name="idcar_startdate" value="{$info.idcar_startdate|default=''}" placeholder="请选择起始日" style="width:30%">
+                </span>
+                至
+                <span  style="margin-left:5%;width:40%" >
+                    <input id="demo2" name="idcar_endtdate" value="{$info.idcar_endtdate|default=''}" placeholder="请选择到期日" style="width:30%">
+                </span>
+            </li>
+
+             <li>所在区域
+                <span style="margin-left:9%" >
+                    <input type='text' name="area" value="{$info.area|default=''}" id='city-picker' placeholder='请选择所在区域' />
+                </span>    
+            </li>
+        </ul>
+        </form>
+        <p>您正在申请个人认证</p>
+    </div>
+
+    <span id="anniu"><a href="javascript:" class="post"  target-from="postfrom" >下一步</a></span>
+    <div style="padding-bottom: 10vmin"></div>
+
+    <script type="text/javascript" src="__JS__/jquery-weui.min.js"></script>
+    <script type="text/javascript" src="__JS__/city-picker.min.js"></script>
+    <script>
+     
+      $('.post').click(function(){
+          var datafrom=$(this).attr('target-from');
+          var post_url = $("."+datafrom).attr('action');
+          var post_data= $("."+datafrom).serialize();
+          if(post_url){
+              $.ajax({
+                 type: "POST",
+                 url: post_url,
+                 data:post_data,
+                 dataType: "json",
+                 success: function(data){
+                    if(data.status==1){
+                          window.location.href=data.url;
+                    }else{
+                        msg_alert(data.info);
+                    }      
+                  }    
+            });
+          }
+      });
+
+
+
+        $("#city-picker").cityPicker({
+            title: "选择省市区/县",
+            onChange: function (picker, values, displayValues) {
+                // console.log(values, displayValues);
+            }
+        });
+    </script>
+
+    <script>
+        var calendar = new datePicker();
+        calendar.init({
+             /*按钮选择器，用于触发弹出插件*/
+            'trigger': '#demo1',
+            /*模式：date日期；datetime日期时间；time时间；ym年月；*/
+            'type': 'date',
+            /*最小日期*/
+            'minDate':'1900-1-1',
+            /*最大日期*/
+            'maxDate':'2100-12-31',
+            'onSubmit':function(){
+              /*确认时触发事件*/
+                var theSelectData=calendar.value;
+            },
+              /*取消时触发事件*/
+            'onClose':function(){
+            }
+        });
+        var calendar = new datePicker();
+        calendar.init({
+            /*按钮选择器，用于触发弹出插件*/
+            'trigger': '#demo2', 
+            /*模式：date日期；datetime日期时间；time时间；ym年月；*/
+            'type': 'date',
+            /*最小日期*/
+            'minDate':'1900-1-1',
+            /*最大日期*/
+            'maxDate':'2100-12-31',
+              /*确认时触发事件*/
+            'onSubmit':function(){
+                var theSelectData=calendar.value;
+            },
+              /*取消时触发事件*/
+            'onClose':function(){
+            }
+        });
+        </script>

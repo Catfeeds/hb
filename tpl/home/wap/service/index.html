@@ -1,0 +1,27 @@
+	<div style="padding-top: 13vmin;"></div>
+    <div class="zxzx_xq">
+        <h3></h3>
+    </div>
+    <div class="zxzx_b">
+    {notempty name="$info['WEB_TEL']" }
+    <p>服务电话：{$info.WEB_TEL}</p>
+    {/notempty}
+    {notempty name="$info['WEB_MOBILE']" }
+    <p>服务手机：{$info.WEB_MOBILE}</p>
+    {/notempty}
+    {notempty name="$info['WEB_QQ1']" }
+    <p>服务QQ：{$info.WEB_QQ1}</p>
+    {/notempty}
+    {notempty name="$info['WEB_QQ2']" }
+    <p>服务QQ：{$info.WEB_QQ2}</p>
+    {/notempty}
+    {notempty name="$info['WEB_WX']" }
+    <p>服务微信：
+      <img style="width:70%;padding:0" src="{$info.WEB_WX}" alt="">
+    </p>
+    {/notempty}
+    </div>
+    <div style="padding-bottom: 10vmin;float: left;width: 100%"></div>
+    <!-- 底部 -->
+
+{include file="public/bottom" /}

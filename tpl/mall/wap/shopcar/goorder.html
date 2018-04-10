@@ -1,0 +1,86 @@
+<div style="margin-top: 13vmin"></div>
+<form>  
+ <div class="address">
+  <a style="width:100%" href="{:url('User/listaddress',array('type'=>2))}">
+  {empty name="address"}
+  选择收货地址
+  {else /}
+  {$address.province}{$address.city}{$address.district}{$address.detail_address}
+  {/empty}
+  <img src="__IMG__/right.png" alt="">
+  </a>
+</div>
+<input type="hidden" name="address_id" id="address" value="{$address.id|default=''}">
+{foreach name="list.good_list" key="k" item="vo"}
+<div class="commoditys">
+  <h2>{$k|get_shop_name}</h2>
+  {foreach name="vo" item="v"}
+  <div style="float:left;width:100%" >
+      <div class="commoditys-left">
+        <a href="{:url('Good/details',array('good_id'=>$v.good_id))}"><img src="{$v.good_cover_img}" alt=""></a>
+      </div>
+      <div class="commoditys-right">
+        <h1>{$v.good_name}</h1>
+        <p>{$v.good_attr|default=''}</p>
+        <h3>￥{$v.good_price}<em>×{$v.good_num}</em></h3>
+      </div>
+  </div>
+  {/foreach}
+</div>
+<div class="shouhuostyle">
+  <label>备注:</label>
+  <input type="text" class="beizhu" id="content" data="{$k}" name="content[{$k}]" placeholder="选填 : 对本次交易的说明最多50个字" style="width:75%;height:10vmin;"  onfocus="this.placeholder=''" onblur="this.placeholder='选填 : 对本次交易的说明最多50个字'">
+</div>
+<div class="clear"></div>
+{/foreach}
+</form>
+<!-- <div class="shouhuostyle">
+  <label>货运方式:</label>
+  <input type="text" placeholder="请输入货运方式(默认为韵达快递)"  onfocus="this.placeholder=''" onblur="this.placeholder='请输入货运方式(默认为韵达快递)'"style="width:75%;height:10vmin;" >
+</div> -->
+
+<!-- <div class="shouhuostyle">
+  <label>运费:</label>
+  <span style="color:#FF2626" >￥10</span>
+</div> -->
+<div style="height:30vmin;"></div>
+<div class="footerss">
+  <p>
+  共<span>{$list.total_num}</span>件
+  合计:<strong style="color: #ff5500">￥{$list.total_price}</strong>
+  <a href="javascript:SaveOrder();">提交订单</a>
+  </p>
+</div>
+
+<script type="text/javascript">
+  function SaveOrder(){
+    var address_id=$('#address').val();
+    if(address_id=='' || address_id==null){
+        layer.open({
+          content:  '请选择收货地址',
+          btn: '我知道了',
+          time: 2 
+        });
+        return false;
+    }
+
+    var post_data=$('form').serialize();
+    $.ajax({
+        type:"POST",
+        url:"{:url('Shopcar/saveorder')}",
+        dataType:'json',
+        data:post_data,
+        success:function(data){
+          if(data.status==1){
+            location.href=data.url;
+          }else{
+            layer.open({
+              content: data.info,
+              btn: '我知道了',
+              time: 2 //2秒后自动关闭
+            });
+          }
+        }
+    });
+  }
+</script>

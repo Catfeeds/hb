@@ -1,0 +1,140 @@
+{extend name="admin@public/layout"/}
+{block name="style" }
+	<link rel="stylesheet" type="text/css" href="__ADMIN__/libs/lyui/dist/css/lyui.extend.min.css">
+	<link rel="stylesheet" type="text/css" href="__ADMIN__/css/style.css">
+{/block}
+
+{block name="main"}
+	<div id="main" class="col-xs-12 col-sm-9 main" style="overflow-y: scroll;">
+		<!-- 面包屑导航 -->
+		<ul class="breadcrumb">
+		<li><i class="fa fa-map-marker"></i></li>
+		{foreach name="_menu_tab['name']" item="tab_v" }
+		<li class="text-muted">{$tab_v}</li>
+		{/foreach}
+		<li class="text-muted">添加商品</li>
+		</ul>
+
+	<!-- 主体内容区域 -->
+	<div class="tab-content ct-tab-content">
+	<div class="builder formbuilder-box">
+	<div class="panel-body">
+		<form action="{:url('savenews')}" method="post" class="form-horizontal form form-builder" enctype="multipart/form-data" >
+			<ul class="nav-tabs nav">
+			<li class="active" ><a href="#tab1" data-toggle="tab" aria-expanded="true">新闻信息</a></li>                   
+			</ul>
+			<div class="tab-content" >
+
+			<!-- 卡片1 -->
+			<div id="tab1" class="tab-pane active" >
+			<div class="col-xs-12">
+			<div style="height:20px;" ></div>
+			<div class="form-type-list">                              
+				<!-- ajax修改，没有id,给个隐藏id -->
+				<input type="hidden"  name="id" value="{$info.id|default=''}">
+				<div class="form-group item_title ">
+				<label class="left control-label">新闻标题：</label>
+				<div style="width:60%" class="right">
+				<input type="text" class="form-control input" name="title" value="{$info.title|default=''}" placeholder="新闻标题" >
+				</div>
+				</div>
+
+				<div class="form-group item_title ">
+				<label class="left control-label">排序：</label>
+				<div style="width:60%" class="right">
+				<input type="text" class="form-control input" name="px" value="{$info.px|default=''}" placeholder="排序" >
+				</div>
+				</div>
+
+				<div class="form-group item_title">
+				<label class="left control-label">新闻分类：</label>
+				<div style="width:60%" class="right">
+				<select name="pid" class="form-control select">
+				
+				{$news_name}
+				</select>
+				</div>
+				</div>
+
+				<div class="form-group item_ysj ">
+				<label class="left control-label">
+				<span>新闻属性：</span>
+				</label>
+				<div class="right">
+				<div class="checkbox-inline lyui-control lyui-checkbox">
+				<label class="checkbox-label">
+				<input type="radio" {if condition="isset($info['newtop']) and $info['newtop'] eq 1" }checked="true"{/if} name="newtop" value="1">
+				<span class="lyui-control-indicator"></span>
+				<span>最新</span>
+				</label>
+				</div>
+				<div class="checkbox-inline lyui-control lyui-checkbox">
+				<label class="checkbox-label">
+				<input type="radio" {if condition="isset($info['newtop']) and $info['newtop'] eq 2" }checked="true"{/if} name="newtop" value="2">
+				<span class="lyui-control-indicator"></span>
+				<span>置顶</span>
+				</label>
+				</div>        
+				</div>
+				</div>
+
+				<div class="form-group item_ysj ">
+				<label class="left control-label">
+				<span>是否展示：</span>
+				</label>
+				<div class="right">
+				<div class="checkbox-inline lyui-control lyui-checkbox">
+				<label class="checkbox-label">
+				<input type="radio" {if condition="isset($info['status']) and $info['status'] eq 1" }checked="true"{/if} name="status" value="1">
+				<span class="lyui-control-indicator"></span>
+				<span>是</span>
+				</label>
+				</div>
+				<div class="checkbox-inline lyui-control lyui-checkbox">
+				<label class="checkbox-label">
+				<input type="radio" {if condition="isset($info['status']) and $info['status'] eq 2" }checked="true"{/if} name="status" value="2">
+				<span class="lyui-control-indicator"></span>
+				<span>否</span>
+				</label>
+				</div> 
+				</div>
+				</div>
+
+				<div class="form-group">
+				<label class="left control-label">新闻内容：</label>
+				<div class="right">
+				<textarea style="min-height:400px" class="form-control" rows="5" name="content">{$info.content|default=''}</textarea>
+				</div>
+				</div>
+			</div>
+			</div> 
+			</div>
+
+			<div class="form-group bottom_button_list">
+			<a class="btn btn-primary submit ajax-post" type="submit" target-form="form">保存</a>
+			<a class="btn btn-danger return" onclick="javascript:history.back(-1);return false;">取消</a>
+			</div>
+			<div class="form-group"></div>
+			</div>
+		</form>
+	</div>
+	</div>
+	</div>                   
+	</div>
+{/block}
+
+{block name="script"}
+	<script type="text/javascript">
+		var editor;
+		KindEditor.ready(function(K)
+		{
+			editor = K.create('textarea[name="content"]', 
+			{
+				allowFileManager : true,
+				afterBlur: function () { this.sync(); }
+			});
+		});
+
+	</script>
+	<script type="text/javascript" src="__ADMIN__/libs/lyui/dist/js/lyui.extend.min.js"></script>
+{/block}

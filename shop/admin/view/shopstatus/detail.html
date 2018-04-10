@@ -1,0 +1,204 @@
+{extend name="public/layout"/}
+{block name="style" }
+    <link rel="stylesheet" type="text/css" href="__ADMIN__/libs/lyui/dist/css/lyui.extend.min.css">
+    <link rel="stylesheet" type="text/css" href="__ADMIN__/css/style.css">
+{/block}
+
+{block name="main"}
+   <div id="main" class="col-xs-12 col-sm-9 main" style="overflow-y: scroll;">
+        <!-- 面包屑导航 -->
+        <ul class="breadcrumb">
+            <li><i class="fa fa-map-marker"></i></li>
+            {foreach name="_menu_tab['name']" item="tab_v" }
+            <li class="text-muted">{$tab_v}</li>
+            {/foreach}
+            <li class="text-muted">审核</li>
+        </ul>
+
+        <!-- 主体内容区域 -->
+        <div class="tab-content ct-tab-content">
+            <div class="panel-body">
+                <div class="builder formbuilder-box">
+                    <div class="form-group"></div>
+                    <div class="builder-container" >
+                            <div class="row" >
+                                <div class="col-xs-12">
+                                    <form action="{:url('setDataStatus')}" method="post" class="form-horizontal form form-builder">
+                                        <div class="form-type-list">
+                                            <div class="form-group hidden item_id ">
+                                                <label class="left control-label">ID：</label>
+                                                <div class="right">
+                                                    <input type="hidden" class="form-control input" name="uid" value="{$info.uid}">
+                                                </div>
+                                            </div>
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">类型：</label>
+                                                <div style="color:red" class="right">
+                                                    {$info.user_type==1 ? '企业用户':'个人用户'}
+                                                </div>
+                                            </div>
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">用户：</label>
+                                                <div class="right">
+                                                   {$info.username}({$info.mobile}) 
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">所在地区：</label>
+                                                <div class="right">
+                                                   {$info.province}、{$info.city}、{$info.district}
+                                                </div>
+                                            </div>
+                                            <hr />
+                                            {eq name="info['user_type']" value='1'}
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">公司名称：</label>
+                                                <div class="right">
+                                                {$info['company_name']}
+                                                </div>
+                                            </div>
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">是否三证合一：</label>
+                                                <div class="right">
+                                                {$info['is_three_card']==1?'是':'否'}
+                                                </div>
+                                            </div>
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">是否分公司：</label>
+                                                <div class="right">
+                                                {$info['is_child_company']==1?'是':'否'}
+                                                </div>
+                                            </div>
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">社会信用代码：</label>
+                                                <div class="right">
+                                                {$info['credit_no']}
+                                                </div>
+                                            </div>
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">税务登记证：</label>
+                                                <div class="right">
+                                                {$info['tax_no']}
+                                                </div>
+                                            </div>
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">组织机构证：</label>
+                                                <div class="right">
+                                                {$info['organize_no']}
+                                                </div>
+                                            </div>
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">法人：</label>
+                                                <div class="right">
+                                                {$info['legal_name']}
+                                                </div>
+                                            </div>
+                                             <div class="form-group item_title ">
+                                                <label class="left control-label">公司类型：</label>
+                                                <div class="right">
+                                                {$info['company_type']}
+                                                </div>
+                                            </div>
+                                             <div class="form-group item_title ">
+                                                <label class="left control-label">经营负责人：</label>
+                                                <div class="right">
+                                                {$info['manage_parent']}
+                                                </div>
+                                            </div>
+                                            {else /}
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">证件类型：</label>
+                                                <div class="right">
+                                                {$info['idcard_type']==1 ? '非大陆身份证':'大陆身份证'}
+                                                </div>
+                                            </div>
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">身份证号：</label>
+                                                <div class="right">
+                                                {$info.idcard}
+                                                </div>
+                                            </div>
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">证件有效期：</label>
+                                                <div class="right">
+                                                {$info.idcar_startdate} 至 {$info.idcar_endtdate}
+                                                </div>
+                                            </div>
+                                            {/eq}
+                                            <div class="form-group item_title ">
+                                                <label class="left control-label">证件照片：</label>
+                                                <div class="right">
+                                                        <a style="margin-right:5vmin" class="left" href="{$info.idcard_img_face}">
+                                                           <img style="width:100%" src="{$info.idcard_img_face}" alt=""> 
+                                                           <p style="text-align:center" >正面照</p>
+                                                        </a>
+                                                        <a style="margin-right:5vmin" class="left" href="{$info.idcard_img_back}">
+                                                            <img style="width:100%" src="{$info.idcard_img_back}" alt="">
+                                                            <p style="text-align:center" >反面照</p>
+                                                        </a>
+                                                         <a style="margin-right:5vmin" class="left" href="{$info.idcard_img_hand}">
+                                                            <img style="width:100%" src="{$info.idcard_img_hand}" alt="">
+                                                            <p style="text-align:center" >手持照</p>
+                                                        </a>
+                                                        {notempty name="info['company_license_img']"}
+                                                         <a style="margin-right:5vmin" class="left" href="{$info.company_license_img}">
+                                                            <img style="width:100%" src="{$info.company_license_img}" alt="">
+                                                            <p style="text-align:center" >营业执照</p>
+                                                        </a>
+                                                        {/notempty}
+                                                </div>
+                                            </div>
+                                            <hr />
+                                            {if condition="($info['user_type'] eq 0 and $info['is_check_user'] eq 1) OR ($info['user_type'] eq 1 and $info['is_check_company'] eq 1)" }
+                                            <div class="form-group ">
+                                                <label class="left control-label">回复信息：</label>
+                                                <div style="width:61.5%" class="input-group">
+                                                    <input type="text" name="content" class="form-control" >
+                                                    <span class="check-tips text-muted small">回复内容、拒绝理由</span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group item_type ">
+                                                <label class="left control-label">
+                                                    <span>是否通过：</span>
+                                                </label>
+                                                <div class="right">
+                                                    <div class="radio-inline lyui-control lyui-radio">
+                                                        <label for="typemodule">
+                                                            <input type="radio" id="typemodule" class="radio" name="agree" value="2"> 
+                                                            <span class="lyui-control-indicator"></span>
+                                                            <span>通过</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio-inline lyui-control lyui-radio">
+                                                        <label for="typetheme">
+                                                            <input type="radio" id="typetheme" class="radio" name="agree" value="3"> 
+                                                            <span class="lyui-control-indicator"></span>
+                                                            <span>拒绝</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {/if}
+             
+                                        <div class="form-group"></div>
+                                        <div class="form-group bottom_button_list">
+                                        {if condition="($info['user_type'] eq 0 and $info['is_check_user'] eq 1) OR ($info['user_type'] eq 1 and $info['is_check_company'] eq 1)" }
+                                            <a class="btn btn-primary submit ajax-post" type="submit" target-form="form-builder">确定</a>
+                                        {/if}
+                                            <a class="btn btn-danger return" onclick="javascript:history.back(-1);return false;">返回</a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>                   
+</div>
+{/block}
+
+{block name="script"}
+    <script type="text/javascript" src="__ADMIN__/libs/lyui/dist/js/lyui.extend.min.js"></script>
+{/block}

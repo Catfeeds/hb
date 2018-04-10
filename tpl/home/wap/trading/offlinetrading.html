@@ -1,0 +1,65 @@
+{__NOLAYOUT__}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,minimal-ui">
+    <title>宏八商城</title>
+    <link rel="stylesheet" href="__CSS__/style.css">
+    <script type="text/javascript" src="__JS__/upload.js"></script>
+</head>
+<body class="body_bg">
+    <div class="fxm_header">
+       <div class="fxm_left"><a href="javascript:history.back()"><img src="__IMG__/left.png"></a></div>
+       <div class="fxm_center" style="width: 75%;">线下转账</div>
+       <div class="fxm_right" style="width: 13%;line-height: 13vmin;padding-right: 1%;">
+        <a href="{:url('Trading/offlinedetaill')}" style="color: #fff">记录</a>
+       </div>
+    </div>
+    <div style="padding-top: 13vmin;"></div>
+
+    <div class="shezhi xgmm">
+        <h6 class="ts">平台收款账户</h6>
+        <ul>
+            <li>账户名称：<span>宏八有限公司</span></li>
+            <li>开户支行：<span>贵阳银行股份有限公司</span></li>
+            <li>账&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;号：<span>15151574545</span></li>
+            <li>转账银行： 
+              <span>
+                  <select>
+                    <option value="请选择">请选择</option>
+                    <option value="中国建设银行">中国建设银行</option>
+                  </select>
+              </span>
+            </li>
+            <li>户&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：<span><input type="text" placeholder="户名"></span></li>
+            <li>卡&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;号：<span><input type="text" placeholder="请输入卡号"></span></li>
+            <li>转账金额：<span><input type="text" placeholder="请输入转账金额"></span></li>
+            <li>
+               <div class="shezhi xgmm">
+                  <div class="upload">
+                    <h6 class="ts">上传银行转账凭证</h6>
+                    <div id="preview">
+
+                        <img id="imghead" width=100% height=auto border=0 src="__IMG__/a1.png">
+                    </div>
+                    <input type="file" onchange="previewImage(this)" class="tijiao" />  
+                    
+                  </div> 
+                </div>  
+            </li>
+            <li>加急到账<span>1%加急手续费，2小时到账</span><i>加急</i></li>
+        </ul>
+    </div>
+
+    <div class="grzqy">
+     <p>银行转账需转账到银行卡后，由财务充值到您的现金账户，需3个工作日处理，节假日顺延。</p>
+   </div>
+    
+
+    <span id="anniu"><a href="">确定</a></span>
+
+    <div style="padding-bottom: 10vmin"></div>
+
+</body>
+</html>

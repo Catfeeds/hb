@@ -1,0 +1,187 @@
+{extend name="public/layout"/}
+{block name="style" }
+    <link rel="stylesheet" type="text/css" href="__ADMIN__/libs/lyui/dist/css/lyui.extend.min.css">
+    <link rel="stylesheet" type="text/css" href="__ADMIN__/css/style.css">
+{/block}
+
+{block name="main"}
+   <div id="main" class="col-xs-12 col-sm-9 main" style="overflow-y: scroll;">
+        <!-- 面包屑导航 -->
+        <ul class="breadcrumb">
+            <li><i class="fa fa-map-marker"></i></li>
+             {foreach name="_menu_tab['name']" item="tab_v" }
+            <li class="text-muted">{$tab_v}</li>
+            {/foreach}
+        </ul>
+
+        <!-- 主体内容区域 -->
+        <div class="tab-content ct-tab-content">
+            <div class="panel-body">
+                <div class="builder formbuilder-box">
+                        
+                        <div class="form-group"></div>
+
+                        <!-- 顶部工具栏按钮 -->
+                        <div class="builder-toolbar">
+                            <div class="row">
+                                <!-- 工具栏按钮 -->
+                                   <!--  <div class="col-xs-12 col-sm-8 button-list clearfix">
+                                        <div class="form-group">
+                                            <a title="新增" class="btn btn-primary-outline btn-pill" href="{:url('User/add')}">新增</a>&nbsp;
+                                        </div>
+                                    </div> -->
+
+                                <!-- 搜索框 -->
+                                <div class="col-xs-12 col-sm-12 clearfix">
+                                        <form class="form" method="get" action="">
+                                            <div class="form-group right">
+                                                <div style="float:left;width:120px;margin-right:20px" class="">
+                                                    <select name="level" class="form-control lyui-select select">
+                                                        <option value="">等级：</option>
+                                                        <option {eq name=":input('get.level')" value="0" }selected="true"{/eq}  value="0">消费商</option>
+                                                        <option {eq name=":input('get.level')" value="1" }selected="true"{/eq}  value="1">宏客</option>
+                                                        <option {eq name=":input('get.level')" value="2" }selected="true"{/eq}  value="2">宏投</option>
+                                                        <option {eq name=":input('get.level')" value="3" }selected="true"{/eq}  value="3">联盟商家</option>
+                                                        <option {eq name=":input('get.level')" value="4" }selected="true"{/eq}  value="4">代理商</option>
+                                                        <option {eq name=":input('get.level')" value="5" }selected="true"{/eq}  value="5">GA代理商</option>
+                                                        <option {eq name=":input('get.level')" value="6" }selected="true"{/eq}  value="6">EA代理商</option>
+                                                    </select>                                            
+                                                </div>
+
+                                                <div style="float:left;width:150px;margin-right:20px" class="">
+                                                    <input type="text" name="date_start" class="search-input form-control date" value="{:input('get.date_start')}" placeholder="开始日期">
+                                                </div>
+                                                <div style="float:left;width:150px;margin-right:20px" class="">
+                                                    <input type="text" name="date_end" class="search-input form-control date" value="{:input('get.date_end')}" placeholder="结束日期">
+                                                </div>
+
+                                                <div style="float:left;width:120px;margin-right:20px" class="">
+                                                    <select name="querytype" class="form-control lyui-select select">
+                                                        <option  value="account">账号</option>
+                                                         <option {eq name=":input('get.querytype')" value="mobile" }selected="true"{/eq}  value="mobile">手机</option>
+                                                        <option {eq name=":input('get.querytype')" value="username" }selected="true"{/eq}  value="username">姓名</option>
+                                                    </select>                                            
+                                                </div>
+  
+                                                <div style="width:250px" class="input-group search-form">
+                                                    <input  type="text" name="keyword" class="search-input form-control" value="{:input('get.keyword')}" placeholder="输入搜索内容">
+                                                    <span class="input-group-btn"><a class="btn btn-default search-btn"><i class="fa fa-search"></i></a></span>
+                                                </div>
+                                            </div>
+                                        </form>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                        
+
+                        <style type="text/css">
+                            tr,td{
+                               margin: 0 !important;
+                               padding: 5px 5px !important;
+                            }
+                        </style>
+
+                        <!-- 数据列表 -->
+                        <div class="builder-container">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="builder-table">
+                                        <div class="panel panel-default table-responsive">
+                                            <table class="table table-bordered table-striped table-hover">
+                                              <thead>
+                                                <tr>
+                                                    <th>UID</th>
+                                                    <th>等级</th>
+                                                    <th>用户</th>
+                                                    <th>财富</th>
+                                                    <th>类别</th>
+                                                    <th>状态</th>
+                                                    <th style="width:23%" >操作</th>
+                                                </tr>
+                                            </thead>
+                                                <tbody>
+                                                    {notempty name="list"}
+                                                    {volist name="list" id="data"}
+                                                        <tr>
+                                                            <td>{$data['userid']}</td>
+                                                            <td>
+                                                                {$data['level']|user_level}
+                                                            </td>
+                                                            <td>
+                                                                账号：{$data['account']} <br />
+                                                                姓名：{$data['username']} <br />
+                                                                手机：{$data['mobile']}
+                                                            </td>
+                                                            <!-- 财富 -->
+                                                            <td style="white-space: nowrap;" >
+                                                               金额：<span style="color:#dc3300" >{$data['money']+0}</span>
+                                                               <br />
+                                                               积分：<span style="color:#dc3300" >{$data['integral']+0}</span>
+                                                               <br />
+                                                               宏宝：<span style="color:#dc3300" >{$data['anzi']+0}</span>
+                                                            </td>
+                                                            
+                                                            <td>
+                                                                {$data['user_type']==1 ? '企业用户':'个人用户'}
+                                                            </td>
+                                                            <td>
+                                                               {eq name="data['status']" value="1" }
+                                                                    <i title="正常" class="fa fa-check text-success"></i>
+                                                               {else /}
+                                                                    <i title="拉黑冻结" class="fa fa-ban text-danger"></i>
+                                                               {/eq}
+                                                            </td>
+                                                            <td>
+                                                                <a name="edit" title="编辑" class="label label-primary-outline label-pill" href="{:url('User/edit',array('id'=>$data['userid']))}">编辑</a>
+
+                                                                {eq name="data['status']" value="1" }
+                                                                <a name="forbid" title="锁定" class="label label-warning-outline label-pill ajax-get confirm" href="{:url('User/setStatus',array('status'=>'forbid','ids'=>$data['userid']))}">锁定</a>
+                                                                {else /}
+                                                                <a name="forbid" title="解锁" class="label label-success-outline label-pill ajax-get confirm" href="{:url('User/setStatus',array('status'=>'resume','ids'=>$data['userid']))}">解锁</a>
+                                                                {/eq}
+                                                                <a name="edit" title="修改财富" class="label label-primary-outline label-pill" href="{:url('User/AddFruits',array('id'=>$data['userid']))}">财富</a>
+                                                                 
+                                                                 <a title="设置代理" class="label label-primary-outline label-pill" href="{:url('User/setarea',array('userid'=>$data['userid']))}">设代理</a>
+                                                            </td>
+
+                                                        </tr>
+                                                    {/volist}
+
+                                                    {else /}
+                                                        <tr class="builder-data-empty">
+                                                            <td class="text-center empty-info" colspan="20">
+                                                                <i class="fa fa-database"></i> 暂时没有数据<br>
+                                                            </td>
+                                                        </tr>
+                                                    {/notempty}
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                            <ul class="pagination">{$table_data_page}</ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+    </div>                   
+</div>
+{/block}
+
+{block name="script"}
+     <script type="text/javascript">
+        $('.date').datetimepicker({
+            format: 'yyyy-mm-dd',
+            language:"zh-CN",
+            minView:2,
+            autoclose:true,
+            todayBtn:1, //是否显示今日按钮
+        });
+    </script>
+    <script type="text/javascript" src="__ADMIN__/libs/lyui/dist/js/lyui.extend.min.js"></script>
+{/block}

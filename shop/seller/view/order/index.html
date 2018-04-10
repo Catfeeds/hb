@@ -1,0 +1,86 @@
+{include file="public/head" /}
+<body>
+   <div class="dux-tools">
+        <div class="bread-head">订单管理
+            <span class="small">订单列表</span>
+        </div>
+    </div>
+        
+    <div class="admin-main">
+    <div class="panel dux-box">
+	<div class="table-tools clearfix ">
+        <div class="float-left">
+            <form method="GET" action="?">
+                <div class="form-inline">
+                    <div class="form-group">
+                        <div class="field"></div>
+                        <input type="date" name="date_start" class="input date" value="{:input('get.date_start')}" placeholder="开始日期">
+                        至
+                        <input type="date" name="date_end" class="input date" value="{:input('get.date_end')}" placeholder="结束日期">
+                    </div>
+					<div class="form-group">
+                        <div class="field">
+                            <select name="querytype" class="input">
+                                <option value="order_no">订单号</option>
+                                <option {eq name=":input('get.querytype')" value="user_name" }selected="true"{/eq} value="user_name">收货姓名</option>
+                                 <option {eq name=":input('get.querytype')" value="user_mobile" }selected="true"{/eq}  value="user_mobile">收货手机</option>
+                                <option {eq name=":input('get.querytype')" value="username" }selected="true"{/eq}  value="username">会员姓名</option>
+                                <option {eq name=":input('get.querytype')" value="mobile" }selected="true"{/eq}  value="mobile">会员手机</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="field">
+                            <input type="text" class="input" id="keyword" name="keyword" size="20" value="{:input('get.keyword')}" placeholder="输入搜索内容">
+                        </div>
+                    </div>
+                    <div class="form-button">
+                        <button class="button" type="submit">搜索</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="float-right">
+
+        </div>
+    </div>
+    <div class="table-responsive">
+        <table id="table" class="table table-hover ">
+            <tbody>
+                <tr>
+					<th>订单号</th>
+                    <th>收货人</th>
+                    <th>订单总额</th>
+                    <th>下单时间</th>
+                    <th>订单状态</th>
+                    <th>操作</th>
+                </tr>
+				{php}
+                    $status_name=array(0=>'未支付',1=>'已支付',2=>'已发货',3=>'已完成');
+                {/php}
+                {volist name="list" id="data"}
+                    <tr>
+                        <td>{$data['order_no']}</td>
+                        <td>{$data['user_name']}:{$data['user_mobile']}</td>
+                        <td>{$data.order_total_price}</td>
+                        <td>{$data['order_create_time'|date="Y-m-d H:i",###]}</td>
+                         <td>{$status_name[$data['order_status']]}</td>
+                      
+                        <td>
+                            <a class="button bg-blue button-small icon-pencil" href="{:url('detail',array('order_id'=>$data['order_id']))}" title="编辑"></a>
+                            {eq name="data['order_status']" value="0" }
+                            <a class="button bg-red button-small icon-trash-o js-del ajax-get confirm" href="{:url('delete',array('order_id'=>$data['order_id']))}"  data="1" title="删除"></a>
+                            {/eq}
+                        </td>
+     
+                    </tr>
+                {/volist}
+               </tbody>
+        </table>
+    </div>
+
+    <div class="panel-foot table-foot clearfix">{$table_data_page}</div>
+</div>
+</div>
+</body>
+</html>

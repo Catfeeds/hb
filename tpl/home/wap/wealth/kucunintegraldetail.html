@@ -1,0 +1,29 @@
+    <div style="padding-top: 13vmin;"></div>
+
+    <div class="myorder">
+         <ul>
+           <li {eq name=":input('f_type')" value="0" } class="licolor" {/eq}><a href="{:url('Wealth/kucunintegraldetail',array('f_type'=>'0'))}">全部</a></li>
+           <li {eq name=":input('f_type')" value="1" } class="licolor" {/eq}><a href="{:url('Wealth/kucunintegraldetail',array('f_type'=>'1'))}">转入</a></li>
+           <li {eq name=":input('f_type')" value="2" } class="licolor" {/eq}><a href="{:url('Wealth/kucunintegraldetail',array('f_type'=>'2'))}">转出</a></li>
+         </ul>
+    </div>  
+
+
+    <div class="czjl cfjl">
+      <ul>
+        {foreach name="list" item="v"}
+        <li>
+          <a href="{:url('Wealth/kcdetail',array('id'=>$v['id']))}">
+            <h3><i>{$v['from_type']==1 ? '转入':'转出'}-{$v.type_name}</i><span>￥{$v.money}</span></h3>
+            <p>{$v.create_time|date="Y-m-d H:i",###} </p>
+          </a>
+        </li>
+        {/foreach}
+      </ul>
+      {empty name="list"}
+      <img src="__IMG__/kong.jpg">
+      <p class="wu">没有充值记录</p>
+      {/empty}
+    </div>
+
+    <div style="padding-bottom: 10vmin"></div>

@@ -1,0 +1,39 @@
+<div style="padding-top: 13vmin;"></div>
+<div class="zxzx">
+<img src="__IMG__/zxzx.jpg">
+<ul id="ulal">
+	{foreach name="menu_son" item="v" }
+	<a href="{:url('News/newscenter',array('new_ids'=>$v['id']))}" >
+	<li  <?php if($v['id'] == input('new_ids')){echo 'class="currental"';}?>>
+	{$v['title']}</li>
+	</a>
+	{/foreach}  
+	<a href="{:url('usercenter/helpcenter',array('new_ids'=>$help_son[0]['id']))}" >
+	<li >帮助中心</li>
+	</a>         
+</ul>
+<div id ="contental">
+<div class="show">
+<div class="zxzx_bottom zxzxa">
+<ul>
+	{foreach name="tit" item="v"}
+	<li <?php if($v['newtop']==2){echo 'class=""';}else{echo 'class="new"';}?>>
+	<a href="{:url('News/newsdetail',array('news_id'=>$v['id']))}">
+	{$v['title']}
+	</a>
+	<span>{$v['addtime']|date='Y-m-d',###}</span>
+	</li>
+	{/foreach}  
+</ul>
+</div>
+</div>
+</div>
+<script>
+	$('#ulal>li').click(function()
+	{
+		$(this).addClass('currental').siblings().removeClass('currental');
+		$('#contental>div').eq($(this).index()).show().siblings().hide();
+	})
+</script>
+</div>
+<div style="padding-bottom: 10vmin;float: left;width: 100%"></div>

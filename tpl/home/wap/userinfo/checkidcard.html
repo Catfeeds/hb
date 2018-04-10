@@ -1,0 +1,38 @@
+    <script type="text/javascript" src="__COM__/js/ajaxfileupload.js"></script>
+    <div style="padding-top: 13vmin;"></div>
+    <div class="shezhi qyrz3">
+
+        <div class="upload">
+          <div id="preview3">
+              <img id="imghead3" width=100% height=auto border=0 src="__IMG__/y2.jpg">
+          </div>
+          <input id="img_face" data="face" name="img_face" type="file" onchange="uploadFile('img_face','{:url('Common/uplodeimg')}')" class="tijiao3" >
+          <span id="ckt"><img src="__IMG__/y6.jpg"></span>
+        </div>
+
+        <div class="upload">
+          <div id="preview4">
+              <img id="imghead4" width=100% height=auto border=0 src="__IMG__/y3.jpg">
+          </div>
+          <input id="img_back" data="back" name="img_back" type="file" onchange="uploadFile('img_back','{:url('Common/uplodeimg')}')" class="tijiao4">
+          <span id="ckt"><img src="__IMG__/y7.jpg"></span>
+        </div>
+
+        <div class="upload">
+          <div id="preview5">
+              <img id="imghead5" width=100% height=auto border=0 src="__IMG__/y4.jpg">
+          </div>
+          <input id="img_hand" data="hand" name="img_hand" type="file" onchange="uploadFile('img_hand','{:url('Common/uplodeimg')}')" class="tijiao5">
+          <span id="ckt"><img src="__IMG__/y8.jpg"></span>
+        </div> 
+        <p style="color:#636363" >注：图片格式为jpg、png，大小在4M以内</p>    
+        <p>我们会对您的资料进行安全保密，您可以放心上传。</p>
+    </div>
+    <form class="postfrom" action="{:url('checkidcard')}">
+        <input type="hidden" name="face"> 
+        <input type="hidden" name="back"> 
+        <input type="hidden" name="hand"> 
+    </form>
+
+    <span id="anniu"><a  class="ajax-post"  target-from="postfrom" href="javascript:">提交</a></span>
+    <div style="padding-bottom: 10vmin"></div>

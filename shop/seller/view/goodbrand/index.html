@@ -1,0 +1,85 @@
+{include file="public/head" /}
+<body>
+   <div class="dux-tools">
+        <div class="bread-head">商品管理
+            <span class="small">品牌列表</span>
+        </div>
+
+        <div class="tools-function clearfix">
+            <div class="float-left">
+                <a class="button button-small bg-dot icon-plus" href="{:url('edit')}">添加</a>
+                </div>
+        </div>
+    </div>
+        
+    <div class="admin-main">
+    <div class="panel dux-box">
+	<div class="table-tools clearfix ">
+        <div class="float-left">
+            <form method="GET" action="?">
+                <div class="form-inline">
+                    
+                    <div class="form-group">
+                        <div class="field">
+                            <input type="text" class="input" id="keyword" name="keyword" size="20" value="{:input('get.keyword')}" placeholder="输入搜索内容">
+                        </div>
+                    </div>
+                    <div class="form-button">
+                        <button class="button" type="submit">搜索</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="float-right">
+
+        </div>
+    </div>
+    <div class="table-responsive">
+        <table id="table" class="table table-hover ">
+            <tbody>
+                <tr>
+                    <th>ID</th>
+                    <th>品牌名称</th>
+                    <th>状态</th>
+                    <th>操作</th>
+                </tr>
+
+				{volist name="list" id="data"}
+                    <tr>
+                        <td>{$data['id']}</td>
+                        <td>{$data['brand_name']}</td>
+                        <td>
+                           {eq name="data['status']" value="1" }
+                                显示
+                           {else /}
+                                隐藏
+                           {/eq}
+                        </td>
+                        <td>
+                             <a class="button bg-blue button-small icon-pencil" title="编辑"  href="{:url('edit',array('id'=>$data['id']))}">编辑</a>
+                            {eq name="data['status']" value="1" }
+                            <a name="forbid" title="禁用" class="button bg-dot ajax-get confirm" href="{:url('setStatus',array('status'=>'forbid','id'=>$data['id']))}">禁用</a>
+                            {else /}
+                            <a name="forbid" title="启用" class="button ajax-get confirm" href="{:url('setStatus',array('status'=>'resume','id'=>$data['id']))}">启用</a>
+                            {/eq}
+
+                            <a class="button bg-red button-small icon-trash-o js-del ajax-get confirm" href="{:url('setStatus',array('status'=>'delete','id'=>$data['id']))}">删除</a>
+                    </tr>
+                {/volist}
+
+                {empty name="list"}
+                    <tr class="builder-data-empty">
+                        <td class="text-center empty-info" colspan="20">
+                            <i class="fa fa-database"></i> 暂时没有数据<br>
+                        </td>
+                    </tr>
+                {/empty}
+               </tbody>
+        </table>
+    </div>
+
+    <div class="panel-foot table-foot clearfix">{$table_data_page}</div>
+</div>
+</div>
+</body>
+</html>

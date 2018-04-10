@@ -1,0 +1,35 @@
+<!-- 底部菜单 -->
+{php}
+  $select_url=controller_name().'-'.action_name();
+  $select_btn1='';
+  $select_btn2='';
+  $select_btn3='';
+  $select_btn4='';
+  if($select_url=='Index-index')
+     $select_btn1='class="onb"';
+  if($select_url=='Goodtype-index')
+     $select_btn2='class="onb"';
+  if($select_url=='Shopcar-index')
+     $select_btn3='class="onb"';
+  if($select_url=='User-usercenter')
+     $select_btn4='class="onb"';
+{/php}
+
+<div class="footer">
+      <a href="{:url('mall/Index/index')}" {$select_btn1} >
+          <i class="iconfont"></i>
+          <p>首页</p>
+      </a>
+       <a href="{:url('mall/Goodtype/index')}" {$select_btn2} >
+          <i class="iconfont"></i>
+          <p>产品分类</p>
+      </a>
+       <a href="{:url('mall/Shopcar/index')}" {$select_btn3} >
+          <i class="iconfont"></i>
+          <p>购物车</p>
+      </a>
+       <a href="{:url('mall/User/usercenter')}" {$select_btn4} >
+          <i class="iconfont"></i>
+          <p>我的</p>
+      </a>
+  </div>

@@ -1,0 +1,129 @@
+    <link rel="stylesheet" href="__CSS__/product.css">
+    <link rel="stylesheet" href="__CSS__/pj.css">
+    <script src="__JS__/jquery.js"></script>
+    <script type="text/javascript" src="__JS__/more-starts.js"></script>
+    <div style="margin-top: 13vmin"></div>
+
+    <div class="order_main pl">
+       <ul>
+          <li>
+            <div class="order_main_l tup"><img src="{$info.good_cover_img}" alt=""></div>
+            <div class="order_main_r wza">
+              <p>商品名称：<span>{$info.good_name}</span></p>
+              <p>商品金额：<span>￥{$info.good_price}</span></p>
+              <p>购买数量：<span>{$info.good_num}</span></p>
+            </div>
+          </li>      
+       </ul>
+    </div>
+
+    <div class="commenttop">
+        <p>给个五星评分吧！</p>
+    </div>
+
+    <div class="BOX">
+
+
+        <div id="star" class="">
+            <span>服务能力</span>
+            <ul class="star_UL star_ability" sid="0">
+                <li><a href="javascript:;">1</a></li>
+                <li><a href="javascript:;">2</a></li>
+                <li><a href="javascript:;">3</a></li>
+                <li><a href="javascript:;">4</a></li>
+                <li><a href="javascript:;">5</a></li>
+            </ul>
+            <span  class="star_result_span">
+                <strong></strong>&nbsp;&nbsp;<!-- <a></a> -->
+            </span>
+        </div>
+        
+        <div id="star" class="">
+            <span>服务态度</span>
+            <ul class="star_UL star_attitude" sid="0">
+                <li><a href="javascript:;">1</a></li>
+                <li><a href="javascript:;">2</a></li>
+                <li><a href="javascript:;">3</a></li>
+                <li><a href="javascript:;">4</a></li>
+                <li><a href="javascript:;">5</a></li>
+            </ul>
+            <span  class="star_result_span">
+                <strong></strong>&nbsp;&nbsp;
+            </span>
+        </div>
+        
+        <div id="star" class="">
+            <span>价格合理</span>
+            <ul class="star_UL star_price" sid="0">
+                <li><a href="javascript:;">1</a></li>
+                <li><a href="javascript:;">2</a></li>
+                <li><a href="javascript:;">3</a></li>
+                <li><a href="javascript:;">4</a></li>
+                <li><a href="javascript:;">5</a></li>
+            </ul>
+            <span  class="star_result_span">
+                <strong></strong>&nbsp;&nbsp;
+            </span>
+        </div>
+    </div>
+    <div class="textarea">
+      <textarea name="introduce" id="textarea" rows="8" placeholder="评价一下您购买的产品吧，您的评价对其他人很重要哦"></textarea>
+    </div>
+
+    <input id="dataid" type="hidden" value="{:input('id')}">
+
+    <div class="commentbott">
+      <input type="button" onclick="comment()" value="提交">
+    </div>
+  
+    <script type="text/javascript">
+    function comment(){
+        var star_ability  = $('.star_ability .on:last a').text();
+        var star_attitude = $('.star_attitude .on:last a').text();
+        var star_price    = $('.star_price .on:last a').text();
+        var content       = $('#textarea').val();
+        var id            = $('#dataid').val();
+        if(star_ability=='' || star_ability==null){
+          user_alert('请给服务能力评分');
+          return;
+        }
+        if(star_attitude=='' || star_attitude==null){
+          user_alert('请给服务态度评分');
+          return;
+        }
+        if(star_price=='' || star_price==null){
+          user_alert('请给价格合理评分');
+          return;
+        }
+        if(content=='' || content==null){
+          user_alert('请输入评价内容');
+          return;
+        }
+        $.ajax({
+          url:"{:url('savecomment')}",
+          data:{'id':id,'star_ability':star_ability,'star_attitude':star_attitude,'star_price':star_price,'content':content},
+          type:'post',
+          dataType:'json',
+          success:function(data){
+            if(data.status==1){
+              user_alert(data.info,data.url);
+            }else{
+              user_alert(data.info);
+            }
+          }
+        })
+    }
+
+    function user_alert(message,url){
+      layer.open({
+           style: 'top:0'
+          ,content: message
+          ,skin: 'msg'
+          ,time: 1.5 //2秒后自动关闭
+          ,end:function(index){
+            if(url)
+              window.location.href=url;
+          }
+        });
+    }
+  </script>

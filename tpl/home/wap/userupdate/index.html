@@ -1,0 +1,45 @@
+
+    <div style="padding-top: 13vmin;"></div>
+
+    <div class="shezhi qyrz sjhy">
+        <ul>
+            <li>用户等级<span class="xfs">{:user_level()}</span></li>
+            <li><a href="{:url('userright')}">用户权益<span><img src="__IMG__/right2.png"></span></a></li>
+            {eq name="level" value="0" }
+            <li style="line-height: 6vmin;" >
+                <i>a.具有购买商家享受商家奖励积分累积权</i>
+                <br>
+                <i>b.具有会员推荐权，可邀请他人注册，并成为他人分享人</i>
+            </li>
+            {/eq}
+            {eq name="level" value="1" }
+            <li style="line-height: 6vmin;" >
+                <i>a.销售奖励（宏宝）20%</i>
+                <br>
+                <i>b.开发销售渠道奖励（积分）1%*5倍*消费金额（仅限直接分享用户）</i>
+                <br>
+                <i>c.开发销售渠道奖（积分）0.5%*5倍*销售金额（仅限直接分享用户）</i>
+                <br>
+                <i>d.市场管理服务奖（积分）（销售奖励、开发销售渠道奖、开发销售渠道奖）50%</i>
+            </li>
+            {/eq}
+            {eq name="level" value="2" }
+            <li style="line-height: 6vmin;" >
+                <i>a.销售奖励（宏宝）20%</i>
+                <br>
+                <i>b.开发销售渠道奖励（积分）1%*5倍*消费金额（仅限直接分享用户）</i>
+                <br>
+                <i>c.开发销售渠道奖（积分）0.5%*5倍*销售金额（仅限直接分享用户）</i>
+                <br>
+                <i>d.市场管理服务奖（积分）（销售奖励、开发销售渠道奖、开发销售渠道奖）50%</i>
+                <br>
+                <i>e.分享代理商（宏宝）20%*认购代理费（仅限直接分享用户）</i>
+            </li>
+            {/eq}
+        </ul>
+
+        <p><i>如果您当前权益较少，可以去升级，享受更多特权。</i></p>
+    </div>
+
+    <span id="anniu"><a href="{:url('userupdate')}">去升级</a></span>
+    <div style="padding-bottom: 10vmin"></div>
