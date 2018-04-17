@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:36:"../tpl/home/wap/wealth\getmoney.html";i:1521194700;s:27:"../tpl/home/wap/layout.html";i:1514211998;s:34:"../tpl/home/wap/public\header.html";i:1516333197;s:34:"../tpl/home/wap/public\footer.html";i:1514211999;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:36:"../tpl/home/wap/wealth\getmoney.html";i:1523936499;s:27:"../tpl/home/wap/layout.html";i:1514211998;s:34:"../tpl/home/wap/public\header.html";i:1516333197;s:34:"../tpl/home/wap/public\footer.html";i:1514211999;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -112,6 +112,25 @@
 
     <script type="text/javascript" src="__COM__/js/sendmessage.js" ></script>
     <script type="text/javascript">
+        //根据现有余额计算最大可提取额度
+        $("#type").change(function(){
+
+            var opt=$("#type").val();
+            var amount = 0;
+            var maxamount = 0;
+
+            if(opt == "1"){ //现金余额
+                amount = parseInt(<?php echo $info['money']; ?>); 
+                maxamount = parseInt(amount/100)*100;
+            }else if(opt == "2"){ //宏宝余额
+                amount = parseInt(<?php echo $info['anzi']; ?>)
+                maxamount = parseInt(amount/10000)*10000;
+            }
+            
+            $('#num').val(maxamount);
+            
+        });
+
         //计算扣除总数
         $('#num').blur(function(){
             var val=$(this).val();

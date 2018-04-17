@@ -81,6 +81,25 @@
 
     <script type="text/javascript" src="__COM__/js/sendmessage.js" ></script>
     <script type="text/javascript">
+        //根据现有余额计算最大可提取额度
+        $("#type").change(function(){
+
+            var opt=$("#type").val();
+            var amount = 0;
+            var maxamount = 0;
+
+            if(opt == "1"){ //现金余额
+                amount = parseInt({$info.money}); 
+                maxamount = parseInt(amount/100)*100;
+            }else if(opt == "2"){ //宏宝余额
+                amount = parseInt({$info.anzi})
+                maxamount = parseInt(amount/10000)*10000;
+            }
+            
+            $('#num').val(maxamount);
+            
+        });
+
         //计算扣除总数
         $('#num').blur(function(){
             var val=$(this).val();
