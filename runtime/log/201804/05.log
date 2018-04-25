@@ -1,0 +1,2218 @@
+---------------------------------------------------------------
+[ 2018-04-05T00:07:37+08:00 ] 103.45.103.50 195.62.238.42 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.080744s][吞吐率：12.38req/s] [内存消耗：3,694.88kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/601.7.7 (KHTML, like Gecko) Version/9.1.2 Safari/601.7.7',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002550s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.001930s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.000885s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000649s ]
+---------------------------------------------------------------
+[ 2018-04-05T01:05:34+08:00 ] 103.45.103.50 191.255.23.7 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.095110s][吞吐率：10.51req/s] [内存消耗：3,694.88kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002744s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002299s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.001211s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000993s ]
+---------------------------------------------------------------
+[ 2018-04-05T01:15:54+08:00 ] 103.45.103.50 177.189.154.88 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.082947s][吞吐率：12.06req/s] [内存消耗：3,694.88kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002562s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.001849s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.000773s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000589s ]
+---------------------------------------------------------------
+[ 2018-04-05T01:16:44+08:00 ] 103.45.103.50 71.19.202.118 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.070663s][吞吐率：14.15req/s] [内存消耗：3,695.06kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011002s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002101s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.000987s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000844s ]
+---------------------------------------------------------------
+[ 2018-04-05T01:17:42+08:00 ] 103.45.103.50 60.191.38.78 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.068676s][吞吐率：14.56req/s] [内存消耗：3,694.71kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:47.0) Gecko/20100101 Firefox/47.0',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012033s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002120s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.001110s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000753s ]
+---------------------------------------------------------------
+[ 2018-04-05T01:48:39+08:00 ] 103.45.103.50 116.212.155.57 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.092126s][吞吐率：10.85req/s] [内存消耗：3,694.88kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002948s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002363s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.001067s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000811s ]
+---------------------------------------------------------------
+[ 2018-04-05T02:10:23+08:00 ] 103.45.103.50 116.212.157.212 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.086408s][吞吐率：11.57req/s] [内存消耗：3,694.88kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002748s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.001670s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.000804s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000628s ]
+---------------------------------------------------------------
+[ 2018-04-05T02:10:56+08:00 ] 103.45.103.50 78.173.37.94 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.069954s][吞吐率：14.30req/s] [内存消耗：3,694.80kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/601.7.7 (KHTML, like Gecko) Version/9.1.2 Safari/601.7.7',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011102s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002005s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.000978s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000734s ]
+---------------------------------------------------------------
+[ 2018-04-05T02:11:37+08:00 ] 103.45.103.50 189.18.7.55 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.068237s][吞吐率：14.65req/s] [内存消耗：3,695.06kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011526s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002284s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.000906s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000637s ]
+---------------------------------------------------------------
+[ 2018-04-05T02:36:08+08:00 ] 103.45.103.50 82.60.95.189 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.076438s][吞吐率：13.08req/s] [内存消耗：3,694.79kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002654s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.001752s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.000881s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000666s ]
+---------------------------------------------------------------
+[ 2018-04-05T03:01:47+08:00 ] 103.45.103.50 79.49.41.230 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.092939s][吞吐率：10.76req/s] [内存消耗：3,694.88kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/601.7.7 (KHTML, like Gecko) Version/9.1.2 Safari/601.7.7',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002884s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002210s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.000943s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000727s ]
+---------------------------------------------------------------
+[ 2018-04-05T03:11:27+08:00 ] 103.45.103.50 172.104.108.109 GET /
+[ info ] 103.45.103.50/ [运行时间：0.087498s][吞吐率：11.43req/s] [内存消耗：3,694.30kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'user-agent' => 'Mozilla/5.0',
+  'host' => '103.45.103.50',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002746s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002043s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.001149s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000815s ]
+---------------------------------------------------------------
+[ 2018-04-05T03:18:13+08:00 ] 103.45.103.50 91.233.70.138 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.097118s][吞吐率：10.30req/s] [内存消耗：3,694.88kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011602s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002296s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.000999s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000612s ]
+---------------------------------------------------------------
+[ 2018-04-05T03:27:49+08:00 ] 103.45.103.50 60.191.38.78 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.088971s][吞吐率：11.24req/s] [内存消耗：3,694.70kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:47.0) Gecko/20100101 Firefox/47.0',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002778s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002421s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.001039s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000757s ]
+---------------------------------------------------------------
+[ 2018-04-05T03:45:59+08:00 ] 103.45.103.50 195.9.68.217 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.088538s][吞吐率：11.29req/s] [内存消耗：3,694.88kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002945s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002107s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.001080s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000926s ]
+---------------------------------------------------------------
+[ 2018-04-05T04:27:32+08:00 ] 103.45.103.50 155.133.83.114 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.085388s][吞吐率：11.71req/s] [内存消耗：3,694.88kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002698s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.001932s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.000923s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000731s ]
+---------------------------------------------------------------
+[ 2018-04-05T04:49:40+08:00 ] 103.45.103.50 60.191.38.78 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.077638s][吞吐率：12.88req/s] [内存消耗：3,694.70kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:47.0) Gecko/20100101 Firefox/47.0',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002710s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002010s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.000912s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000698s ]
+---------------------------------------------------------------
+[ 2018-04-05T05:34:43+08:00 ] 103.45.103.50 139.162.119.197 GET /
+[ info ] 103.45.103.50/ [运行时间：0.092167s][吞吐率：10.85req/s] [内存消耗：3,694.61kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'host' => '103.45.103.50',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002844s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.001967s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.000854s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000682s ]
+---------------------------------------------------------------
+[ 2018-04-05T05:34:43+08:00 ] 103.45.103.50 139.162.119.197 GET /home/login/login.html
+[ info ] 103.45.103.50:80/home/login/login.html [运行时间：0.061564s][吞吐率：16.24req/s] [内存消耗：3,276.00kb] [文件加载：55]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'referer' => 'http://103.45.103.50:80/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Login->login[ D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\shop\home\controller\Login.php ]
+[ info ] [ VIEW ] ../tpl/home/wap/login\login.html [ array (
+  0 => 'site_info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011432s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002144s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.001065s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000796s ]
+---------------------------------------------------------------
+[ 2018-04-05T05:50:08+08:00 ] 103.45.103.50 177.189.223.34 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.080746s][吞吐率：12.38req/s] [内存消耗：3,694.88kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/601.7.7 (KHTML, like Gecko) Version/9.1.2 Safari/601.7.7',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002840s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.001425s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.000695s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000526s ]
+---------------------------------------------------------------
+[ 2018-04-05T06:07:36+08:00 ] 103.45.103.50 46.1.224.13 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.085281s][吞吐率：11.73req/s] [内存消耗：3,694.88kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002891s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.001826s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.000811s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000650s ]
+---------------------------------------------------------------
+[ 2018-04-05T07:26:38+08:00 ] 103.45.103.50 201.43.104.172 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.086967s][吞吐率：11.50req/s] [内存消耗：3,694.88kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002498s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002279s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.001268s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000799s ]
+---------------------------------------------------------------
+[ 2018-04-05T07:30:22+08:00 ] 103.45.103.50 107.12.73.138 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.075175s][吞吐率：13.30req/s] [内存消耗：3,695.06kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011993s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002300s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.001117s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000895s ]
+---------------------------------------------------------------
+[ 2018-04-05T07:39:57+08:00 ] 103.45.103.50 67.22.216.237 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.105220s][吞吐率：9.50req/s] [内存消耗：3,694.88kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002308s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.001590s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.001126s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000940s ]
+---------------------------------------------------------------
+[ 2018-04-05T07:50:15+08:00 ] 103.45.103.50 118.185.39.53 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.083673s][吞吐率：11.95req/s] [内存消耗：3,694.88kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003407s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002011s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.000859s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000735s ]
+---------------------------------------------------------------
+[ 2018-04-05T08:06:58+08:00 ] 103.45.103.50 101.251.246.66 GET /
+[ info ] 103.45.103.50/ [运行时间：0.094920s][吞吐率：10.54req/s] [内存消耗：3,694.11kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'user-agent' => 'Mozilla/5.0 zgrab/0.x',
+  'host' => '103.45.103.50',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002722s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.001970s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.000989s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000639s ]
+---------------------------------------------------------------
+[ 2018-04-05T08:25:23+08:00 ] 103.45.103.50 61.151.179.83 GET /
+[ info ] 103.45.103.50/ [运行时间：0.086851s][吞吐率：11.51req/s] [内存消耗：3,694.89kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; U; Android 6.0.1; zh-cn; OPPO R9s Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/38.0.0.0 Mobile Safari/537.36 OppoBrowser/4.2.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002813s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002144s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.000904s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.001197s ]
+---------------------------------------------------------------
+[ 2018-04-05T08:25:24+08:00 ] 103.45.103.50 212.69.137.37 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.069080s][吞吐率：14.48req/s] [内存消耗：3,694.80kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/601.7.7 (KHTML, like Gecko) Version/9.1.2 Safari/601.7.7',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010017s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.001744s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.000955s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000741s ]
+---------------------------------------------------------------
+[ 2018-04-05T08:35:56+08:00 ] 103.45.103.50 177.21.114.58 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.082106s][吞吐率：12.18req/s] [内存消耗：3,694.88kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003166s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002083s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.000978s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000680s ]
+---------------------------------------------------------------
+[ 2018-04-05T08:42:56+08:00 ] 103.45.103.50 60.191.38.77 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.085470s][吞吐率：11.70req/s] [内存消耗：3,694.70kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:47.0) Gecko/20100101 Firefox/47.0',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002858s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002149s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.000910s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000730s ]
+---------------------------------------------------------------
+[ 2018-04-05T09:26:32+08:00 ] 103.45.103.50 131.0.95.234 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.084260s][吞吐率：11.87req/s] [内存消耗：3,694.88kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002751s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002154s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.001148s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000796s ]
+---------------------------------------------------------------
+[ 2018-04-05T10:29:58+08:00 ] 103.45.103.50 60.191.38.78 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.086168s][吞吐率：11.61req/s] [内存消耗：3,694.70kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:47.0) Gecko/20100101 Firefox/47.0',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002547s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.001976s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.000900s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000767s ]
+---------------------------------------------------------------
+[ 2018-04-05T11:23:26+08:00 ] 103.45.103.50 60.191.38.78 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.087735s][吞吐率：11.40req/s] [内存消耗：3,694.70kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:47.0) Gecko/20100101 Firefox/47.0',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012267s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002502s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.000975s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000871s ]
+---------------------------------------------------------------
+[ 2018-04-05T11:40:26+08:00 ] 103.45.103.50 46.243.189.99 GET /muieblackcat
+[ info ] 103.45.103.50/muieblackcat [运行时间：0.043001s][吞吐率：23.26req/s] [内存消耗：1,907.68kb] [文件加载：40]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'muieblackcat',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en-us',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-05T11:40:29+08:00 ] 103.45.103.50 46.243.189.99 GET //phpMyAdmin/scripts/setup.php
+[ info ] 103.45.103.50//phpMyAdmin/scripts/setup.php [运行时间：0.029641s][吞吐率：33.74req/s] [内存消耗：1,907.55kb] [文件加载：40]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phpMyAdmin',
+    1 => 'scripts',
+    2 => 'setup.php',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en-us',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-05T11:40:30+08:00 ] 103.45.103.50 46.243.189.99 GET //phpmyadmin/scripts/setup.php
+[ info ] 103.45.103.50//phpmyadmin/scripts/setup.php [运行时间：0.034651s][吞吐率：28.86req/s] [内存消耗：1,907.55kb] [文件加载：40]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'phpmyadmin',
+    1 => 'scripts',
+    2 => 'setup.php',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en-us',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-05T11:40:31+08:00 ] 103.45.103.50 46.243.189.99 GET //pma/scripts/setup.php
+[ info ] 103.45.103.50//pma/scripts/setup.php [运行时间：0.029349s][吞吐率：34.07req/s] [内存消耗：1,907.48kb] [文件加载：40]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pma',
+    1 => 'scripts',
+    2 => 'setup.php',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en-us',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-05T11:40:32+08:00 ] 103.45.103.50 46.243.189.99 GET //myadmin/scripts/setup.php
+[ info ] 103.45.103.50//myadmin/scripts/setup.php [运行时间：0.029787s][吞吐率：33.57req/s] [内存消耗：1,907.42kb] [文件加载：40]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'myadmin',
+    1 => 'scripts',
+    2 => 'setup.php',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en-us',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-05T11:40:33+08:00 ] 103.45.103.50 46.243.189.99 GET //MyAdmin/scripts/setup.php
+[ info ] 103.45.103.50//MyAdmin/scripts/setup.php [运行时间：0.025714s][吞吐率：38.89req/s] [内存消耗：1,907.42kb] [文件加载：40]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'MyAdmin',
+    1 => 'scripts',
+    2 => 'setup.php',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en-us',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-05T11:46:21+08:00 ] 103.45.103.50 80.82.78.50 GET http://www.baidu.com/cache/global/img/gs.gif
+[ info ] www.baidu.comhttp://www.baidu.com/cache/global/img/gs.gif [运行时间：0.045128s][吞吐率：22.16req/s] [内存消耗：1,907.41kb] [文件加载：40]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'cache',
+    1 => 'global',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'if-modified-since' => 'Thu, 19 Apr 2012 09:51:20 GMT',
+  'user-agent' => 'Mozilla',
+  'host' => 'www.baidu.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-05T11:52:37+08:00 ] 103.45.103.50 31.129.166.5 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.089274s][吞吐率：11.20req/s] [内存消耗：3,694.88kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002987s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002223s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.000911s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000777s ]
+---------------------------------------------------------------
+[ 2018-04-05T11:56:23+08:00 ] 103.45.103.50 187.1.25.217 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.070403s][吞吐率：14.20req/s] [内存消耗：3,695.06kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010224s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002131s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.001024s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000772s ]
+---------------------------------------------------------------
+[ 2018-04-05T12:30:22+08:00 ] 103.45.103.50 95.85.240.90 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.092678s][吞吐率：10.79req/s] [内存消耗：3,694.88kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002531s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.001435s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.000863s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000719s ]
+---------------------------------------------------------------
+[ 2018-04-05T13:15:15+08:00 ] 103.45.103.50 181.174.162.139 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.108527s][吞吐率：9.21req/s] [内存消耗：3,694.88kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012051s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002402s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.001051s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000849s ]
+---------------------------------------------------------------
+[ 2018-04-05T13:20:24+08:00 ] 103.45.103.50 190.60.130.212 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.073149s][吞吐率：13.67req/s] [内存消耗：3,695.06kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011027s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002232s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.001028s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000805s ]
+---------------------------------------------------------------
+[ 2018-04-05T13:47:31+08:00 ] 103.45.103.50 103.45.241.128 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.073912s][吞吐率：13.53req/s] [内存消耗：3,694.88kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002691s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002602s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.001053s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000797s ]
+---------------------------------------------------------------
+[ 2018-04-05T14:26:00+08:00 ] 103.45.103.50 122.144.14.219 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.090852s][吞吐率：11.01req/s] [内存消耗：3,694.88kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003112s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002605s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.001017s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000857s ]
+---------------------------------------------------------------
+[ 2018-04-05T15:01:29+08:00 ] 103.45.103.50 201.68.96.5 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.096396s][吞吐率：10.37req/s] [内存消耗：3,694.88kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003851s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002328s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.001088s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000764s ]
+---------------------------------------------------------------
+[ 2018-04-05T15:51:59+08:00 ] 103.45.103.50 178.156.83.244 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.089886s][吞吐率：11.13req/s] [内存消耗：3,694.88kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002943s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002217s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.001208s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000843s ]
+---------------------------------------------------------------
+[ 2018-04-05T17:04:56+08:00 ] 103.45.103.50 60.191.52.254 HEAD http://icp.pppf.com.cn
+[ info ] icp.pppf.com.cnhttp://icp.pppf.com.cn [运行时间：0.091945s][吞吐率：10.88req/s] [内存消耗：3,694.13kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'proxy-connection' => 'keep-alive',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'host' => 'icp.pppf.com.cn',
+  'user-agent' => 'Java/1.8.0_77',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002829s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002443s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.001049s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000932s ]
+---------------------------------------------------------------
+[ 2018-04-05T17:04:56+08:00 ] 103.45.103.50 60.191.52.254 HEAD http://icp.pppf.com.cn/home/login/login.html
+[ info ] icp.pppf.com.cnhttp://icp.pppf.com.cn/home/login/login.html [运行时间：0.063577s][吞吐率：15.73req/s] [内存消耗：3,275.17kb] [文件加载：55]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'proxy-connection' => 'keep-alive',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'host' => 'icp.pppf.com.cn',
+  'user-agent' => 'Java/1.8.0_77',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Login->login[ D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\shop\home\controller\Login.php ]
+[ info ] [ VIEW ] ../tpl/home/wap/login\login.html [ array (
+  0 => 'site_info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010366s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.001784s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.000824s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000624s ]
+---------------------------------------------------------------
+[ 2018-04-05T17:08:22+08:00 ] 103.45.103.50 178.136.243.147 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.077181s][吞吐率：12.96req/s] [内存消耗：3,694.80kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/601.7.7 (KHTML, like Gecko) Version/9.1.2 Safari/601.7.7',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010740s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002193s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.001044s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000888s ]
+---------------------------------------------------------------
+[ 2018-04-05T18:34:21+08:00 ] 103.45.103.50 217.24.179.4 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.084214s][吞吐率：11.87req/s] [内存消耗：3,694.88kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002670s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002262s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.000838s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000608s ]
+---------------------------------------------------------------
+[ 2018-04-05T18:37:03+08:00 ] 103.45.103.50 5.190.78.250 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.073582s][吞吐率：13.59req/s] [内存消耗：3,694.80kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/601.7.7 (KHTML, like Gecko) Version/9.1.2 Safari/601.7.7',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011816s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002146s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.000944s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000764s ]
+---------------------------------------------------------------
+[ 2018-04-05T18:42:03+08:00 ] 103.45.103.50 107.170.229.146 GET /
+[ info ] 103.45.103.50/ [运行时间：0.090793s][吞吐率：11.01req/s] [内存消耗：3,694.61kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 zgrab/0.x',
+  'host' => '103.45.103.50',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002497s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002961s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.001226s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000947s ]
+---------------------------------------------------------------
+[ 2018-04-05T19:14:37+08:00 ] 103.45.103.50 179.217.167.34 GET /hndUnblock.cgi
+[ info ] 103.45.103.50/hndUnblock.cgi [运行时间：0.055414s][吞吐率：18.05req/s] [内存消耗：1,906.99kb] [文件加载：40]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hndUnblock.cgi',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Wget(linux)',
+  'host' => '103.45.103.50',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-05T19:14:40+08:00 ] 103.45.103.50 179.217.167.34 GET /tmUnblock.cgi
+[ info ] 103.45.103.50/tmUnblock.cgi [运行时间：0.030436s][吞吐率：32.86req/s] [内存消耗：1,907.41kb] [文件加载：40]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'tmUnblock.cgi',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Wget(linux)',
+  'host' => '103.45.103.50',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-05T19:14:46+08:00 ] 103.45.103.50 179.217.167.34 GET /moo
+[ info ] 103.45.103.50/moo [运行时间：0.036307s][吞吐率：27.54req/s] [内存消耗：1,907.27kb] [文件加载：40]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'moo',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Wget(linux)',
+  'host' => '103.45.103.50',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-05T19:14:52+08:00 ] 103.45.103.50 179.217.167.34 GET /
+[ info ] 103.45.103.50/ [运行时间：0.059370s][吞吐率：16.84req/s] [内存消耗：3,694.72kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Wget(linux)',
+  'host' => '103.45.103.50',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002502s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002032s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.000775s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000521s ]
+---------------------------------------------------------------
+[ 2018-04-05T19:14:55+08:00 ] 103.45.103.50 179.217.167.34 POST /getcfg.php
+[ info ] 103.45.103.50/getcfg.php [运行时间：0.028152s][吞吐率：35.52req/s] [内存消耗：1,908.48kb] [文件加载：40]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'getcfg.php',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '60',
+  'user-agent' => 'Wget(linux)',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => '103.45.103.50',
+  'cookie' => 'uid=Zd5iHiPget',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'A' => 'A
+_POST_SERVICES=DEVICE.ACCOUNT
+AUTHORIZED_GROUP=1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-05T19:15:02+08:00 ] 103.45.103.50 179.217.167.34 POST /getcfg.php
+[ info ] 103.45.103.50/getcfg.php [运行时间：0.028003s][吞吐率：35.71req/s] [内存消耗：1,908.55kb] [文件加载：40]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'getcfg.php',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '60',
+  'user-agent' => 'Wget(linux)',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => '103.45.103.50',
+  'cookie' => 'uid=Zd5iHiPget',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'A' => 'A
+_POST_SERVICES=DEVICE.ACCOUNT
+AUTHORIZED_GROUP=1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-05T19:47:00+08:00 ] 103.45.103.50 107.170.194.60 GET /
+[ info ] 103.45.103.50/ [运行时间：0.071412s][吞吐率：14.00req/s] [内存消耗：3,694.61kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 zgrab/0.x',
+  'host' => '103.45.103.50',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002891s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002043s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.000831s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000694s ]
+---------------------------------------------------------------
+[ 2018-04-05T20:54:06+08:00 ] 103.45.103.50 178.253.58.150 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.084620s][吞吐率：11.82req/s] [内存消耗：3,694.88kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002521s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.001844s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.000836s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000695s ]
+---------------------------------------------------------------
+[ 2018-04-05T21:13:40+08:00 ] 103.45.103.50 189.46.101.231 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.092031s][吞吐率：10.87req/s] [内存消耗：3,694.88kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012016s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002239s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.000823s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000626s ]
+---------------------------------------------------------------
+[ 2018-04-05T21:28:57+08:00 ] 103.45.103.50 186.219.243.52 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.087662s][吞吐率：11.41req/s] [内存消耗：3,694.88kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002945s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002128s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.001064s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000826s ]
+---------------------------------------------------------------
+[ 2018-04-05T22:16:48+08:00 ] 103.45.103.50 84.54.147.81 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.077062s][吞吐率：12.98req/s] [内存消耗：3,694.88kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002422s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.001740s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.000776s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000575s ]
+---------------------------------------------------------------
+[ 2018-04-05T22:45:52+08:00 ] 103.45.103.50 180.189.196.71 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.098550s][吞吐率：10.15req/s] [内存消耗：3,694.88kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011116s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002265s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.001082s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000906s ]
+---------------------------------------------------------------
+[ 2018-04-05T22:52:23+08:00 ] 103.45.103.50 130.0.30.93 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.081760s][吞吐率：12.23req/s] [内存消耗：3,694.88kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002810s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002460s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.000814s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000674s ]
+---------------------------------------------------------------
+[ 2018-04-05T23:20:22+08:00 ] 103.45.103.50 31.151.102.201 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.079691s][吞吐率：12.55req/s] [内存消耗：3,694.88kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002741s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002069s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.000849s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000698s ]

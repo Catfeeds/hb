@@ -1,0 +1,3649 @@
+---------------------------------------------------------------
+[ 2018-04-16T09:59:47+08:00 ] 103.45.103.50 14.127.121.4 GET /static/admin/libs/lyui/dist/css/lyui.min.css.map
+[ info ] 103.45.103.50/static/admin/libs/lyui/dist/css/lyui.min.css.map [运行时间：0.027902s][吞吐率：35.84req/s] [内存消耗：1,910.15kb] [文件加载：40]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'libs',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=cc2o6l1b4u4nhsll8ctl4n2fp7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+)
+[ info ] [ PARAM ] array (
+  'lyui' => 'dist',
+  'css' => 'lyui.min.css.map',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-16T09:59:47+08:00 ] 103.45.103.50 14.127.121.4 GET /static/admin/libs/lyui/dist/css/lyui.extend.min.css.map
+[ info ] 103.45.103.50/static/admin/libs/lyui/dist/css/lyui.extend.min.css.map [运行时间：0.040366s][吞吐率：24.77req/s] [内存消耗：1,909.92kb] [文件加载：40]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'libs',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=cc2o6l1b4u4nhsll8ctl4n2fp7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+)
+[ info ] [ PARAM ] array (
+  'lyui' => 'dist',
+  'css' => 'lyui.extend.min.css.map',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-16T09:59:48+08:00 ] 103.45.103.50 14.127.121.4 GET /static/admin/libs/lyui/dist/js/lyui.extend.min.js.map
+[ info ] 103.45.103.50/static/admin/libs/lyui/dist/js/lyui.extend.min.js.map [运行时间：0.026671s][吞吐率：37.49req/s] [内存消耗：1,909.89kb] [文件加载：40]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'libs',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=cc2o6l1b4u4nhsll8ctl4n2fp7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+)
+[ info ] [ PARAM ] array (
+  'lyui' => 'dist',
+  'js' => 'lyui.extend.min.js.map',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-16T09:59:48+08:00 ] 103.45.103.50 14.127.121.4 GET /static/admin/libs/lyui/dist/js/lyui.min.js.map
+[ info ] 103.45.103.50/static/admin/libs/lyui/dist/js/lyui.min.js.map [运行时间：0.036063s][吞吐率：27.73req/s] [内存消耗：1,909.63kb] [文件加载：40]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'libs',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=cc2o6l1b4u4nhsll8ctl4n2fp7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+)
+[ info ] [ PARAM ] array (
+  'lyui' => 'dist',
+  'js' => 'lyui.min.js.map',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-16T10:00:09+08:00 ] 103.45.103.50 117.185.117.59 GET /Adminmall/goodbrand/index.html?page=4
+[ info ] 103.45.103.50/Adminmall/goodbrand/index.html?page=4 [运行时间：0.031745s][吞吐率：31.50req/s] [内存消耗：2,227.03kb] [文件加载：46]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Adminmall',
+    1 => 'goodbrand',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'referer' => 'http://103.45.103.50/Adminmall/goodbrand/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+  'page' => '4',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-16T10:00:20+08:00 ] 103.45.103.50 101.227.131.139 GET /Admin/config/group.html
+[ info ] 103.45.103.50/Admin/config/group.html [运行时间：0.026510s][吞吐率：37.72req/s] [内存消耗：2,232.73kb] [文件加载：46]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'config',
+    2 => 'group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'referer' => 'http://103.45.103.50/Adminmall/goodbrand/index.html?page=3',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2141.400 QQBrowser/9.5.10219.400',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-16T10:00:23+08:00 ] 103.45.103.50 101.226.102.237 GET /Admin/useradvice/index.html
+[ info ] 103.45.103.50/Admin/useradvice/index.html [运行时间：0.033867s][吞吐率：29.53req/s] [内存消耗：2,231.31kb] [文件加载：46]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'useradvice',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'referer' => 'http://103.45.103.50/Admin/config/group.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.124 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-16T10:00:25+08:00 ] 103.45.103.50 117.135.173.79 GET /Admin/news/index.html
+[ info ] 103.45.103.50/Admin/news/index.html [运行时间：0.028812s][吞吐率：34.71req/s] [内存消耗：2,286.56kb] [文件加载：46]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'news',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'referer' => 'http://103.45.103.50/Admin/useradvice/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-16T10:00:29+08:00 ] 103.45.103.50 61.151.226.85 GET /admin/news/addtitle/id/2.html
+[ info ] 103.45.103.50/admin/news/addtitle/id/2.html [运行时间：0.029052s][吞吐率：34.42req/s] [内存消耗：2,287.78kb] [文件加载：46]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'news',
+    2 => 'addtitle',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'referer' => 'http://103.45.103.50/Admin/news/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.3; rv:11.0) like Gecko',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-16T10:00:30+08:00 ] 103.45.103.50 61.151.226.76 GET /Admin/recharge/index.html
+[ info ] 103.45.103.50/Admin/recharge/index.html [运行时间：0.036776s][吞吐率：27.19req/s] [内存消耗：2,229.33kb] [文件加载：46]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'recharge',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'referer' => 'http://103.45.103.50/admin/news/addtitle/id/2.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-16T10:00:41+08:00 ] 103.45.103.50 61.151.226.71 GET /static/admin/libs/lyui/dist/css/lyui.min.css.map
+[ info ] 103.45.103.50/static/admin/libs/lyui/dist/css/lyui.min.css.map [运行时间：0.030197s][吞吐率：33.12req/s] [内存消耗：1,909.05kb] [文件加载：40]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'libs',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) 			Chrome/55.0.2883.95 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+  'lyui' => 'dist',
+  'css' => 'lyui.min.css.map',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-16T10:00:46+08:00 ] 103.45.103.50 61.151.226.76 GET /static/admin/libs/lyui/dist/css/lyui.extend.min.css.map
+[ info ] 103.45.103.50/static/admin/libs/lyui/dist/css/lyui.extend.min.css.map [运行时间：0.025347s][吞吐率：39.45req/s] [内存消耗：1,909.07kb] [文件加载：40]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'libs',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+  'lyui' => 'dist',
+  'css' => 'lyui.extend.min.css.map',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-16T10:00:47+08:00 ] 103.45.103.50 61.151.178.177 GET /static/admin/libs/lyui/dist/js/lyui.extend.min.js.map
+[ info ] 103.45.103.50/static/admin/libs/lyui/dist/js/lyui.extend.min.js.map [运行时间：0.035338s][吞吐率：28.30req/s] [内存消耗：1,909.21kb] [文件加载：40]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'libs',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+  'lyui' => 'dist',
+  'js' => 'lyui.extend.min.js.map',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-16T10:10:34+08:00 ] 103.45.103.50 168.235.93.142 GET /
+[ info ] 103.45.103.50/ [运行时间：0.095692s][吞吐率：10.45req/s] [内存消耗：3,696.02kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'en;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002679s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002135s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.001117s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000718s ]
+---------------------------------------------------------------
+[ 2018-04-16T10:10:52+08:00 ] 103.45.103.50 101.227.131.139 GET /Adminmall/order/index/order_status/0.html
+[ info ] 103.45.103.50/Adminmall/order/index/order_status/0.html [运行时间：0.035120s][吞吐率：28.47req/s] [内存消耗：2,238.68kb] [文件加载：46]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Adminmall',
+    1 => 'order',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'referer' => 'http://103.45.103.50/Adminmall/order/index/order_status/1.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+  'order_status' => '0',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-16T10:32:21+08:00 ] 103.45.103.50 197.255.178.103 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.086448s][吞吐率：11.57req/s] [内存消耗：3,694.88kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002814s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002003s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.000904s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000679s ]
+---------------------------------------------------------------
+[ 2018-04-16T10:44:23+08:00 ] 103.45.103.50 90.143.86.57 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.094913s][吞吐率：10.54req/s] [内存消耗：3,694.88kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002715s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002023s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.001076s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000900s ]
+---------------------------------------------------------------
+[ 2018-04-16T11:02:02+08:00 ] 103.45.103.50 80.247.243.208 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.098250s][吞吐率：10.18req/s] [内存消耗：3,694.88kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/601.7.7 (KHTML, like Gecko) Version/9.1.2 Safari/601.7.7',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003316s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002177s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.001047s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.001092s ]
+---------------------------------------------------------------
+[ 2018-04-16T12:38:28+08:00 ] 103.45.103.50 80.82.78.50 GET http://www.baidu.com/cache/global/img/gs.gif
+[ info ] www.baidu.comhttp://www.baidu.com/cache/global/img/gs.gif [运行时间：0.046268s][吞吐率：21.61req/s] [内存消耗：1,907.41kb] [文件加载：40]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'cache',
+    1 => 'global',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'if-modified-since' => 'Thu, 19 Apr 2012 09:51:20 GMT',
+  'user-agent' => 'Mozilla',
+  'host' => 'www.baidu.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-16T13:43:46+08:00 ] 103.45.103.50 211.23.154.138 GET /
+[ info ] 103.45.103.50/ [运行时间：0.090014s][吞吐率：11.11req/s] [内存消耗：3,694.61kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 zgrab/0.x',
+  'host' => '103.45.103.50',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012391s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002026s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.000828s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000565s ]
+---------------------------------------------------------------
+[ 2018-04-16T14:07:06+08:00 ] 103.45.103.50 201.92.200.155 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.097687s][吞吐率：10.24req/s] [内存消耗：3,694.88kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002928s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002799s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.000864s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000651s ]
+---------------------------------------------------------------
+[ 2018-04-16T15:27:46+08:00 ] 103.45.103.50 14.127.123.196 GET /Adminmall/good/index.html
+[ info ] 103.45.103.50/Adminmall/good/index.html [运行时间：0.138715s][吞吐率：7.21req/s] [内存消耗：4,172.79kb] [文件加载：63]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Adminmall',
+    1 => 'good',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=cc2o6l1b4u4nhsll8ctl4n2fp7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://103.45.103.50/Adminmall/goodtype/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\adminmall\controller\Good->index[ D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\shop\adminmall\controller\Good.php ]
+[ info ] [ VIEW ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\public/../shop/adminmall\view\good\index.html [ array (
+  0 => '_menu_list_g',
+  1 => '_menu_list_p',
+  2 => '_menu_list_c',
+  3 => '_menu_tab',
+  4 => 'list',
+  5 => 'table_data_page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002315s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.001775s ]
+[ sql ] [ SQL ] SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE  `mod` = 'adminmall'  AND `col` = 'Good'  AND `act` = 'index' LIMIT 1 [ RunTime:0.000923s ]
+[ sql ] [ SQL ] SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE  `mod` = 'adminmall'  AND `col` = 'Good'  AND `act` = 'index'  AND `status` = 1  AND `level` = 2 LIMIT 1 [ RunTime:0.000810s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000645s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 10 LIMIT 1 [ RunTime:0.000676s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 1  AND `gid` = 10 ORDER BY sort asc, id asc [ RunTime:0.001265s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 2  AND `gid` = 10 ORDER BY sort asc, id asc [ RunTime:0.001252s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 0 ORDER BY sort asc, id asc [ RunTime:0.001073s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.000933s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 10 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.000898s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_good` [ RunTime:0.002227s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ysk_good` WHERE  `seller_id` = 0  AND `good_type` = 0 LIMIT 1 [ RunTime:0.000936s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_good` WHERE  `seller_id` = 0  AND `good_type` = 0 ORDER BY good_sort desc,category_id LIMIT 0,10 [ RunTime:0.002079s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_good_category` [ RunTime:0.001717s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_good_category` WHERE  `id` = 338 LIMIT 1 [ RunTime:0.000688s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_good_category` WHERE  `id` = 107 LIMIT 1 [ RunTime:0.000735s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_good_category` WHERE  `id` = 425 LIMIT 1 [ RunTime:0.000658s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_good_category` WHERE  `id` = 424 LIMIT 1 [ RunTime:0.000660s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_good_category` WHERE  `id` = 442 LIMIT 1 [ RunTime:0.000652s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_good_category` WHERE  `id` = 818 LIMIT 1 [ RunTime:0.000814s ]
+---------------------------------------------------------------
+[ 2018-04-16T15:27:51+08:00 ] 103.45.103.50 14.127.123.196 GET /logo.png
+[ info ] 103.45.103.50/logo.png [运行时间：0.031229s][吞吐率：32.02req/s] [内存消耗：1,909.77kb] [文件加载：40]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'logo.png',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=cc2o6l1b4u4nhsll8ctl4n2fp7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://103.45.103.50/Adminmall/good/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-16T15:29:50+08:00 ] 103.45.103.50 186.225.68.248 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.077732s][吞吐率：12.86req/s] [内存消耗：3,694.73kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011005s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.001763s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.000998s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000812s ]
+---------------------------------------------------------------
+[ 2018-04-16T15:30:14+08:00 ] 103.45.103.50 14.127.123.196 GET /admin/index/index.html
+[ info ] 103.45.103.50/admin/index/index.html [运行时间：0.093542s][吞吐率：10.69req/s] [内存消耗：3,873.17kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=cc2o6l1b4u4nhsll8ctl4n2fp7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://103.45.103.50/Adminmall/good/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\shop\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\public/../shop/admin\view\index\index.html [ array (
+  0 => '_menu_list_g',
+  1 => '_menu_list_p',
+  2 => '_menu_list_c',
+  3 => '_menu_tab',
+  4 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011144s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.002539s ]
+[ sql ] [ SQL ] SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000889s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000825s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 1  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001366s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001388s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 0 ORDER BY sort asc, id asc [ RunTime:0.000960s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.000897s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 10 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.000818s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_user` [ RunTime:0.001783s ]
+[ sql ] [ SQL ] SELECT COUNT(1) AS tp_count FROM `ysk_user` LIMIT 1 [ RunTime:0.000557s ]
+[ sql ] [ SQL ] SELECT COUNT(1) AS tp_count FROM `ysk_user` WHERE  FROM_UNIXTIME(reg_date,'%Y%m%d') = '20180416' LIMIT 1 [ RunTime:0.000592s ]
+---------------------------------------------------------------
+[ 2018-04-16T15:30:20+08:00 ] 103.45.103.50 14.127.123.196 GET /Admin/config/group.html
+[ info ] 103.45.103.50/Admin/config/group.html [运行时间：0.100933s][吞吐率：9.91req/s] [内存消耗：3,944.92kb] [文件加载：60]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'config',
+    2 => 'group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=cc2o6l1b4u4nhsll8ctl4n2fp7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://103.45.103.50/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Config->group[ D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\shop\admin\controller\Config.php ]
+[ info ] [ VIEW ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\public/../shop/admin\view\config\base.html [ array (
+  0 => '_menu_list_g',
+  1 => '_menu_list_p',
+  2 => '_menu_list_c',
+  3 => '_menu_tab',
+  4 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011522s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.002026s ]
+[ sql ] [ SQL ] SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE  `mod` = 'admin'  AND `col` = 'Config'  AND `act` = 'group' LIMIT 1 [ RunTime:0.000900s ]
+[ sql ] [ SQL ] SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE  `mod` = 'admin'  AND `col` = 'Config'  AND `act` = 'group'  AND `status` = 1  AND `level` = 2 LIMIT 1 [ RunTime:0.000955s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000742s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000728s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 1  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001431s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001293s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 0 ORDER BY sort asc, id asc [ RunTime:0.001029s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.000893s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 10 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.000899s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.001754s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`value`,`tip`,`type`,`title` FROM `ysk_config` WHERE  `group` = 1  AND `status` = 1 [ RunTime:0.001037s ]
+---------------------------------------------------------------
+[ 2018-04-16T15:30:41+08:00 ] 103.45.103.50 14.127.123.196 GET /admin/config/group/group/2.html
+[ info ] 103.45.103.50/admin/config/group/group/2.html [运行时间：0.102926s][吞吐率：9.72req/s] [内存消耗：3,951.26kb] [文件加载：60]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'config',
+    2 => 'group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=cc2o6l1b4u4nhsll8ctl4n2fp7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://103.45.103.50/Admin/config/group.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+)
+[ info ] [ PARAM ] array (
+  'group' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Config->group[ D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\shop\admin\controller\Config.php ]
+[ info ] [ VIEW ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\public/../shop/admin\view\config\system.html [ array (
+  0 => '_menu_list_g',
+  1 => '_menu_list_p',
+  2 => '_menu_list_c',
+  3 => '_menu_tab',
+  4 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011351s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.001990s ]
+[ sql ] [ SQL ] SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE  `mod` = 'admin'  AND `col` = 'Config'  AND `act` = 'group' LIMIT 1 [ RunTime:0.000942s ]
+[ sql ] [ SQL ] SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE  `mod` = 'admin'  AND `col` = 'Config'  AND `act` = 'group'  AND `status` = 1  AND `level` = 2 LIMIT 1 [ RunTime:0.001006s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000689s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000586s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 1  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001301s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001511s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 0 ORDER BY sort asc, id asc [ RunTime:0.001191s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.001003s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 10 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.001003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.001811s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`value`,`tip`,`type`,`title` FROM `ysk_config` WHERE  `group` = 2  AND `status` = 1 [ RunTime:0.001164s ]
+---------------------------------------------------------------
+[ 2018-04-16T15:30:43+08:00 ] 103.45.103.50 14.127.123.196 GET /admin/config/group/group/4.html
+[ info ] 103.45.103.50/admin/config/group/group/4.html [运行时间：0.094919s][吞吐率：10.54req/s] [内存消耗：3,939.62kb] [文件加载：60]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'config',
+    2 => 'group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=cc2o6l1b4u4nhsll8ctl4n2fp7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://103.45.103.50/admin/config/group/group/2.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+)
+[ info ] [ PARAM ] array (
+  'group' => '4',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Config->group[ D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\shop\admin\controller\Config.php ]
+[ info ] [ VIEW ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\public/../shop/admin\view\config\fee.html [ array (
+  0 => '_menu_list_g',
+  1 => '_menu_list_p',
+  2 => '_menu_list_c',
+  3 => '_menu_tab',
+  4 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010630s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.002175s ]
+[ sql ] [ SQL ] SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE  `mod` = 'admin'  AND `col` = 'Config'  AND `act` = 'group' LIMIT 1 [ RunTime:0.000940s ]
+[ sql ] [ SQL ] SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE  `mod` = 'admin'  AND `col` = 'Config'  AND `act` = 'group'  AND `status` = 1  AND `level` = 2 LIMIT 1 [ RunTime:0.000804s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000722s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000637s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 1  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001551s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001695s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 0 ORDER BY sort asc, id asc [ RunTime:0.001280s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.001054s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 10 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.001732s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.001973s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`value`,`tip`,`type`,`title` FROM `ysk_config` WHERE  `group` = 4  AND `status` = 1 [ RunTime:0.000958s ]
+---------------------------------------------------------------
+[ 2018-04-16T15:30:45+08:00 ] 103.45.103.50 14.127.123.196 GET /admin/config/group/group/2.html
+[ info ] 103.45.103.50/admin/config/group/group/2.html [运行时间：0.092358s][吞吐率：10.83req/s] [内存消耗：3,951.41kb] [文件加载：60]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'config',
+    2 => 'group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=cc2o6l1b4u4nhsll8ctl4n2fp7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://103.45.103.50/admin/config/group/group/4.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+)
+[ info ] [ PARAM ] array (
+  'group' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Config->group[ D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\shop\admin\controller\Config.php ]
+[ info ] [ VIEW ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\public/../shop/admin\view\config\system.html [ array (
+  0 => '_menu_list_g',
+  1 => '_menu_list_p',
+  2 => '_menu_list_c',
+  3 => '_menu_tab',
+  4 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011739s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.002004s ]
+[ sql ] [ SQL ] SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE  `mod` = 'admin'  AND `col` = 'Config'  AND `act` = 'group' LIMIT 1 [ RunTime:0.000937s ]
+[ sql ] [ SQL ] SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE  `mod` = 'admin'  AND `col` = 'Config'  AND `act` = 'group'  AND `status` = 1  AND `level` = 2 LIMIT 1 [ RunTime:0.000802s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000666s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000630s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 1  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001189s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001598s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 0 ORDER BY sort asc, id asc [ RunTime:0.001304s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.000924s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 10 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.000892s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.001626s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`value`,`tip`,`type`,`title` FROM `ysk_config` WHERE  `group` = 2  AND `status` = 1 [ RunTime:0.000965s ]
+---------------------------------------------------------------
+[ 2018-04-16T15:30:49+08:00 ] 103.45.103.50 14.127.123.196 GET /admin/config/group/group/4.html
+[ info ] 103.45.103.50/admin/config/group/group/4.html [运行时间：0.092910s][吞吐率：10.76req/s] [内存消耗：3,939.62kb] [文件加载：60]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'config',
+    2 => 'group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=cc2o6l1b4u4nhsll8ctl4n2fp7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://103.45.103.50/admin/config/group/group/2.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+)
+[ info ] [ PARAM ] array (
+  'group' => '4',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Config->group[ D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\shop\admin\controller\Config.php ]
+[ info ] [ VIEW ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\public/../shop/admin\view\config\fee.html [ array (
+  0 => '_menu_list_g',
+  1 => '_menu_list_p',
+  2 => '_menu_list_c',
+  3 => '_menu_tab',
+  4 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010622s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.002734s ]
+[ sql ] [ SQL ] SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE  `mod` = 'admin'  AND `col` = 'Config'  AND `act` = 'group' LIMIT 1 [ RunTime:0.000931s ]
+[ sql ] [ SQL ] SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE  `mod` = 'admin'  AND `col` = 'Config'  AND `act` = 'group'  AND `status` = 1  AND `level` = 2 LIMIT 1 [ RunTime:0.000728s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000685s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000942s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 1  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001127s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001228s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 0 ORDER BY sort asc, id asc [ RunTime:0.001372s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.001014s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 10 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.001213s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.001858s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`value`,`tip`,`type`,`title` FROM `ysk_config` WHERE  `group` = 4  AND `status` = 1 [ RunTime:0.001036s ]
+---------------------------------------------------------------
+[ 2018-04-16T15:30:50+08:00 ] 103.45.103.50 14.127.123.196 GET /admin/config/turntable.html
+[ info ] 103.45.103.50/admin/config/turntable.html [运行时间：0.106083s][吞吐率：9.43req/s] [内存消耗：3,920.03kb] [文件加载：60]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'config',
+    2 => 'turntable',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=cc2o6l1b4u4nhsll8ctl4n2fp7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://103.45.103.50/admin/config/group/group/4.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Config->turntable[ D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\shop\admin\controller\Config.php ]
+[ info ] [ VIEW ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\public/../shop/admin\view\config\turntable.html [ array (
+  0 => '_menu_list_g',
+  1 => '_menu_list_p',
+  2 => '_menu_list_c',
+  3 => '_menu_tab',
+  4 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011394s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.002290s ]
+[ sql ] [ SQL ] SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE  `mod` = 'admin'  AND `col` = 'Config'  AND `act` = 'turntable' LIMIT 1 [ RunTime:0.001027s ]
+[ sql ] [ SQL ] SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE  `mod` = 'admin'  AND `col` = 'Config'  AND `status` = 1  AND `level` = 2 LIMIT 1 [ RunTime:0.001080s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000689s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000725s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 1  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001274s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001461s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 0 ORDER BY sort asc, id asc [ RunTime:0.001075s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.000945s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 10 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.000970s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_turntable_lv` [ RunTime:0.002709s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_turntable_lv` ORDER BY `id` LIMIT 1 [ RunTime:0.000701s ]
+---------------------------------------------------------------
+[ 2018-04-16T15:30:53+08:00 ] 103.45.103.50 14.127.123.196 GET /admin/config/group/group/3.html
+[ info ] 103.45.103.50/admin/config/group/group/3.html [运行时间：0.089160s][吞吐率：11.22req/s] [内存消耗：3,926.58kb] [文件加载：60]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'config',
+    2 => 'group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=cc2o6l1b4u4nhsll8ctl4n2fp7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://103.45.103.50/admin/config/turntable.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+)
+[ info ] [ PARAM ] array (
+  'group' => '3',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Config->group[ D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\shop\admin\controller\Config.php ]
+[ info ] [ VIEW ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\public/../shop/admin\view\config\siteclose.html [ array (
+  0 => '_menu_list_g',
+  1 => '_menu_list_p',
+  2 => '_menu_list_c',
+  3 => '_menu_tab',
+  4 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010840s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.002211s ]
+[ sql ] [ SQL ] SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE  `mod` = 'admin'  AND `col` = 'Config'  AND `act` = 'group' LIMIT 1 [ RunTime:0.000965s ]
+[ sql ] [ SQL ] SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE  `mod` = 'admin'  AND `col` = 'Config'  AND `act` = 'group'  AND `status` = 1  AND `level` = 2 LIMIT 1 [ RunTime:0.000898s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000719s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000657s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 1  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001160s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001344s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 0 ORDER BY sort asc, id asc [ RunTime:0.001069s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.000988s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 10 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.000955s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.001690s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`value`,`tip`,`type`,`title` FROM `ysk_config` WHERE  `group` = 3  AND `status` = 1 [ RunTime:0.000874s ]
+---------------------------------------------------------------
+[ 2018-04-16T15:31:14+08:00 ] 103.45.103.50 117.135.173.78 GET /admin/index/index.html
+[ info ] 103.45.103.50/admin/index/index.html [运行时间：0.029173s][吞吐率：34.28req/s] [内存消耗：2,218.13kb] [文件加载：46]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'referer' => 'http://103.45.103.50/Adminmall/good/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.3; rv:11.0) like Gecko',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-16T15:31:41+08:00 ] 103.45.103.50 101.226.233.139 GET /admin/config/group/group/2.html
+[ info ] 103.45.103.50/admin/config/group/group/2.html [运行时间：0.029478s][吞吐率：33.92req/s] [内存消耗：2,232.92kb] [文件加载：46]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'config',
+    2 => 'group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'referer' => 'http://103.45.103.50/Admin/config/group.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0',
+)
+[ info ] [ PARAM ] array (
+  'group' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-16T15:31:43+08:00 ] 103.45.103.50 117.135.173.79 GET /admin/config/group/group/4.html
+[ info ] 103.45.103.50/admin/config/group/group/4.html [运行时间：0.032583s][吞吐率：30.69req/s] [内存消耗：2,233.30kb] [文件加载：46]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'config',
+    2 => 'group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'referer' => 'http://103.45.103.50/admin/config/group/group/2.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) 			Chrome/55.0.2883.95 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+  'group' => '4',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-16T15:55:27+08:00 ] 103.45.103.50 177.95.206.193 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.084036s][吞吐率：11.90req/s] [内存消耗：3,694.88kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002706s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002202s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.000840s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000648s ]
+---------------------------------------------------------------
+[ 2018-04-16T15:59:31+08:00 ] 103.45.103.50 187.11.58.225 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.069342s][吞吐率：14.42req/s] [内存消耗：3,695.06kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010379s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002449s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.001057s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000819s ]
+---------------------------------------------------------------
+[ 2018-04-16T16:00:19+08:00 ] 103.45.103.50 14.127.123.196 GET /Admin/shopstatus/orderlist.html
+[ info ] 103.45.103.50/Admin/shopstatus/orderlist.html [运行时间：0.114557s][吞吐率：8.73req/s] [内存消耗：4,108.39kb] [文件加载：63]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'shopstatus',
+    2 => 'orderlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=cc2o6l1b4u4nhsll8ctl4n2fp7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://103.45.103.50/admin/config/group/group/3.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Shopstatus->orderlist[ D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\shop\admin\controller\Shopstatus.php ]
+[ info ] [ VIEW ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\public/../shop/admin\view\shopstatus\orderlist.html [ array (
+  0 => '_menu_list_g',
+  1 => '_menu_list_p',
+  2 => '_menu_list_c',
+  3 => '_menu_tab',
+  4 => 'list',
+  5 => 'table_data_page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010779s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.002388s ]
+[ sql ] [ SQL ] SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE  `mod` = 'admin'  AND `col` = 'Shopstatus'  AND `act` = 'orderlist' LIMIT 1 [ RunTime:0.000992s ]
+[ sql ] [ SQL ] SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE  `mod` = 'admin'  AND `col` = 'Shopstatus'  AND `act` = 'orderlist'  AND `status` = 1  AND `level` = 2 LIMIT 1 [ RunTime:0.000844s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 359 LIMIT 1 [ RunTime:0.000599s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000648s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 1  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001156s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001647s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 0 ORDER BY sort asc, id asc [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.000785s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 10 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.001023s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_update_userinfo` [ RunTime:0.003439s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM ysk_update_userinfo a LEFT JOIN `ysk_user` `b` ON `b`.`userid`=`a`.`uid` WHERE  `a`.`status` = 0 LIMIT 1 [ RunTime:0.000924s ]
+[ sql ] [ SQL ] SELECT `a`.`uid`,`b`.`username`,`b`.`mobile`,`a`.* FROM ysk_update_userinfo a LEFT JOIN `ysk_user` `b` ON `b`.`userid`=`a`.`uid` WHERE  `a`.`status` = 0 ORDER BY a.create_time desc LIMIT 0,10 [ RunTime:0.001171s ]
+---------------------------------------------------------------
+[ 2018-04-16T16:00:28+08:00 ] 103.45.103.50 14.127.123.196 GET /admin/shopstatus/orderlist/type/1.html
+[ info ] 103.45.103.50/admin/shopstatus/orderlist/type/1.html [运行时间：0.103942s][吞吐率：9.62req/s] [内存消耗：4,116.91kb] [文件加载：63]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'shopstatus',
+    2 => 'orderlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=cc2o6l1b4u4nhsll8ctl4n2fp7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://103.45.103.50/Admin/shopstatus/orderlist.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Shopstatus->orderlist[ D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\shop\admin\controller\Shopstatus.php ]
+[ info ] [ VIEW ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\public/../shop/admin\view\shopstatus\orderlist.html [ array (
+  0 => '_menu_list_g',
+  1 => '_menu_list_p',
+  2 => '_menu_list_c',
+  3 => '_menu_tab',
+  4 => 'list',
+  5 => 'table_data_page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011879s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.001740s ]
+[ sql ] [ SQL ] SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE  `mod` = 'admin'  AND `col` = 'Shopstatus'  AND `act` = 'orderlist' LIMIT 1 [ RunTime:0.000878s ]
+[ sql ] [ SQL ] SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE  `mod` = 'admin'  AND `col` = 'Shopstatus'  AND `act` = 'orderlist'  AND `status` = 1  AND `level` = 2 LIMIT 1 [ RunTime:0.000909s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 359 LIMIT 1 [ RunTime:0.000700s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000605s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 1  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001442s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001419s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 0 ORDER BY sort asc, id asc [ RunTime:0.001083s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.000899s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 10 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.000773s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_update_userinfo` [ RunTime:0.002710s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM ysk_update_userinfo a LEFT JOIN `ysk_user` `b` ON `b`.`userid`=`a`.`uid` WHERE  `a`.`status` = 1 LIMIT 1 [ RunTime:0.000742s ]
+[ sql ] [ SQL ] SELECT `a`.`uid`,`b`.`username`,`b`.`mobile`,`a`.* FROM ysk_update_userinfo a LEFT JOIN `ysk_user` `b` ON `b`.`userid`=`a`.`uid` WHERE  `a`.`status` = 1 ORDER BY a.create_time desc LIMIT 0,10 [ RunTime:0.000920s ]
+---------------------------------------------------------------
+[ 2018-04-16T16:00:29+08:00 ] 103.45.103.50 14.127.123.196 GET /admin/shopstatus/orderlist/type/2.html
+[ info ] 103.45.103.50/admin/shopstatus/orderlist/type/2.html [运行时间：0.102854s][吞吐率：9.72req/s] [内存消耗：4,113.48kb] [文件加载：63]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'shopstatus',
+    2 => 'orderlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=cc2o6l1b4u4nhsll8ctl4n2fp7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://103.45.103.50/admin/shopstatus/orderlist/type/1.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Shopstatus->orderlist[ D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\shop\admin\controller\Shopstatus.php ]
+[ info ] [ VIEW ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\public/../shop/admin\view\shopstatus\orderlist.html [ array (
+  0 => '_menu_list_g',
+  1 => '_menu_list_p',
+  2 => '_menu_list_c',
+  3 => '_menu_tab',
+  4 => 'list',
+  5 => 'table_data_page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011263s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.002177s ]
+[ sql ] [ SQL ] SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE  `mod` = 'admin'  AND `col` = 'Shopstatus'  AND `act` = 'orderlist' LIMIT 1 [ RunTime:0.000872s ]
+[ sql ] [ SQL ] SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE  `mod` = 'admin'  AND `col` = 'Shopstatus'  AND `act` = 'orderlist'  AND `status` = 1  AND `level` = 2 LIMIT 1 [ RunTime:0.001083s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 359 LIMIT 1 [ RunTime:0.000682s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000680s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 1  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001336s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001307s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 0 ORDER BY sort asc, id asc [ RunTime:0.001505s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.000897s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 10 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.000954s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_update_userinfo` [ RunTime:0.002536s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM ysk_update_userinfo a LEFT JOIN `ysk_user` `b` ON `b`.`userid`=`a`.`uid` WHERE  `a`.`status` = 2 LIMIT 1 [ RunTime:0.001104s ]
+[ sql ] [ SQL ] SELECT `a`.`uid`,`b`.`username`,`b`.`mobile`,`a`.* FROM ysk_update_userinfo a LEFT JOIN `ysk_user` `b` ON `b`.`userid`=`a`.`uid` WHERE  `a`.`status` = 2 ORDER BY a.create_time desc LIMIT 0,10 [ RunTime:0.001166s ]
+---------------------------------------------------------------
+[ 2018-04-16T16:00:41+08:00 ] 103.45.103.50 14.127.123.196 GET /admin/shopstatus/orderlist/type/1.html
+[ info ] 103.45.103.50/admin/shopstatus/orderlist/type/1.html [运行时间：0.092376s][吞吐率：10.83req/s] [内存消耗：4,117.05kb] [文件加载：63]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'shopstatus',
+    2 => 'orderlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=cc2o6l1b4u4nhsll8ctl4n2fp7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://103.45.103.50/admin/shopstatus/orderlist/type/2.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Shopstatus->orderlist[ D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\shop\admin\controller\Shopstatus.php ]
+[ info ] [ VIEW ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\public/../shop/admin\view\shopstatus\orderlist.html [ array (
+  0 => '_menu_list_g',
+  1 => '_menu_list_p',
+  2 => '_menu_list_c',
+  3 => '_menu_tab',
+  4 => 'list',
+  5 => 'table_data_page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010637s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.002188s ]
+[ sql ] [ SQL ] SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE  `mod` = 'admin'  AND `col` = 'Shopstatus'  AND `act` = 'orderlist' LIMIT 1 [ RunTime:0.001139s ]
+[ sql ] [ SQL ] SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE  `mod` = 'admin'  AND `col` = 'Shopstatus'  AND `act` = 'orderlist'  AND `status` = 1  AND `level` = 2 LIMIT 1 [ RunTime:0.000917s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 359 LIMIT 1 [ RunTime:0.000699s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000585s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 1  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001105s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001410s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 0 ORDER BY sort asc, id asc [ RunTime:0.000948s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.000755s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 10 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.000886s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_update_userinfo` [ RunTime:0.002885s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM ysk_update_userinfo a LEFT JOIN `ysk_user` `b` ON `b`.`userid`=`a`.`uid` WHERE  `a`.`status` = 1 LIMIT 1 [ RunTime:0.000979s ]
+[ sql ] [ SQL ] SELECT `a`.`uid`,`b`.`username`,`b`.`mobile`,`a`.* FROM ysk_update_userinfo a LEFT JOIN `ysk_user` `b` ON `b`.`userid`=`a`.`uid` WHERE  `a`.`status` = 1 ORDER BY a.create_time desc LIMIT 0,10 [ RunTime:0.001174s ]
+---------------------------------------------------------------
+[ 2018-04-16T16:00:41+08:00 ] 103.45.103.50 14.127.123.196 GET /admin/shopstatus/orderlist.html
+[ info ] 103.45.103.50/admin/shopstatus/orderlist.html [运行时间：0.102995s][吞吐率：9.71req/s] [内存消耗：4,108.39kb] [文件加载：63]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'shopstatus',
+    2 => 'orderlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=cc2o6l1b4u4nhsll8ctl4n2fp7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://103.45.103.50/admin/shopstatus/orderlist/type/1.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Shopstatus->orderlist[ D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\shop\admin\controller\Shopstatus.php ]
+[ info ] [ VIEW ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\public/../shop/admin\view\shopstatus\orderlist.html [ array (
+  0 => '_menu_list_g',
+  1 => '_menu_list_p',
+  2 => '_menu_list_c',
+  3 => '_menu_tab',
+  4 => 'list',
+  5 => 'table_data_page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010654s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.001430s ]
+[ sql ] [ SQL ] SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE  `mod` = 'admin'  AND `col` = 'Shopstatus'  AND `act` = 'orderlist' LIMIT 1 [ RunTime:0.000793s ]
+[ sql ] [ SQL ] SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE  `mod` = 'admin'  AND `col` = 'Shopstatus'  AND `act` = 'orderlist'  AND `status` = 1  AND `level` = 2 LIMIT 1 [ RunTime:0.000780s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 359 LIMIT 1 [ RunTime:0.000838s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000570s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 1  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001322s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001569s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 0 ORDER BY sort asc, id asc [ RunTime:0.001225s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.000989s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 10 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.000984s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_update_userinfo` [ RunTime:0.002836s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM ysk_update_userinfo a LEFT JOIN `ysk_user` `b` ON `b`.`userid`=`a`.`uid` WHERE  `a`.`status` = 0 LIMIT 1 [ RunTime:0.000910s ]
+[ sql ] [ SQL ] SELECT `a`.`uid`,`b`.`username`,`b`.`mobile`,`a`.* FROM ysk_update_userinfo a LEFT JOIN `ysk_user` `b` ON `b`.`userid`=`a`.`uid` WHERE  `a`.`status` = 0 ORDER BY a.create_time desc LIMIT 0,10 [ RunTime:0.000986s ]
+---------------------------------------------------------------
+[ 2018-04-16T16:00:48+08:00 ] 103.45.103.50 14.127.123.196 GET /Admin/article/index.html
+[ info ] 103.45.103.50/Admin/article/index.html [运行时间：0.102138s][吞吐率：9.79req/s] [内存消耗：4,084.46kb] [文件加载：63]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=cc2o6l1b4u4nhsll8ctl4n2fp7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://103.45.103.50/admin/shopstatus/orderlist.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->index[ D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\shop\admin\controller\Article.php ]
+[ info ] [ VIEW ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\public/../shop/admin\view\article\index.html [ array (
+  0 => '_menu_list_g',
+  1 => '_menu_list_p',
+  2 => '_menu_list_c',
+  3 => '_menu_tab',
+  4 => 'list',
+  5 => 'table_data_page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012056s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.001981s ]
+[ sql ] [ SQL ] SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE  `mod` = 'admin'  AND `col` = 'Article'  AND `act` = 'index' LIMIT 1 [ RunTime:0.000979s ]
+[ sql ] [ SQL ] SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE  `mod` = 'admin'  AND `col` = 'Article'  AND `act` = 'index'  AND `status` = 1  AND `level` = 2 LIMIT 1 [ RunTime:0.000896s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 356 LIMIT 1 [ RunTime:0.000758s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000851s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 1  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001270s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001427s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 0 ORDER BY sort asc, id asc [ RunTime:0.001208s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.000999s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 10 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.000937s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_article` [ RunTime:0.003114s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ysk_article` LIMIT 1 [ RunTime:0.000680s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_article` ORDER BY `type` LIMIT 0,10 [ RunTime:0.000937s ]
+---------------------------------------------------------------
+[ 2018-04-16T16:00:49+08:00 ] 103.45.103.50 14.127.123.196 GET /Admin/news/entry.html
+[ info ] 103.45.103.50/Admin/news/entry.html [运行时间：0.102283s][吞吐率：9.78req/s] [内存消耗：4,190.69kb] [文件加载：63]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'news',
+    2 => 'entry',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=cc2o6l1b4u4nhsll8ctl4n2fp7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://103.45.103.50/Admin/article/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\News->entry[ D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\shop\admin\controller\News.php ]
+[ info ] [ VIEW ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\public/../shop/admin\view\news\entry.html [ array (
+  0 => '_menu_list_g',
+  1 => '_menu_list_p',
+  2 => '_menu_list_c',
+  3 => '_menu_tab',
+  4 => 'list',
+  5 => 'table_data_page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010305s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.002096s ]
+[ sql ] [ SQL ] SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE  `mod` = 'admin'  AND `col` = 'News'  AND `act` = 'entry' LIMIT 1 [ RunTime:0.000821s ]
+[ sql ] [ SQL ] SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE  `mod` = 'admin'  AND `col` = 'News'  AND `act` = 'entry'  AND `status` = 1  AND `level` = 2 LIMIT 1 [ RunTime:0.000900s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 322 LIMIT 1 [ RunTime:0.000807s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000741s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 1  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001312s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001385s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 0 ORDER BY sort asc, id asc [ RunTime:0.001071s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.001037s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 10 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.000947s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_news` [ RunTime:0.003231s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ysk_news` LIMIT 1 [ RunTime:0.000898s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_news` ORDER BY px desc LIMIT 0,10 [ RunTime:0.001706s ]
+---------------------------------------------------------------
+[ 2018-04-16T16:00:49+08:00 ] 103.45.103.50 14.127.123.196 GET /Admin/news/index.html
+[ info ] 103.45.103.50/Admin/news/index.html [运行时间：0.098904s][吞吐率：10.11req/s] [内存消耗：4,133.41kb] [文件加载：63]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'news',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=cc2o6l1b4u4nhsll8ctl4n2fp7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://103.45.103.50/Admin/news/entry.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\News->index[ D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\shop\admin\controller\News.php ]
+[ info ] [ VIEW ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\public/../shop/admin\view\news\index.html [ array (
+  0 => '_menu_list_g',
+  1 => '_menu_list_p',
+  2 => '_menu_list_c',
+  3 => '_menu_tab',
+  4 => 'list',
+  5 => 'table_data_page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010292s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.002173s ]
+[ sql ] [ SQL ] SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE  `mod` = 'admin'  AND `col` = 'News'  AND `act` = 'index' LIMIT 1 [ RunTime:0.000948s ]
+[ sql ] [ SQL ] SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE  `mod` = 'admin'  AND `col` = 'News'  AND `act` = 'index'  AND `status` = 1  AND `level` = 2 LIMIT 1 [ RunTime:0.000964s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 322 LIMIT 1 [ RunTime:0.000757s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000808s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 1  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001291s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001539s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 0 ORDER BY sort asc, id asc [ RunTime:0.001280s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.001117s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 10 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.000963s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_news_title` [ RunTime:0.002841s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ysk_news_title` LIMIT 1 [ RunTime:0.000683s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_news_title` ORDER BY sort desc LIMIT 0,10 [ RunTime:0.000806s ]
+---------------------------------------------------------------
+[ 2018-04-16T16:01:18+08:00 ] 103.45.103.50 61.151.226.65 GET /Admin/shopstatus/orderlist.html
+[ info ] 103.45.103.50/Admin/shopstatus/orderlist.html [运行时间：0.032858s][吞吐率：30.43req/s] [内存消耗：2,258.67kb] [文件加载：46]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'shopstatus',
+    2 => 'orderlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'referer' => 'http://103.45.103.50/admin/config/group/group/3.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-16T16:01:28+08:00 ] 103.45.103.50 117.185.117.61 GET /admin/shopstatus/orderlist/type/1.html
+[ info ] 103.45.103.50/admin/shopstatus/orderlist/type/1.html [运行时间：0.030007s][吞吐率：33.33req/s] [内存消耗：2,259.66kb] [文件加载：46]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'shopstatus',
+    2 => 'orderlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'referer' => 'http://103.45.103.50/Admin/shopstatus/orderlist.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-16T16:01:29+08:00 ] 103.45.103.50 61.151.226.53 GET /admin/shopstatus/orderlist/type/2.html
+[ info ] 103.45.103.50/admin/shopstatus/orderlist/type/2.html [运行时间：0.033245s][吞吐率：30.08req/s] [内存消耗：2,259.66kb] [文件加载：46]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'shopstatus',
+    2 => 'orderlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'referer' => 'http://103.45.103.50/admin/shopstatus/orderlist/type/1.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-16T16:01:47+08:00 ] 103.45.103.50 61.151.226.67 GET /Admin/article/index.html
+[ info ] 103.45.103.50/Admin/article/index.html [运行时间：0.030207s][吞吐率：33.10req/s] [内存消耗：2,227.32kb] [文件加载：46]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'referer' => 'http://103.45.103.50/admin/shopstatus/orderlist.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-16T16:01:48+08:00 ] 103.45.103.50 61.151.218.118 GET /Admin/news/entry.html
+[ info ] 103.45.103.50/Admin/news/entry.html [运行时间：0.035526s][吞吐率：28.15req/s] [内存消耗：2,286.84kb] [文件加载：46]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'news',
+    2 => 'entry',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'referer' => 'http://103.45.103.50/Admin/article/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-16T16:03:33+08:00 ] 103.45.103.50 14.127.123.196 GET /Admin/news/index.html
+[ info ] 103.45.103.50/Admin/news/index.html [运行时间：0.091435s][吞吐率：10.94req/s] [内存消耗：4,133.83kb] [文件加载：63]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'news',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=cc2o6l1b4u4nhsll8ctl4n2fp7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://103.45.103.50/Admin/news/entry.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\News->index[ D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\shop\admin\controller\News.php ]
+[ info ] [ VIEW ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\public/../shop/admin\view\news\index.html [ array (
+  0 => '_menu_list_g',
+  1 => '_menu_list_p',
+  2 => '_menu_list_c',
+  3 => '_menu_tab',
+  4 => 'list',
+  5 => 'table_data_page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002400s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.002046s ]
+[ sql ] [ SQL ] SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE  `mod` = 'admin'  AND `col` = 'News'  AND `act` = 'index' LIMIT 1 [ RunTime:0.000752s ]
+[ sql ] [ SQL ] SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE  `mod` = 'admin'  AND `col` = 'News'  AND `act` = 'index'  AND `status` = 1  AND `level` = 2 LIMIT 1 [ RunTime:0.000852s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 322 LIMIT 1 [ RunTime:0.000621s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000657s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 1  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001024s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001135s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 0 ORDER BY sort asc, id asc [ RunTime:0.000935s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.000787s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 10 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.000793s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_news_title` [ RunTime:0.002684s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ysk_news_title` LIMIT 1 [ RunTime:0.000691s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_news_title` ORDER BY sort desc LIMIT 0,10 [ RunTime:0.000758s ]
+---------------------------------------------------------------
+[ 2018-04-16T16:03:37+08:00 ] 103.45.103.50 14.127.123.196 GET /Admin/shopstatus/orderlist.html
+[ info ] 103.45.103.50/Admin/shopstatus/orderlist.html [运行时间：0.109314s][吞吐率：9.15req/s] [内存消耗：4,108.23kb] [文件加载：63]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'shopstatus',
+    2 => 'orderlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=cc2o6l1b4u4nhsll8ctl4n2fp7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://103.45.103.50/Admin/news/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Shopstatus->orderlist[ D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\shop\admin\controller\Shopstatus.php ]
+[ info ] [ VIEW ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\public/../shop/admin\view\shopstatus\orderlist.html [ array (
+  0 => '_menu_list_g',
+  1 => '_menu_list_p',
+  2 => '_menu_list_c',
+  3 => '_menu_tab',
+  4 => 'list',
+  5 => 'table_data_page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011938s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.002156s ]
+[ sql ] [ SQL ] SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE  `mod` = 'admin'  AND `col` = 'Shopstatus'  AND `act` = 'orderlist' LIMIT 1 [ RunTime:0.000981s ]
+[ sql ] [ SQL ] SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE  `mod` = 'admin'  AND `col` = 'Shopstatus'  AND `act` = 'orderlist'  AND `status` = 1  AND `level` = 2 LIMIT 1 [ RunTime:0.000957s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 359 LIMIT 1 [ RunTime:0.000757s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000629s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 1  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001352s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001368s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 0 ORDER BY sort asc, id asc [ RunTime:0.001034s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.000920s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 10 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.000945s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_update_userinfo` [ RunTime:0.003089s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM ysk_update_userinfo a LEFT JOIN `ysk_user` `b` ON `b`.`userid`=`a`.`uid` WHERE  `a`.`status` = 0 LIMIT 1 [ RunTime:0.000910s ]
+[ sql ] [ SQL ] SELECT `a`.`uid`,`b`.`username`,`b`.`mobile`,`a`.* FROM ysk_update_userinfo a LEFT JOIN `ysk_user` `b` ON `b`.`userid`=`a`.`uid` WHERE  `a`.`status` = 0 ORDER BY a.create_time desc LIMIT 0,10 [ RunTime:0.001037s ]
+---------------------------------------------------------------
+[ 2018-04-16T16:03:38+08:00 ] 103.45.103.50 14.127.123.196 GET /Admin/shopstatus/index.html
+[ info ] 103.45.103.50/Admin/shopstatus/index.html [运行时间：0.100982s][吞吐率：9.90req/s] [内存消耗：4,121.13kb] [文件加载：63]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'shopstatus',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=cc2o6l1b4u4nhsll8ctl4n2fp7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://103.45.103.50/Admin/shopstatus/orderlist.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Shopstatus->index[ D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\shop\admin\controller\Shopstatus.php ]
+[ info ] [ VIEW ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\public/../shop/admin\view\shopstatus\index.html [ array (
+  0 => '_menu_list_g',
+  1 => '_menu_list_p',
+  2 => '_menu_list_c',
+  3 => '_menu_tab',
+  4 => 'list',
+  5 => 'table_data_page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011968s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.002163s ]
+[ sql ] [ SQL ] SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE  `mod` = 'admin'  AND `col` = 'Shopstatus'  AND `act` = 'index' LIMIT 1 [ RunTime:0.001075s ]
+[ sql ] [ SQL ] SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE  `mod` = 'admin'  AND `col` = 'Shopstatus'  AND `act` = 'index'  AND `status` = 1  AND `level` = 2 LIMIT 1 [ RunTime:0.000980s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 359 LIMIT 1 [ RunTime:0.000638s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000716s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 1  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001233s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001375s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 0 ORDER BY sort asc, id asc [ RunTime:0.001125s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.001090s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 10 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.001073s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_user_checkinfo` [ RunTime:0.003911s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM ysk_user_checkinfo a LEFT JOIN `ysk_user` `b` ON `b`.`userid`=`a`.`uid` WHERE  ( `a`.`is_check_user` = 1 OR `a`.`is_check_company` = 1 ) LIMIT 1 [ RunTime:0.001070s ]
+[ sql ] [ SQL ] SELECT `a`.`uid`,`b`.`username`,`b`.`mobile`,`a`.`province`,`a`.`city`,`a`.`district`,`a`.`is_check_company`,`a`.`is_check_user`,`a`.`create_time`,`a`.`user_type` FROM ysk_user_checkinfo a LEFT JOIN `ysk_user` `b` ON `b`.`userid`=`a`.`uid` WHERE  ( `a`.`is_check_user` = 1 OR `a`.`is_check_company` = 1 ) ORDER BY a.create_time desc LIMIT 0,10 [ RunTime:0.001155s ]
+---------------------------------------------------------------
+[ 2018-04-16T16:03:39+08:00 ] 103.45.103.50 14.127.123.196 GET /Admin/money/index.html
+[ info ] 103.45.103.50/Admin/money/index.html [运行时间：0.091976s][吞吐率：10.87req/s] [内存消耗：4,097.90kb] [文件加载：63]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'money',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=cc2o6l1b4u4nhsll8ctl4n2fp7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://103.45.103.50/Admin/shopstatus/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Money->index[ D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\shop\admin\controller\Money.php ]
+[ info ] [ VIEW ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\public/../shop/admin\view\money\index.html [ array (
+  0 => '_menu_list_g',
+  1 => '_menu_list_p',
+  2 => '_menu_list_c',
+  3 => '_menu_tab',
+  4 => 'list',
+  5 => 'table_data_page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010650s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.002096s ]
+[ sql ] [ SQL ] SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE  `mod` = 'admin'  AND `col` = 'Money'  AND `act` = 'index' LIMIT 1 [ RunTime:0.001023s ]
+[ sql ] [ SQL ] SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE  `mod` = 'admin'  AND `col` = 'Money'  AND `act` = 'index'  AND `status` = 1  AND `level` = 2 LIMIT 1 [ RunTime:0.000963s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 359 LIMIT 1 [ RunTime:0.000791s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000591s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 1  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001025s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001610s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 0 ORDER BY sort asc, id asc [ RunTime:0.001033s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.000897s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 10 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.000938s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_money_get` [ RunTime:0.003460s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ysk_money_get` WHERE  `status` = 0 LIMIT 1 [ RunTime:0.000750s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_money_get` WHERE  `status` = 0 ORDER BY id desc LIMIT 0,10 [ RunTime:0.000975s ]
+---------------------------------------------------------------
+[ 2018-04-16T16:03:40+08:00 ] 103.45.103.50 14.127.123.196 GET /Admin/recharge/index.html
+[ info ] 103.45.103.50/Admin/recharge/index.html [运行时间：0.105423s][吞吐率：9.49req/s] [内存消耗：4,096.87kb] [文件加载：63]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'recharge',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=cc2o6l1b4u4nhsll8ctl4n2fp7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://103.45.103.50/Admin/money/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Recharge->index[ D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\shop\admin\controller\Recharge.php ]
+[ info ] [ VIEW ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\public/../shop/admin\view\recharge\index.html [ array (
+  0 => '_menu_list_g',
+  1 => '_menu_list_p',
+  2 => '_menu_list_c',
+  3 => '_menu_tab',
+  4 => 'list',
+  5 => 'table_data_page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010964s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.002105s ]
+[ sql ] [ SQL ] SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE  `mod` = 'admin'  AND `col` = 'Recharge'  AND `act` = 'index' LIMIT 1 [ RunTime:0.001122s ]
+[ sql ] [ SQL ] SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE  `mod` = 'admin'  AND `col` = 'Recharge'  AND `act` = 'index'  AND `status` = 1  AND `level` = 2 LIMIT 1 [ RunTime:0.001023s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 359 LIMIT 1 [ RunTime:0.000774s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000774s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 1  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001538s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001464s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 0 ORDER BY sort asc, id asc [ RunTime:0.001069s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.000961s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 10 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.000975s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_money_recharge` [ RunTime:0.003294s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ysk_money_recharge` WHERE  `type` = 'underline'  AND `status` = 0 LIMIT 1 [ RunTime:0.000961s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_money_recharge` WHERE  `type` = 'underline'  AND `status` = 0 ORDER BY id desc LIMIT 0,10 [ RunTime:0.001247s ]
+---------------------------------------------------------------
+[ 2018-04-16T16:03:41+08:00 ] 103.45.103.50 14.127.123.196 GET /Admin/sellerapply/apply.html
+[ info ] 103.45.103.50/Admin/sellerapply/apply.html [运行时间：0.095114s][吞吐率：10.51req/s] [内存消耗：4,090.52kb] [文件加载：63]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'sellerapply',
+    2 => 'apply',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=cc2o6l1b4u4nhsll8ctl4n2fp7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://103.45.103.50/Admin/recharge/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Sellerapply->apply[ D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\shop\admin\controller\Sellerapply.php ]
+[ info ] [ VIEW ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\public/../shop/admin\view\sellerapply\apply.html [ array (
+  0 => '_menu_list_g',
+  1 => '_menu_list_p',
+  2 => '_menu_list_c',
+  3 => '_menu_tab',
+  4 => 'list',
+  5 => 'table_data_page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011750s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.001760s ]
+[ sql ] [ SQL ] SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE  `mod` = 'admin'  AND `col` = 'Sellerapply'  AND `act` = 'apply' LIMIT 1 [ RunTime:0.000830s ]
+[ sql ] [ SQL ] SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE  `mod` = 'admin'  AND `col` = 'Sellerapply'  AND `act` = 'apply'  AND `status` = 1  AND `level` = 2 LIMIT 1 [ RunTime:0.000916s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 359 LIMIT 1 [ RunTime:0.000860s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000752s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 1  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001484s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001380s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 0 ORDER BY sort asc, id asc [ RunTime:0.001079s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.000957s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 10 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.001137s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_seller_apply` [ RunTime:0.003520s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ysk_seller_apply` WHERE  `status` = 0 LIMIT 1 [ RunTime:0.000808s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_seller_apply` WHERE  `status` = 0 ORDER BY id desc LIMIT 0,10 [ RunTime:0.001127s ]
+---------------------------------------------------------------
+[ 2018-04-16T16:03:43+08:00 ] 103.45.103.50 14.127.123.196 GET /Admin/user/index.html
+[ info ] 103.45.103.50/Admin/user/index.html [运行时间：0.137576s][吞吐率：7.27req/s] [内存消耗：4,222.29kb] [文件加载：63]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=cc2o6l1b4u4nhsll8ctl4n2fp7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://103.45.103.50/Admin/sellerapply/apply.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\User->index[ D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\shop\admin\controller\User.php ]
+[ info ] [ VIEW ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\public/../shop/admin\view\user\index.html [ array (
+  0 => '_menu_list_g',
+  1 => '_menu_list_p',
+  2 => '_menu_list_c',
+  3 => '_menu_tab',
+  4 => 'list',
+  5 => 'table_data_page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011349s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.002163s ]
+[ sql ] [ SQL ] SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE  `mod` = 'admin'  AND `col` = 'User'  AND `act` = 'index' LIMIT 1 [ RunTime:0.001038s ]
+[ sql ] [ SQL ] SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE  `mod` = 'admin'  AND `col` = 'User'  AND `act` = 'index'  AND `status` = 1  AND `level` = 2 LIMIT 1 [ RunTime:0.000850s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 7 LIMIT 1 [ RunTime:0.000638s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000668s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 1  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001594s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001595s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 0 ORDER BY sort asc, id asc [ RunTime:0.001132s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.000771s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 10 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.000901s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_user` [ RunTime:0.002181s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM ysk_user a LEFT JOIN `ysk_user_wealth` `b` ON `a`.`userid`=`b`.`uid` LIMIT 1 [ RunTime:0.000825s ]
+[ sql ] [ SQL ] SELECT `a`.`userid`,`a`.`username`,`a`.`email`,`a`.`account`,`a`.`mobile`,`a`.`reg_date`,`a`.`status`,`a`.`pid`,`a`.`level`,`a`.`user_type`,`b`.`money`,`b`.`integral`,`b`.`anzi` FROM ysk_user a LEFT JOIN `ysk_user_wealth` `b` ON `a`.`userid`=`b`.`uid` ORDER BY a.userid desc LIMIT 0,10 [ RunTime:0.001195s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_user_level` [ RunTime:0.002761s ]
+[ sql ] [ SQL ] SELECT `level_name` FROM `ysk_user_level` WHERE  `level` = 0 LIMIT 1 [ RunTime:0.000853s ]
+[ sql ] [ SQL ] SELECT `account` FROM `ysk_user` WHERE  `userid` = 1 LIMIT 1 [ RunTime:0.000845s ]
+[ sql ] [ SQL ] SELECT `level_name` FROM `ysk_user_level` WHERE  `level` = 0 LIMIT 1 [ RunTime:0.000733s ]
+[ sql ] [ SQL ] SELECT `account` FROM `ysk_user` WHERE  `userid` = 1 LIMIT 1 [ RunTime:0.000709s ]
+[ sql ] [ SQL ] SELECT `level_name` FROM `ysk_user_level` WHERE  `level` = 0 LIMIT 1 [ RunTime:0.000827s ]
+[ sql ] [ SQL ] SELECT `account` FROM `ysk_user` WHERE  `userid` = 1 LIMIT 1 [ RunTime:0.000740s ]
+[ sql ] [ SQL ] SELECT `level_name` FROM `ysk_user_level` WHERE  `level` = 0 LIMIT 1 [ RunTime:0.000690s ]
+[ sql ] [ SQL ] SELECT `account` FROM `ysk_user` WHERE  `userid` = 1 LIMIT 1 [ RunTime:0.000722s ]
+[ sql ] [ SQL ] SELECT `level_name` FROM `ysk_user_level` WHERE  `level` = 0 LIMIT 1 [ RunTime:0.000740s ]
+[ sql ] [ SQL ] SELECT `account` FROM `ysk_user` WHERE  `userid` = 1 LIMIT 1 [ RunTime:0.000618s ]
+[ sql ] [ SQL ] SELECT `level_name` FROM `ysk_user_level` WHERE  `level` = 0 LIMIT 1 [ RunTime:0.000665s ]
+[ sql ] [ SQL ] SELECT `account` FROM `ysk_user` WHERE  `userid` = 1 LIMIT 1 [ RunTime:0.000735s ]
+[ sql ] [ SQL ] SELECT `level_name` FROM `ysk_user_level` WHERE  `level` = 0 LIMIT 1 [ RunTime:0.000708s ]
+[ sql ] [ SQL ] SELECT `account` FROM `ysk_user` WHERE  `userid` = 1 LIMIT 1 [ RunTime:0.000737s ]
+[ sql ] [ SQL ] SELECT `level_name` FROM `ysk_user_level` WHERE  `level` = 0 LIMIT 1 [ RunTime:0.000735s ]
+[ sql ] [ SQL ] SELECT `account` FROM `ysk_user` WHERE  `userid` = 1 LIMIT 1 [ RunTime:0.000751s ]
+[ sql ] [ SQL ] SELECT `level_name` FROM `ysk_user_level` WHERE  `level` = 0 LIMIT 1 [ RunTime:0.000778s ]
+[ sql ] [ SQL ] SELECT `account` FROM `ysk_user` WHERE  `userid` = 316 LIMIT 1 [ RunTime:0.000759s ]
+[ sql ] [ SQL ] SELECT `level_name` FROM `ysk_user_level` WHERE  `level` = 0 LIMIT 1 [ RunTime:0.000720s ]
+[ sql ] [ SQL ] SELECT `account` FROM `ysk_user` WHERE  `userid` = 1 LIMIT 1 [ RunTime:0.000725s ]
+---------------------------------------------------------------
+[ 2018-04-16T16:03:44+08:00 ] 103.45.103.50 14.127.123.196 GET /Admin/user/userlist.html
+[ info ] 103.45.103.50/Admin/user/userlist.html [运行时间：0.123943s][吞吐率：8.07req/s] [内存消耗：4,210.94kb] [文件加载：63]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'user',
+    2 => 'userlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=cc2o6l1b4u4nhsll8ctl4n2fp7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://103.45.103.50/Admin/user/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\User->userlist[ D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\shop\admin\controller\User.php ]
+[ info ] [ VIEW ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\public/../shop/admin\view\user\userlist.html [ array (
+  0 => '_menu_list_g',
+  1 => '_menu_list_p',
+  2 => '_menu_list_c',
+  3 => '_menu_tab',
+  4 => 'list',
+  5 => 'table_data_page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011774s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.002003s ]
+[ sql ] [ SQL ] SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE  `mod` = 'admin'  AND `col` = 'User'  AND `act` = 'userlist' LIMIT 1 [ RunTime:0.000999s ]
+[ sql ] [ SQL ] SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE  `mod` = 'admin'  AND `col` = 'User'  AND `act` = 'userlist'  AND `status` = 1  AND `level` = 2 LIMIT 1 [ RunTime:0.000929s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 7 LIMIT 1 [ RunTime:0.000747s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000740s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 1  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001370s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001262s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 0 ORDER BY sort asc, id asc [ RunTime:0.001005s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.000981s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 10 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.001039s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_user` [ RunTime:0.002004s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM ysk_user a LEFT JOIN `ysk_user_wealth` `b` ON `a`.`userid`=`b`.`uid` LIMIT 1 [ RunTime:0.001973s ]
+[ sql ] [ SQL ] SELECT `a`.`userid`,`a`.`username`,`a`.`email`,`a`.`account`,`a`.`mobile`,`a`.`reg_date`,`a`.`status`,`a`.`pid`,`a`.`level`,`a`.`user_type`,`b`.`money`,`b`.`integral`,`b`.`anzi` FROM ysk_user a LEFT JOIN `ysk_user_wealth` `b` ON `a`.`userid`=`b`.`uid` ORDER BY a.userid desc LIMIT 0,10 [ RunTime:0.001089s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_user_level` [ RunTime:0.003205s ]
+[ sql ] [ SQL ] SELECT `level_name` FROM `ysk_user_level` WHERE  `level` = 0 LIMIT 1 [ RunTime:0.000817s ]
+[ sql ] [ SQL ] SELECT `level_name` FROM `ysk_user_level` WHERE  `level` = 0 LIMIT 1 [ RunTime:0.000781s ]
+[ sql ] [ SQL ] SELECT `level_name` FROM `ysk_user_level` WHERE  `level` = 0 LIMIT 1 [ RunTime:0.000760s ]
+[ sql ] [ SQL ] SELECT `level_name` FROM `ysk_user_level` WHERE  `level` = 0 LIMIT 1 [ RunTime:0.000674s ]
+[ sql ] [ SQL ] SELECT `level_name` FROM `ysk_user_level` WHERE  `level` = 0 LIMIT 1 [ RunTime:0.000658s ]
+[ sql ] [ SQL ] SELECT `level_name` FROM `ysk_user_level` WHERE  `level` = 0 LIMIT 1 [ RunTime:0.000763s ]
+[ sql ] [ SQL ] SELECT `level_name` FROM `ysk_user_level` WHERE  `level` = 0 LIMIT 1 [ RunTime:0.000754s ]
+[ sql ] [ SQL ] SELECT `level_name` FROM `ysk_user_level` WHERE  `level` = 0 LIMIT 1 [ RunTime:0.000675s ]
+[ sql ] [ SQL ] SELECT `level_name` FROM `ysk_user_level` WHERE  `level` = 0 LIMIT 1 [ RunTime:0.000683s ]
+[ sql ] [ SQL ] SELECT `level_name` FROM `ysk_user_level` WHERE  `level` = 0 LIMIT 1 [ RunTime:0.000671s ]
+---------------------------------------------------------------
+[ 2018-04-16T16:03:46+08:00 ] 103.45.103.50 14.127.123.196 GET /Admin/group/index.html
+[ info ] 103.45.103.50/Admin/group/index.html [运行时间：0.100577s][吞吐率：9.94req/s] [内存消耗：3,948.96kb] [文件加载：60]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'group',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=cc2o6l1b4u4nhsll8ctl4n2fp7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://103.45.103.50/Admin/user/userlist.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Group->index[ D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\shop\admin\controller\Group.php ]
+[ info ] [ VIEW ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\public/../shop/admin\view\group\index.html [ array (
+  0 => '_menu_list_g',
+  1 => '_menu_list_p',
+  2 => '_menu_list_c',
+  3 => '_menu_tab',
+  4 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011395s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.002142s ]
+[ sql ] [ SQL ] SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE  `mod` = 'admin'  AND `col` = 'Group'  AND `act` = 'index' LIMIT 1 [ RunTime:0.000933s ]
+[ sql ] [ SQL ] SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE  `mod` = 'admin'  AND `col` = 'Group'  AND `act` = 'index'  AND `status` = 1  AND `level` = 2 LIMIT 1 [ RunTime:0.000857s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000578s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000544s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 1  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001268s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001258s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 0 ORDER BY sort asc, id asc [ RunTime:0.001015s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.000924s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 10 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.001027s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_group` [ RunTime:0.003645s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_group` WHERE  `status` >= 0 ORDER BY sort asc, id asc [ RunTime:0.000950s ]
+---------------------------------------------------------------
+[ 2018-04-16T16:03:47+08:00 ] 103.45.103.50 14.127.123.196 GET /Admin/config/group.html
+[ info ] 103.45.103.50/Admin/config/group.html [运行时间：0.093008s][吞吐率：10.75req/s] [内存消耗：3,944.92kb] [文件加载：60]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'config',
+    2 => 'group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=cc2o6l1b4u4nhsll8ctl4n2fp7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://103.45.103.50/Admin/group/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Config->group[ D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\shop\admin\controller\Config.php ]
+[ info ] [ VIEW ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\public/../shop/admin\view\config\base.html [ array (
+  0 => '_menu_list_g',
+  1 => '_menu_list_p',
+  2 => '_menu_list_c',
+  3 => '_menu_tab',
+  4 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011819s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.001923s ]
+[ sql ] [ SQL ] SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE  `mod` = 'admin'  AND `col` = 'Config'  AND `act` = 'group' LIMIT 1 [ RunTime:0.000948s ]
+[ sql ] [ SQL ] SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE  `mod` = 'admin'  AND `col` = 'Config'  AND `act` = 'group'  AND `status` = 1  AND `level` = 2 LIMIT 1 [ RunTime:0.000828s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000602s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000554s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 1  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001180s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001151s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 0 ORDER BY sort asc, id asc [ RunTime:0.000871s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.000685s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 10 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.000709s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.001569s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`value`,`tip`,`type`,`title` FROM `ysk_config` WHERE  `group` = 1  AND `status` = 1 [ RunTime:0.000968s ]
+---------------------------------------------------------------
+[ 2018-04-16T16:03:49+08:00 ] 103.45.103.50 14.127.123.196 GET /Admin/manage/index.html
+[ info ] 103.45.103.50/Admin/manage/index.html [运行时间：0.103462s][吞吐率：9.67req/s] [内存消耗：4,092.44kb] [文件加载：63]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'manage',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=cc2o6l1b4u4nhsll8ctl4n2fp7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://103.45.103.50/Admin/config/group.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Manage->index[ D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\shop\admin\controller\Manage.php ]
+[ info ] [ VIEW ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\public/../shop/admin\view\manage\index.html [ array (
+  0 => '_menu_list_g',
+  1 => '_menu_list_p',
+  2 => '_menu_list_c',
+  3 => '_menu_tab',
+  4 => 'list',
+  5 => 'table_data_page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011119s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.002164s ]
+[ sql ] [ SQL ] SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE  `mod` = 'admin'  AND `col` = 'Manage'  AND `act` = 'index' LIMIT 1 [ RunTime:0.000859s ]
+[ sql ] [ SQL ] SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE  `mod` = 'admin'  AND `col` = 'Manage'  AND `act` = 'index'  AND `status` = 1  AND `level` = 2 LIMIT 1 [ RunTime:0.000833s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000707s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000792s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 1  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001360s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001557s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 0 ORDER BY sort asc, id asc [ RunTime:0.001035s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.001014s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 10 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.000971s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_admin` [ RunTime:0.002975s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM ysk_admin a LEFT JOIN `ysk_group` `b` ON `a`.`auth_id`=`b`.`id` WHERE  `a`.`status` >= '0' LIMIT 1 [ RunTime:0.002025s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`title` FROM ysk_admin a LEFT JOIN `ysk_group` `b` ON `a`.`auth_id`=`b`.`id` WHERE  `a`.`status` >= '0' ORDER BY a.id asc LIMIT 0,10 [ RunTime:0.001134s ]
+---------------------------------------------------------------
+[ 2018-04-16T16:03:49+08:00 ] 103.45.103.50 14.127.123.196 GET /Admin/banner/index.html
+[ info ] 103.45.103.50/Admin/banner/index.html [运行时间：0.098292s][吞吐率：10.17req/s] [内存消耗：4,113.98kb] [文件加载：63]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'banner',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=cc2o6l1b4u4nhsll8ctl4n2fp7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://103.45.103.50/Admin/manage/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Banner->index[ D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\shop\admin\controller\Banner.php ]
+[ info ] [ VIEW ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\public/../shop/admin\view\banner\index.html [ array (
+  0 => '_menu_list_g',
+  1 => '_menu_list_p',
+  2 => '_menu_list_c',
+  3 => '_menu_tab',
+  4 => 'list',
+  5 => 'table_data_page',
+  6 => 'psdata',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001880s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.002763s ]
+[ sql ] [ SQL ] SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE  `mod` = 'admin'  AND `col` = 'Banner'  AND `act` = 'index' LIMIT 1 [ RunTime:0.001129s ]
+[ sql ] [ SQL ] SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE  `mod` = 'admin'  AND `col` = 'Banner'  AND `act` = 'index'  AND `status` = 1  AND `level` = 2 LIMIT 1 [ RunTime:0.001296s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000934s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000757s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 1  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001345s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001360s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 0 ORDER BY sort asc, id asc [ RunTime:0.001074s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.000903s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 10 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.000998s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_banner` [ RunTime:0.001725s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ysk_banner` LIMIT 1 [ RunTime:0.000699s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_banner` ORDER BY b_order desc,b_type,id LIMIT 0,10 [ RunTime:0.000931s ]
+---------------------------------------------------------------
+[ 2018-04-16T16:04:36+08:00 ] 103.45.103.50 140.207.118.16 GET /Admin/shopstatus/index.html
+[ info ] 103.45.103.50/Admin/shopstatus/index.html [运行时间：0.036798s][吞吐率：27.18req/s] [内存消耗：2,258.98kb] [文件加载：46]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'shopstatus',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'referer' => 'http://103.45.103.50/Admin/news/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-16T16:04:37+08:00 ] 103.45.103.50 117.185.117.60 GET /Admin/shopstatus/orderlist.html
+[ info ] 103.45.103.50/Admin/shopstatus/orderlist.html [运行时间：0.032848s][吞吐率：30.44req/s] [内存消耗：2,259.12kb] [文件加载：46]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'shopstatus',
+    2 => 'orderlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'referer' => 'http://103.45.103.50/Admin/news/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2141.400 QQBrowser/9.5.10219.400',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-16T16:04:39+08:00 ] 103.45.103.50 117.185.117.59 GET /Admin/money/index.html
+[ info ] 103.45.103.50/Admin/money/index.html [运行时间：0.032627s][吞吐率：30.65req/s] [内存消耗：2,242.23kb] [文件加载：46]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'money',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'referer' => 'http://103.45.103.50/Admin/shopstatus/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-16T16:04:41+08:00 ] 103.45.103.50 101.227.131.219 GET /Admin/sellerapply/apply.html
+[ info ] 103.45.103.50/Admin/sellerapply/apply.html [运行时间：0.028599s][吞吐率：34.97req/s] [内存消耗：2,236.42kb] [文件加载：46]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'sellerapply',
+    2 => 'apply',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'referer' => 'http://103.45.103.50/Admin/recharge/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-16T16:04:43+08:00 ] 103.45.103.50 61.151.225.155 GET /Admin/user/userlist.html
+[ info ] 103.45.103.50/Admin/user/userlist.html [运行时间：0.040424s][吞吐率：24.74req/s] [内存消耗：2,283.95kb] [文件加载：46]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'user',
+    2 => 'userlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'referer' => 'http://103.45.103.50/Admin/user/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.124 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-16T16:04:46+08:00 ] 103.45.103.50 61.151.178.165 GET /Admin/group/index.html
+[ info ] 103.45.103.50/Admin/group/index.html [运行时间：0.030641s][吞吐率：32.64req/s] [内存消耗：2,235.83kb] [文件加载：46]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'group',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'referer' => 'http://103.45.103.50/Admin/user/userlist.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-16T16:04:46+08:00 ] 103.45.103.50 101.227.131.207 GET /Admin/config/group.html
+[ info ] 103.45.103.50/Admin/config/group.html [运行时间：0.033651s][吞吐率：29.72req/s] [内存消耗：2,232.52kb] [文件加载：46]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'config',
+    2 => 'group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'referer' => 'http://103.45.103.50/Admin/group/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-16T16:04:48+08:00 ] 103.45.103.50 117.135.173.79 GET /Admin/manage/index.html
+[ info ] 103.45.103.50/Admin/manage/index.html [运行时间：0.031441s][吞吐率：31.81req/s] [内存消耗：2,239.33kb] [文件加载：46]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'manage',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'referer' => 'http://103.45.103.50/Admin/config/group.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2141.400 QQBrowser/9.5.10219.400',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-16T16:04:49+08:00 ] 103.45.103.50 61.151.226.63 GET /Admin/banner/index.html
+[ info ] 103.45.103.50/Admin/banner/index.html [运行时间：0.030830s][吞吐率：32.44req/s] [内存消耗：2,233.68kb] [文件加载：46]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'banner',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'referer' => 'http://103.45.103.50/Admin/manage/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-16T16:05:16+08:00 ] 103.45.103.50 14.127.123.196 GET /Admin/banner/index.html
+[ info ] 103.45.103.50/Admin/banner/index.html [运行时间：0.098157s][吞吐率：10.19req/s] [内存消耗：4,113.86kb] [文件加载：63]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'banner',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=cc2o6l1b4u4nhsll8ctl4n2fp7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://103.45.103.50/Admin/manage/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Banner->index[ D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\shop\admin\controller\Banner.php ]
+[ info ] [ VIEW ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\public/../shop/admin\view\banner\index.html [ array (
+  0 => '_menu_list_g',
+  1 => '_menu_list_p',
+  2 => '_menu_list_c',
+  3 => '_menu_tab',
+  4 => 'list',
+  5 => 'table_data_page',
+  6 => 'psdata',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010384s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_menu` [ RunTime:0.001398s ]
+[ sql ] [ SQL ] SELECT COUNT(1) AS tp_count FROM `ysk_menu` WHERE  `mod` = 'admin'  AND `col` = 'Banner'  AND `act` = 'index' LIMIT 1 [ RunTime:0.000675s ]
+[ sql ] [ SQL ] SELECT `pid`,`gid`,`name` FROM `ysk_menu` WHERE  `mod` = 'admin'  AND `col` = 'Banner'  AND `act` = 'index'  AND `status` = 1  AND `level` = 2 LIMIT 1 [ RunTime:0.000632s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000539s ]
+[ sql ] [ SQL ] SELECT `name` FROM `ysk_menu` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000573s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 1  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001113s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc [ RunTime:0.001091s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_menu` WHERE  `status` = 1  AND `level` = 0 ORDER BY sort asc, id asc [ RunTime:0.001053s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 1 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.001020s ]
+[ sql ] [ SQL ] SELECT `mod`,`col`,`act`,`param`,`param_value` FROM `ysk_menu` WHERE  `level` = 2  AND `gid` = 10 ORDER BY sort asc, id asc LIMIT 1 [ RunTime:0.000941s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_banner` [ RunTime:0.001493s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ysk_banner` LIMIT 1 [ RunTime:0.000770s ]
+[ sql ] [ SQL ] SELECT * FROM `ysk_banner` ORDER BY b_order desc,b_type,id LIMIT 0,10 [ RunTime:0.000799s ]
+---------------------------------------------------------------
+[ 2018-04-16T16:06:57+08:00 ] 103.45.103.50 117.13.169.226 GET http://www.baidu.com/
+[ info ] www.baidu.comhttp://www.baidu.com/ [运行时间：0.083406s][吞吐率：11.99req/s] [内存消耗：3,694.91kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'python-requests/2.6.0 CPython/2.7.5 Linux/3.10.0-693.11.1.el7.x86_64',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'close',
+  'host' => 'www.baidu.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002662s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002407s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.001105s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000645s ]
+---------------------------------------------------------------
+[ 2018-04-16T16:30:49+08:00 ] 103.45.103.50 221.1.173.6 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.089137s][吞吐率：11.22req/s] [内存消耗：3,694.88kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002844s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002225s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.001064s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000695s ]
+---------------------------------------------------------------
+[ 2018-04-16T16:32:53+08:00 ] 103.45.103.50 187.148.139.16 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.081889s][吞吐率：12.21req/s] [内存消耗：3,695.06kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011874s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002031s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.000928s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000786s ]
+---------------------------------------------------------------
+[ 2018-04-16T16:54:25+08:00 ] 103.45.103.50 47.96.11.241 HEAD /pmd/index.php
+[ info ] 103.45.103.50/pmd/index.php [运行时间：0.043568s][吞吐率：22.95req/s] [内存消耗：1,905.49kb] [文件加载：40]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'pmd',
+    1 => 'index.php',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => '103.45.103.50',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-16T17:00:01+08:00 ] 103.45.103.50 192.241.199.17 GET /
+[ info ] 103.45.103.50/ [运行时间：0.083571s][吞吐率：11.97req/s] [内存消耗：3,694.61kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 zgrab/0.x',
+  'host' => '103.45.103.50',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002833s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002392s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.001118s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000802s ]
+---------------------------------------------------------------
+[ 2018-04-16T17:28:41+08:00 ] 103.45.103.50 60.191.38.78 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.081266s][吞吐率：12.31req/s] [内存消耗：3,694.70kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:47.0) Gecko/20100101 Firefox/47.0',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003092s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002011s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.000946s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000683s ]
+---------------------------------------------------------------
+[ 2018-04-16T18:06:24+08:00 ] 103.45.103.50 103.82.75.162 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.092725s][吞吐率：10.78req/s] [内存消耗：3,694.88kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/601.7.7 (KHTML, like Gecko) Version/9.1.2 Safari/601.7.7',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002683s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.001862s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.000863s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000788s ]
+---------------------------------------------------------------
+[ 2018-04-16T19:41:58+08:00 ] 103.45.103.50 96.39.163.28 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.085406s][吞吐率：11.71req/s] [内存消耗：3,694.88kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002779s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.001933s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.000827s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000587s ]
+---------------------------------------------------------------
+[ 2018-04-16T19:48:46+08:00 ] 103.45.103.50 60.191.38.78 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.091043s][吞吐率：10.98req/s] [内存消耗：3,694.70kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:47.0) Gecko/20100101 Firefox/47.0',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002521s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002092s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.000899s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000833s ]
+---------------------------------------------------------------
+[ 2018-04-16T20:12:34+08:00 ] 103.45.103.50 179.99.18.14 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.087230s][吞吐率：11.46req/s] [内存消耗：3,694.88kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002666s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002024s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.000716s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000789s ]
+---------------------------------------------------------------
+[ 2018-04-16T20:17:19+08:00 ] 103.45.103.50 187.10.41.95 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.070288s][吞吐率：14.23req/s] [内存消耗：3,695.06kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011389s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002103s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.000930s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000691s ]
+---------------------------------------------------------------
+[ 2018-04-16T20:52:55+08:00 ] 103.45.103.50 187.10.126.11 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.092005s][吞吐率：10.87req/s] [内存消耗：3,694.88kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002831s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002210s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.000961s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000842s ]
+---------------------------------------------------------------
+[ 2018-04-16T20:56:21+08:00 ] 103.45.103.50 45.228.94.71 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.072158s][吞吐率：13.86req/s] [内存消耗：3,695.06kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011902s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002018s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.001159s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000976s ]
+---------------------------------------------------------------
+[ 2018-04-16T21:06:28+08:00 ] 103.45.103.50 103.79.156.165 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.098775s][吞吐率：10.12req/s] [内存消耗：3,694.88kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/601.7.7 (KHTML, like Gecko) Version/9.1.2 Safari/601.7.7',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003119s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002368s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.001060s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000810s ]
+---------------------------------------------------------------
+[ 2018-04-16T21:33:04+08:00 ] 103.45.103.50 60.191.38.78 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.088221s][吞吐率：11.34req/s] [内存消耗：3,694.70kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:47.0) Gecko/20100101 Firefox/47.0',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002617s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002149s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.001031s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000874s ]
+---------------------------------------------------------------
+[ 2018-04-16T21:57:01+08:00 ] 103.45.103.50 222.83.228.182 POST /wls-wsat/CoordinatorPortType
+[ info ] 103.45.103.50:80/wls-wsat/CoordinatorPortType [运行时间：0.050549s][吞吐率：19.78req/s] [内存消耗：1,909.02kb] [文件加载：40]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wls-wsat',
+    1 => 'CoordinatorPortType',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '1214',
+  'content-type' => 'text/xml',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; rv:5.0) Gecko/20100101 Firefox/5.0',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-16T22:59:50+08:00 ] 103.45.103.50 125.26.82.226 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.086419s][吞吐率：11.57req/s] [内存消耗：3,694.88kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/601.7.7 (KHTML, like Gecko) Version/9.1.2 Safari/601.7.7',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002657s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002018s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.000894s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000713s ]
+---------------------------------------------------------------
+[ 2018-04-16T23:44:29+08:00 ] 103.45.103.50 60.191.38.78 GET /
+[ info ] 103.45.103.50:80/ [运行时间：0.074428s][吞吐率：13.44req/s] [内存消耗：3,694.70kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:47.0) Gecko/20100101 Firefox/47.0',
+  'host' => '103.45.103.50:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002683s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002197s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.000993s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000762s ]
