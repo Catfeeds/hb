@@ -7248,3 +7248,37 @@
 [ info ] [ VIEW ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\public/../shop/admin\view\login\login.html [ array (
 ) ]
 [ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-25T14:00:02+08:00 ] 203.78.142.44 86.120.46.165 GET /
+[ info ] 203.78.142.44:80/ [运行时间：0.073093s][吞吐率：13.68req/s] [内存消耗：3,695.06kb] [文件加载：59]
+[ info ] [ LANG ] D:\UPUPW_ANK_W64\WebRoot\Vhosts\web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36',
+  'host' => '203.78.142.44:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010626s ] mysql:host=127.0.0.1;port=3306;dbname=anzhiquan1201_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ysk_config` [ RunTime:0.002429s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `ysk_config` WHERE  `group` = 1 [ RunTime:0.001054s ]
+[ sql ] [ SQL ] SELECT `value`,`tip` FROM `ysk_config` WHERE  `name` = 'TOGGLE_WEB_SITE' LIMIT 1 [ RunTime:0.000868s ]
