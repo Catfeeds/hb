@@ -17,9 +17,9 @@ return [
     // 数据库名
     'database'        => 'anzhiquan1201_db',
     // 用户名
-    'username'        => 'anzhiquan1201_f',
+    'username'        => 'root',
     // 密码
-    'password'        => 'EgPsyYeWyQeIG0O',
+    'password'        => 'root',
     // 端口
     'hostport'        => '3306',
     // 连接dsn
