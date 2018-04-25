@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:32:"../tpl/home/wap/index\index.html";i:1521114944;s:34:"../tpl/home/wap/public\bottom.html";i:1517050374;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:32:"../tpl/home/wap/index\index.html";i:1524644095;s:34:"../tpl/home/wap/public\bottom.html";i:1517050374;}*/ ?>
 
 <!-- 不使用布局文件 -->
 <!DOCTYPE html>
@@ -202,7 +202,7 @@
     		</li>
     		<li>
     			<a href="<?php echo url('Usercenter/manageuser'); ?>">
-	    			<span><img src="__IMG__/fl5.png"></span>
+	    			<span><img src="__IMG__/yhgl.png"></span>
 	    			<p>分享管理</p>
     			</a>
     		</li>
@@ -212,21 +212,22 @@
                     <p>个人转企业</p>
                 </a>
             </li>
-    		<li>
-    			<a href="<?php echo url('Userinfo/index'); ?>">
-	    			<span><img src="__IMG__/fl7.png"></span>
-	    			<p>认证中心</p>
-    			</a>
-    		</li>
-    		<li>
+            <li>
     			<a href="<?php echo url('Userorder/index'); ?>">
 	    			<span><img src="__IMG__/fl8.png"></span>
 	    			<p>工单</p>
     			</a>
     		</li>
     		<li>
+    			<a href="<?php echo url('Userinfo/index'); ?>">
+	    			<span><img src="__IMG__/fl7.png"></span>
+	    			<p>认证中心</p>
+    			</a>
+    		</li>
+    		
+    		<li>
                 <a href="<?php echo url('Userupdate/index'); ?>">
-                    <span><img src="__IMG__/fl1.png"></span>
+                    <span><img src="__IMG__/hysj.png"></span>
                     <p>会员升级</p>
                 </a>
             </li>

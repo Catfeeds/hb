@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:31:"../tpl/home/wap/index\more.html";i:1517727789;s:27:"../tpl/home/wap/layout.html";i:1514211998;s:34:"../tpl/home/wap/public\header.html";i:1516333197;s:34:"../tpl/home/wap/public\footer.html";i:1514211999;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:31:"../tpl/home/wap/index\more.html";i:1524638653;s:27:"../tpl/home/wap/layout.html";i:1514211998;s:34:"../tpl/home/wap/public\header.html";i:1516333197;s:34:"../tpl/home/wap/public\footer.html";i:1514211999;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -49,16 +49,16 @@
             </li>
             <li>
                 <a href="<?php echo url('Usercenter/manageuser'); ?>">
-                    <span><img src="__IMG__/fl5.png"></span>
+                    <span><img src="__IMG__/yhgl.png"></span>
                     <p>分享管理</p>
                 </a>
             </li>
-            <li>
-                <a href="<?php echo url('Usercenter/manageuser'); ?>">
-                    <span><img src="__IMG__/fl7.png"></span>
-                    <p>用户管理</p>
-                </a>
-            </li>
+         <!--    <li>
+             <a href="<?php echo url('Usercenter/manageuser'); ?>">
+                 <span><img src="__IMG__/fl7.png"></span>
+                 <p>用户管理</p>
+             </a>
+         </li> -->
             <li>
                 <a href="<?php echo url('Userorder/index'); ?>">
                     <span><img src="__IMG__/fl8.png"></span>
@@ -125,7 +125,7 @@
             </li>
             <li>
                 <a href="<?php echo url('News/newscenter',array('new_ids'=>3)); ?>">
-                    <span><img src="__IMG__/fl5.png"></span>
+                    <span><img src="__IMG__/zxzx.png"></span>
                     <p>资讯中心</p>
                 </a>
             </li>
